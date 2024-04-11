@@ -1,0 +1,16 @@
+{
+editPartDetails              : false,
+showSustitutePartCount       : true,
+showShipvia                  : false,
+showShipAddress              : false,
+showNotes                     : false,
+previousPOpartRate           : true,
+showPrint                    : false,
+allowToReceivePartial		 : true,
+poApprovalRequired			: true,
+customPuchaseOrderprint 	 : 'showPurchaseOrderPrintForAadinath',
+showCustomPurchaseOrderPrint : true,
+requisitionApproved 		 : true,
+showSaveRemarkButton		 : true,
+editInvoiceNoLength			 : true
+}

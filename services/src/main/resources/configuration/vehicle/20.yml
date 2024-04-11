@@ -1,0 +1,14 @@
+{
+  showVehicleColor                 : false,
+  showClassOfVehicle               : false,
+  showVehicleBody                  : false,
+  showRoute                        : false,
+  showACType                       : false,
+  showCylinder                     : false,
+  showCubicCapacity                : false,
+  showPower                        : false,
+  showWheelBase                    : false,
+  showSeatCapacity                 : false,
+  showVehicleLocation              : false,
+  fuelTankText                     : "Fuel Tank Capacity",
+}

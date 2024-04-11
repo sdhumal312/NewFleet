@@ -1,0 +1,11 @@
+{ 
+TallyCompanyMasterInSE                : true,
+allowServiceEntriesBackDate           : true,
+noOfDaysForServiceEntriesBackDate     : 1325,
+noOfDaysToReOpenServiceEntries        : 1325,
+expenseId                             : 2967,
+showPaidDateOnListView                : true,
+showInvoiceDateOnListView             : true,
+showPaidDateForServEnt                : false,
+validateInvoiceNumber                 : true
+}

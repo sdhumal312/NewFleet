@@ -1,0 +1,17 @@
+# this is default property
+
+vehicleGroupWisePermission : true
+
+cashBookWisePermission : true
+
+partLocationWisePermission : true
+
+cashBookClosedDateView : 30
+
+tripSheetFlavor : 3
+
+subRouteTypeNeeded  : true
+
+vehicleGroupWiseRoute : true
+
+vehicleGroupWisePerInRenewal : false

@@ -1,0 +1,4 @@
+{
+groupInventoryOnPartName : true,
+validateVendor			 : false
+}

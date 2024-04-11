@@ -1,0 +1,126 @@
+{ 
+"tableProperties"	: {"enableColumnReOrder":true
+							,"showPrintButton":true
+							,"showExcelButton":true
+							,"gridDataId":"editReport"
+							,"gridDataHeight":"500px"
+							,"enableCellNavigation":false
+							,"divId":"container"
+							,"frozenColumn":"-1"
+							,"showSerialNumber":true
+							,"fullTableHeight": true
+							,"rowHeight":30
+							,"showGrouping":true
+							,"columnNumber":0
+							
+					}
+	,"columnConfiguration"	: {	
+								"1":"User_Name"
+								,"2":"Issues_Number"
+								,"3":"SUMMARY"
+								,"4":"vehicle_registration"
+								,"5":"Issue_Type"
+								,"6":"ASSIGN_TO_NAME"
+								,"7":"Status"
+								,"8":"created"
+								,"9":"lastupdated"
+
+						} 
+						
+						
+						
+	,"User_Name"		: {	 "tableDtoName":"userName"
+							,"dataType":"text"
+							,"labelid":"User_Name"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+	
+						
+	,"Issues_Number"		: {	 "tableDtoName":"issuesNumberStr"
+							,"dataType":"text"
+							,"labelid":"Issues_Number"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+						
+	,"Issue_Type"		: {	 "tableDtoName":"issues_TYPE"
+							,"dataType":"text"
+							,"labelid":"Issue_Type"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+						
+						
+	,"SUMMARY"		: {	 "tableDtoName":"issues_SUMMARY"
+							,"dataType":"text"
+							,"labelid":"SUMMARY"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+						
+			
+	,"vehicle_registration"		: {	 "tableDtoName":"issues_VEHICLE_REGISTRATION"
+							,"dataType":"text"
+							,"labelid":"vehicle_registration"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+						
+
+	
+	,"created"		: {	 "tableDtoName":"created_DATE"
+							,"dataType":"text"
+							,"labelid":"created"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	,"lastupdated"		: {	 "tableDtoName":"lastupdated_DATE"
+							,"dataType":"text"
+							,"labelid":"lastupdated"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+						
+						
+	,"ASSIGN_TO_NAME"		: {	 "tableDtoName":"issues_ASSIGN_TO_NAME"
+							,"dataType":"text"
+							,"labelid":"ASSIGN_TO_NAME"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+						
+	,"Status"		: {	 "tableDtoName":"issues_STATUS"
+							,"dataType":"text"
+							,"labelid":"Status"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+						
+
+								
+}

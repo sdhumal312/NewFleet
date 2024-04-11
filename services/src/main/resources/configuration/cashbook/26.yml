@@ -1,0 +1,9 @@
+{ 
+isAutoVoucherNumber               : true,
+allowZeroAmountCashBook  		  : true,
+addTripIncomeInCashBook		      : true,
+checkAuthorityForCashBook         : true,
+addDueExpenseInCashBook			  : true,
+viewCashReference				  : true,
+showCashBookReference			  : true
+}

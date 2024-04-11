@@ -1,0 +1,76 @@
+{
+	  "tableProperties"	: {"enableColumnReOrder":true
+							,"showPrintButton":true
+							,"showExcelButton":true
+							,"gridDataId":"editReport"
+							,"gridDataHeight":"500px"
+							,"enableCellNavigation":false
+							,"divId":"container"
+							,"frozenColumn":"-1"
+							,"showSerialNumber":true
+							,"fullTableHeight": true
+							,"rowHeight":30
+							
+						}
+	,"columnConfiguration"	: {	
+								"1":"vehicle"
+								,"2":"driver"
+								,"3":"upholsteryName"
+								,"4":"location"
+								,"5":"quantity" 
+								,"6":"date" 
+						} 
+	
+	,"vehicle"	: {	 "tableDtoName":"vehicle_registration"
+							,"dataType":"text"
+							,"labelid":"Vehicle"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+						
+						
+	,"driver"		: {	 "tableDtoName":"driver_firstname"
+							,"dataType":"text"
+							,"labelid":"Driver"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	
+	,"upholsteryName" : { "tableDtoName":"clothName"
+							,"dataType":"text"
+							,"labelid":"UpholsteryName"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	,"location"			: {	 "tableDtoName":"partlocation_name"
+							,"dataType":"text"
+							,"labelid":"Location"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	,"quantity"		: {	 "tableDtoName":"losedQuantity"
+							,"dataType":"text"
+							,"labelid":"Quantity"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : false
+							,"show":true
+						}
+	,"date"		: {	 "tableDtoName":"createdDateStr"
+							,"dataType":"text"
+							,"labelid":"Date"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	
+}

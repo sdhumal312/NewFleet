@@ -1,0 +1,20 @@
+{
+   showPaymentTerm                   : true,
+   showWebsite                       : true,
+   showPrimaryEmail                  : true,
+   editVendorName                    : false,
+   showVendorInputField              : false,
+   allVendorTypeAutoComplete         : false,
+   VendorInputFieldInPOAdd           : true,
+   VendorInputFieldInPOAddPart       : false,
+   addVehicleDetailsInPOAddPart      : false,
+   showVehicleDetailsInPO            : false,
+   allowOwnPetrolPump                : false,
+   fuelTypeId                        : 21,
+   validatePrimaryContactName         : true,
+   validatePrimaryContactNum         : true,
+   validatePrimaryContactEmail        : true,
+   PanCardMandatory					 : false,
+   TDSPercent						 : false,
+   validatePanNO					 : false
+}

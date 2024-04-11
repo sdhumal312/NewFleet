@@ -1,0 +1,13 @@
+{
+allowIVLoadingSheetEntry               : true,
+allowBackDateEntry                     : true,
+noOfDaysForBackDate                    : 15,
+loadingSheetChargesType                : 1,
+loadingSheetSyncLink                   : "https://ivcargo.net/ivwebservices/LoadingSheetToTripSheetWS/getLoadingSheetToTripSheetData.do",
+allowTicketIncomeApiIntegeration       : true,
+addLhpvAfterTripSheet                  : true,
+lhpvAsExpense                          : true,
+allowAutoIncomeOnTripClose             : false,
+allowAccountCloseWithoutIncome         : false,  
+allowAutoLSOnTripClose                : false
+}

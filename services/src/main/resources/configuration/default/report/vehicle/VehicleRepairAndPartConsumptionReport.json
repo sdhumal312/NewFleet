@@ -1,0 +1,175 @@
+{
+	  "tableProperties"	: {"enableColumnReOrder":true
+							,"showPrintButton":true
+							,"showExcelButton":true
+							,"gridDataId":"myGrid"
+							,"gridDataHeight":"500px"
+							,"enableCellNavigation":false
+							,"divId":"container"
+							,"frozenColumn":"-1"
+							,"showSerialNumber":false
+							,"fullTableHeight": false
+							,"rowHeight":30
+							,"showGrouping":true
+							,"columnNumber":1
+							
+							
+							
+						}
+	,"columnConfiguration"	: {	
+								"1":"TRANSACTION NO"
+								,"2":"STATUS"
+								,"3":"VEHICLE"
+								,"4":"VEHICLE ODOMETER"
+								,"5":"WO-START DATE" 
+								,"6":"WO-DUE DATE" 
+								,"7":"SE-INVOICE DATE" 
+								,"8":"SE-INVOICE NO" 
+								,"9":"TASK" 
+								,"10":"PART NAME" 
+								,"11":"PART NUMBER" 
+								,"12":"PART QUANTITY" 
+								,"13":"PART EACH COST" 
+								,"14":"TOTAL COST" 
+								,"15":"LABOR COST" 
+								,"16":"TOTAL REPAIR COST" 
+						} 
+	
+	,"TRANSACTION NO"		: {	 "tableDtoName":"transactionNumber"
+							,"dataType":"text"
+							,"labelid":"TRANSACTION NO"
+							,"columnhidden":true
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+							,"inputElement" : "link"
+						}	
+	,"STATUS"		: {	 "tableDtoName":"status"
+							,"dataType":"text"
+							,"labelid":"STATUS"
+							,"columnhidden":true
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":false
+						}									
+	
+	,"VEHICLE"			: {	 "tableDtoName":"vehicle_registration"
+							,"dataType":"text"
+							,"labelid":"VEHICLE"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							,"buttonCallback" : "showVehicle"
+							,"inputElement" : "link"
+						}
+	,"VEHICLE ODOMETER"			: {	 "tableDtoName":"vehicleOdometer"
+							,"dataType":"text"
+							,"labelid":"VEHICLE ODOMETER"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : false
+							,"show":false
+						}
+	,"WO-START DATE"		: {	 "tableDtoName":"startDateStr"
+							,"dataType":"text"
+							,"labelid":"WO-START DATE"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":false
+						}
+	,"WO-DUE DATE"		: {	 "tableDtoName":"endDateStr"
+							,"dataType":"text"
+							,"labelid":"WO-DUE DATE"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	,"SE-INVOICE DATE"		: {	 "tableDtoName":"invoiceDateStr"
+							,"dataType":"text"
+							,"labelid":"SE-INVOICE DATE"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	,"SE-INVOICE NO"		: {	 "tableDtoName":"invoiceNumber"
+							,"dataType":"text"
+							,"labelid":"SE-INVOICE NO"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	,"TASK"		: {	 "tableDtoName":"jobSubType"
+							,"dataType":"text"
+							,"labelid":"TASK"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							,"buttonCallback" : "showTaskName"
+						}
+	,"PART NAME"	: {	 "tableDtoName":"partName"
+							,"dataType":"text"
+							,"labelid":"PART NAME"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							,"buttonCallback" : "showPartName"
+						}
+	,"PART NUMBER"	: {	 "tableDtoName":"partNumber"
+							,"dataType":"text"
+							,"labelid":"PART NUMBER"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	,"PART QUANTITY"	: {	 "tableDtoName":"partQuantity"
+							,"dataType":"text"
+							,"labelid":"PART QUANTITY"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	,"PART EACH COST"	: {	 "tableDtoName":"partEachCost"
+							,"dataType":"text"
+							,"labelid":"PART EACH COST"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	,"TOTAL COST"	: {	 "tableDtoName":"partTotalCost"
+							,"dataType":"text"
+							,"labelid":"TOTAL COST"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}
+	,"LABOR COST"	: {	 "tableDtoName":"laborTotalCost"
+							,"dataType":"text"
+							,"labelid":"LABOR COST"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}
+	,"TOTAL REPAIR COST"	: {	 "tableDtoName":"totalRepairCost"
+							,"dataType":"text"
+							,"labelid":"TOTAL REPAIR COST"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}					
+																														
+						
+	
+}

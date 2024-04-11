@@ -1,0 +1,105 @@
+{
+	  "tableProperties"	: {"enableColumnReOrder":true
+							,"showPrintButton":true
+							,"showExcelButton":true
+							,"gridDataId":"editReport"
+							,"gridDataHeight":"500px"
+							,"enableCellNavigation":false
+							,"divId":"container"
+							,"frozenColumn":"-1"
+							,"showSerialNumber":true
+							,"fullTableHeight": true
+							,"rowHeight":30
+							,"showGrouping":true
+							,"columnNumber": 0
+							
+						}
+	,"columnConfiguration"	: {	
+								"1":"vehicle"
+								,"2":"position"
+								,"3":"tyreNum"
+								,"4":"currentCompany"
+								,"5":"km"
+								,"6":"dateOfFitment"
+								,"7":"VehicleGroup"
+						} 
+	
+	,"vehicle"	: {	 "tableDtoName":"vehicleNumberStr"
+							,"dataType":"text"
+							,"labelid":"vehicle"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+						
+						
+	,"currentCompany"		: {	 "tableDtoName":"tyre_MODEL"
+							,"dataType":"text"
+							,"labelid":"Tyre Model"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}
+	
+	,"tyreNum"			: {	 "tableDtoName":"tyre_NUMBER"
+							,"dataType":"text"
+							,"labelid":"Tyre Number"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	,"km"			: {	 "tableDtoName":"open_ODOMETER"
+							,"dataType":"text"
+							,"labelid":"Odometer"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}
+	,"cost"		: {	 "tableDtoName":"tyre_AMOUNT"
+							,"dataType":"text"
+							,"labelid":"Cost"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}
+
+	,"dateOfFitment"		: {	 "tableDtoName":"tyre_ASSIGN_DATE"
+							,"dataType":"text"
+							,"labelid":"Assign Date"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	,"position"		: {	 "tableDtoName":"positionT"
+							,"dataType":"text"
+							,"labelid":"Position"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	,"axile"		: {	 "tableDtoName":"axle"
+							,"dataType":"text"
+							,"labelid":"Axile"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	,"VehicleGroup"		: {	 "tableDtoName":"vehicleGroup"
+							,"dataType":"text"
+							,"labelid":"Vehicle Group"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+
+
+}

@@ -1,0 +1,123 @@
+{
+	  "tableProperties"	: {"enableColumnReOrder":true
+							,"showPrintButton":true
+							,"showExcelButton":true
+							,"gridDataId":"editReport"
+							,"gridDataHeight":"500px"
+							,"enableCellNavigation":false
+							,"divId":"container"
+							,"frozenColumn":"-1"
+							,"showSerialNumber":false
+							,"fullTableHeight": true
+							,"rowHeight":30
+							,"showGrouping":true
+							,"columnNumber":0
+							
+						}
+						
+						
+	,"columnConfiguration"	: {	
+								 "1":"VEHICLE"
+								,"2":"SR NUMBER"
+								,"3":"SERVICE TYPE"
+								,"4":"SERVICE SUB TYPE"
+								,"5":"SR CREATED" 
+								,"6":"CURRENT ODOMETER" 
+								,"7":"DUE THRESHOLD ODOMETER"
+								,"8":"DUE THRESHOLD DATE" 
+								,"9":"SERVICE ODOMETER" 
+								,"10":"SERVICE DATE"
+						} 
+		
+	,"VEHICLE"	: {	 "tableDtoName":"vehicle_registration"
+						,"dataType":"text"
+						,"labelid":"VEHICLE"
+						,"columnhidden":false
+						,"showColumnTotal":false
+						,"sortable" : false
+						,"show":true
+						,"inputElement" : "link"
+					}
+	,"SR NUMBER"	: {	 "tableDtoName":"srNumber"
+						,"dataType":"text"
+						,"labelid":"SR NUMBER"
+						,"columnhidden":false
+						,"showColumnTotal":false
+						,"sortable" : false
+						,"show":true
+						,"inputElement" : "link"
+					}				
+	,"SERVICE TYPE"	: {	 "tableDtoName":"service_type"
+						,"dataType":"text"
+						,"labelid":"SERVICE TYPE"
+						,"columnhidden":false
+						,"showColumnTotal":false
+						,"sortable" : false
+						,"show":true
+					}										
+	,"SERVICE SUB TYPE"			: {	 "tableDtoName":"service_subtype"
+							,"dataType":"text"
+							,"labelid":"SERVICE SUB TYPE"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}					
+	
+						
+	 ,"SR CREATED"		: {	 "tableDtoName":"created"
+							,"dataType":"text"
+							,"labelid":"SR CREATED"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}
+	 ,"CURRENT ODOMETER"		: {	 "tableDtoName":"vehicle_currentOdometer"
+							,"dataType":"text"
+							,"labelid":"CURRENT ODOMETER"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}					
+						
+	,"DUE THRESHOLD ODOMETER"		: {	 "tableDtoName":"meter_servicethreshold_odometer"
+							,"dataType":"text"
+							,"labelid":"DUE THRESHOLD ODOMETER"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}
+						
+	,"DUE THRESHOLD DATE"		: {	 "tableDtoName":"threshHoldDate"
+							,"dataType":"text"
+							,"labelid":"DUE THRESHOLD DATE"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}
+						 
+	,"SERVICE ODOMETER"		: {	 "tableDtoName":"meter_serviceodometer"
+							,"dataType":"text"
+							,"labelid":"SERVICE ODOMETER"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						} 										 
+	
+	,"SERVICE DATE"		: {	 "tableDtoName":"servceDate"
+							,"dataType":"number"
+							,"labelid":"SERVICE DATE"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+						
+						
+	
+}

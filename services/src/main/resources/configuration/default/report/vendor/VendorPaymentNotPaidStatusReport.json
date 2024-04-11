@@ -1,0 +1,70 @@
+{
+	  "tableProperties"	: {"enableColumnReOrder":true
+							,"showPrintButton":true
+							,"showExcelButton":true
+							,"gridDataId":"editReport"
+							,"gridDataHeight":"500px"
+							,"enableCellNavigation":false
+							,"divId":"container"
+							,"frozenColumn":"-1"
+							,"showSerialNumber":true
+							,"fullTableHeight": true
+							,"rowHeight":30
+							
+						}
+						
+	,"columnConfiguration"	: {	
+								 "1":"serialNumber"
+								,"2":"invoiceDate"
+								,"3":"invoiceNumber"
+								,"4":"invoiceAmount" 
+								,"5":"balanceAmount" 																	
+						} 
+	
+	,"serialNumber"	: {	 "tableDtoName":"serialNumberStr"
+							,"dataType":"number"
+							,"labelid":"ID"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"buttonCallback" : "showSerialNumberDetails"
+							,"inputElement" : "link"
+							,"show":true
+						}
+	
+	,"invoiceDate"			: {	 "tableDtoName":"invoiceDateStr"
+							,"dataType":"text"
+							,"labelid":"Invoice Date"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false									
+							,"show":true
+						}
+						
+	,"invoiceNumber"			: {	 "tableDtoName":"invoiceNumber"
+							,"dataType":"number"
+							,"labelid":"Invoice Number"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}
+	  
+	,"invoiceAmount"		: {	 "tableDtoName":"invoiceAmount"
+							,"dataType":"text"
+							,"labelid":"Invoice Amount"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}
+	,"balanceAmount"		: {	 "tableDtoName":"balanceAmount"
+							,"dataType":"text"
+							,"labelid":"Balance Amount"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}
+	
+}

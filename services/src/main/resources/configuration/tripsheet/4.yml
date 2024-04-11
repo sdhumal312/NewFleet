@@ -1,0 +1,10 @@
+{
+saveDriverLedgerDetails					: true,
+hideAdvanceAndExpenseAddIfAccClose		: true,
+transferDriverBalanceToNextTrip			: false,
+disableAdvanceDuringDispatch			: true,
+showDriverBalance                     	: true,
+addMoreButtonInTripIncomeExpense		: false,
+showPaymentTypeInIncomeExpense			: false,
+showLastTripMileageOnCloseTrip			: true
+}

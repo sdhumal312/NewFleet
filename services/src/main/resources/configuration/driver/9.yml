@@ -1,0 +1,17 @@
+{ 
+
+showBloodGroup                : false,
+showLanguage                  : false,
+showHomePhoneNumber           : false,
+showAddress2                  : false,
+showInsuranceNumber           : false,
+showOtherTrainning            : false,   
+showLeaveDate                 : false,   
+showBadgeNo                   : false,   
+showLicenseClass              : false,
+showLicenseState              : false,   
+showAuthorizedToDrive         : false,   
+showOriginalDLRemark          : false,   
+showReferenceData             : false
+
+}

@@ -1,0 +1,8 @@
+
+{
+showLoadType                          : true,
+allowBackDateEntry                    : true,
+noOfDaysForBackDate                   : 15,
+addLhpvAfterTripSheet                 : true,
+showPODdetails                        : true
+}

@@ -1,0 +1,5 @@
+{
+jobTypeWiseAutoGenerateEmpNo  : true,
+autoGenerateEmpNo             : false
+
+}

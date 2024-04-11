@@ -1,0 +1,159 @@
+{
+	  "tableProperties"	: {"enableColumnReOrder":true
+							,"showPrintButton":true
+							,"showExcelButton":true
+							,"gridDataId":"editReport"
+							,"gridDataHeight":"500px"
+							,"enableCellNavigation":false
+							,"divId":"container"
+							,"frozenColumn":"-1"
+							,"showSerialNumber":true
+							,"fullTableHeight": true
+							,"rowHeight":30
+							,"showGrouping":true
+							,"columnNumber":1
+							
+						}
+	,"columnConfiguration"	: {	
+								 "1":"issuesStatus"
+								,"2":"issuesLabels"
+								,"3":"vehicleRegistration"
+								,"4":"route"
+								,"5":"driver"
+								,"6":"odometer"
+								,"7":"issueType"
+								,"8":"category"
+								,"9":"summary" 
+								,"10":"reportedDateTime"
+								,"11":"resolvingDateTime"
+								,"12":"totalTime" 
+								,"13":"assignByName" 
+								,"14":"assignTo" 
+																 
+						} 
+	
+	,"issuesStatus"		: {	 "tableDtoName":"issueStatusName"
+							,"dataType":"text"
+							,"labelid":"Status"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}					
+	,"issuesLabels"		: {	 "tableDtoName":"issueLabelName"
+							,"dataType":"text"
+							,"labelid":"Label"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+	,"vehicleRegistration"		: {	 "tableDtoName":"issues_VEHICLE_REGISTRATION"
+							,"dataType":"text"
+							,"labelid":"Vehicle"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	,"route"		: {	 "tableDtoName":"routeName"
+							,"dataType":"text"
+							,"labelid":"Route"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+	,"driver"		: {	 "tableDtoName":"issues_DRIVER_NAME"
+							,"dataType":"text"
+							,"labelid":"Driver"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}
+	
+	,"odometer"			: {	 "tableDtoName":"issues_ODOMETER"
+							,"dataType":"text"
+							,"labelid":"Odometer"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}
+	,"issueType"			: {	 "tableDtoName":"issueTypeName"
+							,"dataType":"text"
+							,"labelid":"Issue Type"
+							,"columnhidden":false
+							,"showColumnTotalAvg":true
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	,"category"			: {	 "tableDtoName":"partCategoryName"
+							,"dataType":"text"
+							,"labelid":"Category"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+	,"summary"			: {	 "tableDtoName":"issues_SUMMARY"
+							,"dataType":"text"
+							,"labelid":"Summary"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+	,"reportedDateTime"			: {	 "tableDtoName":"issuesReportedDateStr"
+							,"dataType":"text"
+							,"labelid":"Reported Date"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+	,"resolvingDateTime"			: {	 "tableDtoName":"resolvingDate"
+							,"dataType":"text"
+							,"labelid":"Resolving Date"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+	,"totalTime"			: {	 "tableDtoName":"totalTime"
+							,"dataType":"text"
+							,"labelid":"Total Time"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+	,"assignByName"		: {	 "tableDtoName":"createdby"
+							,"dataType":"text"
+							,"labelid":"Assign By"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"buttonCallback" : "serviceQtyDetails"
+							,"show":true
+						}
+	,"assignTo"		: {	 "tableDtoName":"issues_ASSIGN_TO"
+							,"dataType":"text"
+							,"labelid":"Assign To"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"buttonCallback" : "serviceQtyDetails"
+							,"show":true
+						}
+}

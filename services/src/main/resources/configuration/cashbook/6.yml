@@ -1,0 +1,8 @@
+{ 
+
+showCashBookStatus                : false,
+showGstNoCol                      : true,
+showApprovalButton                : false,
+AllowEditAfterClose               : true,
+showLinkRefLink                   : true
+}

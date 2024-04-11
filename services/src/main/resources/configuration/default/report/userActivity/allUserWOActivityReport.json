@@ -1,0 +1,110 @@
+{ 
+"tableProperties"	: {"enableColumnReOrder":true
+							,"showPrintButton":true
+							,"showExcelButton":true
+							,"gridDataId":"editReport"
+							,"gridDataHeight":"500px"
+							,"enableCellNavigation":false
+							,"divId":"container"
+							,"frozenColumn":"-1"
+							,"showSerialNumber":true
+							,"fullTableHeight": true
+							,"rowHeight":30
+							,"showGrouping":true
+							,"columnNumber":0
+							
+					}
+	,"columnConfiguration"	: {	
+								"1":"User_Name"
+								,"2":"workorders_id"
+								,"3":"start_date"
+								,"4":"due_date"
+								,"5":"vehicle_registration"
+								,"6":"created"
+								,"7":"lastupdated"
+								,"8":"Total_Cost"
+
+																 
+						} 
+						
+						
+		,"User_Name"		: {	 "tableDtoName":"userName"
+							,"dataType":"text"
+							,"labelid":"User_Name"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+						
+	,"workorders_id"		: {	 "tableDtoName":"workorders_Numbers"
+							,"dataType":"text"
+							,"labelid":"workorders_id"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+						
+	,"start_date"		: {	 "tableDtoName":"start_date"
+							,"dataType":"text"
+							,"labelid":"start_date"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+						
+						
+	,"due_date"		: {	 "tableDtoName":"due_date"
+							,"dataType":"text"
+							,"labelid":"due_date"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+						
+			
+	,"vehicle_registration"		: {	 "tableDtoName":"vehicle_registration"
+							,"dataType":"text"
+							,"labelid":"vehicle_registration"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+						
+
+	
+	,"created"		: {	 "tableDtoName":"created"
+							,"dataType":"text"
+							,"labelid":"created"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	,"lastupdated"		: {	 "tableDtoName":"lastupdated"
+							,"dataType":"text"
+							,"labelid":"lastupdated"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+						
+							,"Total_Cost"		: {	 "tableDtoName":"totalworkorder_cost"
+							,"dataType":"text"
+							,"labelid":"Total_Cost"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+							
+						}
+}

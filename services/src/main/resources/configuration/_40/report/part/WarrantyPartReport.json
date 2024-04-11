@@ -1,0 +1,77 @@
+{
+	 "tableProperties"				: {"enableColumnReOrder":true
+										,"showPrintButton":true
+										,"showExcelButton":true
+										,"gridDataId":"editReport"
+										,"gridDataHeight":"500px"
+										,"enableCellNavigation":false
+										,"divId":"container"
+										,"frozenColumn":"-1"
+										,"showSerialNumber":false
+										,"fullTableHeight": true
+										,"rowHeight":30
+										,"showGrouping":true
+										,"columnNumber":0
+							
+									}
+	,"columnConfiguration"	: {	
+								"1":"workOrder"
+								,"2":"vehicle"
+								,"3":"quantity"
+								,"4":"rate"
+								,"5":"totalAmount"
+								,"6":"Part_Number"
+								
+						} 
+						
+	,"workOrder"		: {	 "tableDtoName":"workOrderNumberStr"
+							,"dataType":"text"
+							,"labelid":"WO/SE No"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	
+	,"vehicle"			: {	 "tableDtoName":"vehicle_registration"
+							,"dataType":"text"
+							,"labelid":"Vehicle"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}
+	,"quantity"			: {	 "tableDtoName":"quantity"
+							,"dataType":"text"
+							,"labelid":"Quantity"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : false
+							,"show":true
+						}
+	,"rate"				: {	 "tableDtoName":"parteachcost"
+							,"dataType":"text"
+							,"labelid":"Rate"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}
+	,"totalAmount"		: {	 "tableDtoName":"totalcost"
+							,"dataType":"text"
+							,"labelid":"Total Amount"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}
+	,"Part_Number"		: {	 "tableDtoName":"partname"
+							,"dataType":"text"
+							,"labelid":"Part_Number"
+							,"columnhidden":true
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+					
+}

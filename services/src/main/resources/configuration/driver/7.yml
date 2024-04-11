@@ -1,0 +1,18 @@
+{
+showRenewalType            : false,
+showRenewalValidity        : false,
+showDueThreshold           : false,
+showRenewalDoc             : false,
+validateRenwalType         : false,
+validateRenewalPeriod      : false,
+validateRenewalThreshold   : false,
+validateRenwalDoc          : false,
+validateJobTitle           : false,
+autoGenerateEmpNo          : true,
+validateDateOfBirth        : false,
+validateDLNumber           : false,
+validateAadhar             : false,
+validateStartDate          : false,
+validateDLNumberWhenJobTypeIsDriver           : false
+
+ }

@@ -1,0 +1,90 @@
+{
+	  "tableProperties"	: {"enableColumnReOrder":true
+							,"showPrintButton":true
+							,"showExcelButton":true
+							,"gridDataId":"editReport"
+							,"gridDataHeight":"500px"
+							,"enableCellNavigation":false
+							,"divId":"container"
+							,"frozenColumn":"-1"
+							,"showSerialNumber":true
+							,"fullTableHeight": true
+							,"rowHeight":30
+							
+						}
+	,"columnConfiguration"	: {	
+								 "1":"tripSheetNumber"
+								,"2":"vehicle"
+								,"3":"tripOpenDate"
+								,"4":"closetripDate"
+								,"5":"expenseName"
+								,"6":"expenseAmount" 
+								,"7":"tripEndDateTimeStr" 																
+						} 
+	
+	,"tripSheetNumber"	: {	 "tableDtoName":"tripSheetNumberStr"
+							,"dataType":"text"
+							,"labelid":"TripSheet Number"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"buttonCallback" : "showTripSheetNumberDetails"
+							,"inputElement" : "link"
+							,"show":true
+						}
+						
+						
+	,"vehicle"		: {	 "tableDtoName":"vehicle_registration"
+							,"dataType":"text"
+							,"labelid":"Vehicle"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"buttonCallback" : "showVehicleDetails"
+							,"inputElement" : "link"
+							,"show":true
+						}
+	
+	,"tripOpenDate"			: {	 "tableDtoName":"tripOpenDate"
+							,"dataType":"text"
+							,"labelid":"Trip Open Date"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false							
+							,"show":true
+						}
+	,"closetripDate"			: {	 "tableDtoName":"closetripDate"
+							,"dataType":"text"
+							,"labelid":"Trip Close Date"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false							
+							,"show":true
+						}
+	,"expenseName"			: {	 "tableDtoName":"expenseName"
+							,"dataType":"text"
+							,"labelid":"Expense Name"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}
+	 ,"expenseAmount"		: {	 "tableDtoName":"expenseAmount"
+							,"dataType":"text"
+							,"labelid":"Expense Amount"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : false
+							,"show":true
+						} 
+	,"tripEndDateTimeStr"			: {	 "tableDtoName":"tripEndDateTimeStr"
+							,"dataType":"text"
+							,"labelid":"Voucher Date"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false							
+							,"show":true
+						}					
+	
+	
+}

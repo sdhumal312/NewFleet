@@ -1,0 +1,120 @@
+{
+	  "tableProperties"	: {"enableColumnReOrder":true
+							,"showPrintButton":true
+							,"showExcelButton":true
+							,"gridDataId":"editReport"
+							,"gridDataHeight":"500px"
+							,"enableCellNavigation":false
+							,"divId":"container"
+							,"frozenColumn":"-1"
+							,"showSerialNumber":false
+							,"fullTableHeight": true
+							,"rowHeight":30
+							,"showGrouping":true
+							,"columnNumber":0
+							
+						}
+	,"columnConfiguration"	: {	
+								 "1":"vendorName"
+								,"2":"lorryHireDetailsNumber"
+								,"3":"Vehicle"
+								,"4":"transactionDate"
+								,"5":"LorryHire"
+								,"6":"AdvanceAmount" 
+								,"7":"PaidAmount"
+								,"8":"BalanceAmount" 
+								,"9":"paymentStatus" 																	
+						} 
+						
+						
+						
+	,"vendorName"		: {	 "tableDtoName":"vendorName"
+							,"dataType":"text"
+							,"labelid":"Vendor Name"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false								
+							,"show":true
+						}
+	
+	,"lorryHireDetailsNumber"	: {	 "tableDtoName":"lorryHireDetailsNumber"
+							,"dataType":"text"
+							,"labelid":"Hire Number"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}
+						
+	
+	,"transactionDate"			: {	 "tableDtoName":"hireDateStr"
+							,"dataType":"text"
+							,"labelid":"Hire Date"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false									
+							,"show":true
+						}
+						
+	,"Vehicle"	: {	 "tableDtoName":"vehicle_registration"
+							,"dataType":"text"
+							,"labelid":"Vehicle"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}
+	 ,"LorryHire"		: {	 "tableDtoName":"lorryHire"
+							,"dataType":"number"
+							,"labelid":"Lorry Hire"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : false
+							,"show":true
+						} 
+	,"AdvanceAmount"		: {	 "tableDtoName":"advanceAmount"
+							,"dataType":"number"
+							,"labelid":"Advance Amt"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : false
+							,"show":true
+						} 
+	,"PaidAmount"		: {	 "tableDtoName":"paidAmount"
+							,"dataType":"number"
+							,"labelid":"Paid Amt"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : false
+							,"show":true
+						} 
+	
+	,"BalanceAmount"		: {	 "tableDtoName":"balanceAmount"
+							,"dataType":"number"
+							,"labelid":"Balance Amt"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : false
+							,"show":true
+						} 					
+	
+	,"paymentType"		: {	 "tableDtoName":"paymentType"
+							,"dataType":"text"
+							,"labelid":"Payment Mode"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"buttonCallback" : "showVendorDetails"
+							,"inputElement" : "link"
+							,"sortable" : true
+							,"show":true
+						}
+	,"paymentStatus"		: {	 "tableDtoName":"paymentStatusAction"
+							,"dataType":"text"
+							,"labelid":"Status"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	
+}

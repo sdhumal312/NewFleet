@@ -1,0 +1,11 @@
+{ 
+  validateChasisNo	               : false,
+  validateVGroup	               : true,
+  validateEngineNo                 : false,
+  validateVehicleType              : false,
+  validateVehicleStatus            : false,
+  validateVehicleFuelType          : false,
+  validateVehicleOdometer          : false,
+  validateVehicleExpectedOdometer  : false,
+  validateVehicleExpectedMileage   : false			
+}

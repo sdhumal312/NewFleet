@@ -1,0 +1,9 @@
+# this is default property
+
+isOTPValidationAtLogin : true
+
+OTPSendToType : 1
+
+forceUserToResetPassword : true
+
+noOfDaysToResetPassword  : 90

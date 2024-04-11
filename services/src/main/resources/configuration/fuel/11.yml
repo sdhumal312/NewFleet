@@ -1,0 +1,8 @@
+{
+referenceName               : true,
+noOfDaysForBackDate         : 60,
+allowManualOdometerEntry    : false,
+roundFigureAmount           : true,
+validateReference             : false,
+showVehicleNumCol           : true
+}

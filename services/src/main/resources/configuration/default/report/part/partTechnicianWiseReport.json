@@ -1,0 +1,98 @@
+{
+	  "tableProperties"	: {"enableColumnReOrder":true
+							,"showPrintButton":true
+							,"showExcelButton":true
+							,"gridDataId":"editReport"
+							,"gridDataHeight":"500px"
+							,"enableCellNavigation":false
+							,"divId":"container"
+							,"frozenColumn":"-1"
+							,"showSerialNumber":true
+							,"fullTableHeight": true
+							,"rowHeight":30
+							
+						}
+	,"columnConfiguration"	: {	
+								 "1":"completeDate"
+								,"2":"workOrderNo"
+								,"3":"vehicle"
+								,"4":"taskName"
+								,"5":"workHour" 
+								,"6":"workRate" 
+								,"7":"laborCost" 								
+								,"8":"labername" 								
+						} 
+	
+	,"completeDate"	: {	 "tableDtoName":"completeDateStr"
+							,"dataType":"text"
+							,"labelid":"Complete Date"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+						
+						
+	,"workOrderNo"		: {	 "tableDtoName":"workorders_Numbers"
+							,"dataType":"number"
+							,"labelid":"WorkOrder No"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"buttonCallback" : "showWorkOrder"
+							,"inputElement" : "link"
+							,"show":true
+						}
+	
+	,"vehicle"			: {	 "tableDtoName":"vehicle_registration"
+							,"dataType":"text"
+							,"labelid":"Vehicle"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"buttonCallback" : "showVehicleDetails"
+							,"inputElement" : "link"
+							,"show":true
+						}
+	,"taskName"			: {	 "tableDtoName":"job_Type"
+							,"dataType":"text"
+							,"labelid":"Task Name"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}
+	 ,"workHour"		: {	 "tableDtoName":"laberhourscost"
+							,"dataType":"text"
+							,"labelid":"Work Hour"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						} 
+	,"workRate"		: {	 "tableDtoName":"eachlabercost"
+							,"dataType":"text"
+							,"labelid":"Work Rate"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}
+	,"laborCost"		: {	 "tableDtoName":"totalcost"
+							,"dataType":"text"
+							,"labelid":"Labour Cost"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}
+	,"labername"		: {	 "tableDtoName":"driver_firstname"
+							,"dataType":"text"
+							,"labelid":"Technician Name"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}
+	
+}

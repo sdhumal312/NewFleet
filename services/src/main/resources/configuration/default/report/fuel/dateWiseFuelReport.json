@@ -1,0 +1,162 @@
+{
+	  "tableProperties"	: {"enableColumnReOrder":true
+							,"showPrintButton":true
+							,"showExcelButton":true
+							,"gridDataId":"editReport"
+							,"gridDataHeight":"500px"
+							,"enableCellNavigation":false
+							,"divId":"container"
+							,"frozenColumn":"-1"
+							,"showSerialNumber":true
+							,"fullTableHeight": true
+							,"rowHeight":30
+							
+							
+						}
+	,"columnConfiguration"	: {	
+								 "1":"Vehicle_Number"
+								,"2":"Open_KM"
+								,"3":"Close_KM"
+								,"4":"Total_KM"
+								,"5":"Diesel"
+								,"6":"Average"
+								,"7":"vendor_name"
+								,"8":"Driver_1" 
+								,"9":"Driver_2" 
+								,"10":"Cleaner" 
+								,"11":"Route" 
+								,"12":"Date"
+								,"13":"GpsUsage"
+								,"14":"GpsKmpl"
+						
+								
+																 
+						} 
+	
+						
+	,"Vehicle_Number"		: {	 "tableDtoName":"vehicle_registration"
+							,"dataType":"text"
+							,"labelid":"Vehicle_Number"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							,"buttonCallback" : "showVehicle"
+							,"inputElement" : "link"
+						}
+	,"Open_KM"		: {	 "tableDtoName":"fuel_meter_old"
+							,"dataType":"text"
+							,"labelid":"Open_KM"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	,"Close_KM"		: {	 "tableDtoName":"fuel_meter"
+							,"dataType":"text"
+							,"labelid":"Close_KM"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+	,"Total_KM"		: {	 "tableDtoName":"fuel_usage"
+							,"dataType":"text"
+							,"labelid":"Total_KM"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}
+	
+	,"Diesel"			: {	 "tableDtoName":"fuel_liters"
+							,"dataType":"text"
+							,"labelid":"Diesel"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}
+	,"Average"			: {	 "tableDtoName":"fuel_kml"
+							,"dataType":"text"
+							,"labelid":"Average"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	,"vendor_name"			: {	 "tableDtoName":"vendor_name"
+							,"dataType":"text"
+							,"labelid":"vendor_name"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							,"buttonCallback" : "showVendor"
+							,"inputElement" : "link"
+						}
+	,"Driver_1"			: {	 "tableDtoName":"driver_name"
+							,"dataType":"text"
+							,"labelid":"Driver_1"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							,"buttonCallback" : "showDriver"
+							,"inputElement" : "link"
+						}
+	,"Driver_2"		: {	 "tableDtoName":"fuelSecDriverName"
+							,"dataType":"text"
+							,"labelid":"Driver_2"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							,"buttonCallback" : "showDriver2"
+							,"inputElement" : "link"
+						}
+	,"Cleaner"		: {	 "tableDtoName":"fuelCleanerName"
+							,"dataType":"text"
+							,"labelid":"Cleaner"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+							,"buttonCallback" : "showCleaner"
+							,"inputElement" : "link"
+						}
+	,"Route"		: {	 "tableDtoName":"fuelRouteName"
+							,"dataType":"text"
+							,"labelid":"Route"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+
+	,"Date"		: {	 "tableDtoName":"fuel_date"
+							,"dataType":"text"
+							,"labelid":"Date"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}	
+	,"GpsUsage"		: {	 "tableDtoName":"gpsUsageKM"
+							,"dataType":"number"
+							,"labelid":"GPS Usage"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}	
+	,"GpsKmpl"		: {	 "tableDtoName":"gpKMPL"
+							,"dataType":"number"
+							,"labelid":"GPS Kmpl"
+							,"columnhidden":true
+							,"showColumnTotalAvg": true
+							,"sortable" : true
+							,"show":false
+						}						
+}

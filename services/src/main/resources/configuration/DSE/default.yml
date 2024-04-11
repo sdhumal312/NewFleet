@@ -1,0 +1,11 @@
+{
+partWarranty                  : false ,
+tyreAssginFromDSE             : false ,
+validateOdometer              : false ,
+multipleQuotation             : false ,
+showServiceProgram            : false ,
+showServRemindWhileCreating   : false ,
+showLastModifiedBy            : true,
+showAction                    : true,
+showRemark                    : false
+}

@@ -1,0 +1,103 @@
+{
+	  "tableProperties"	: {"enableColumnReOrder":true
+							,"showPrintButton":true
+							,"showExcelButton":true
+							,"gridDataId":"editReport"
+							,"gridDataHeight":"500px"
+							,"enableCellNavigation":false
+							,"divId":"container"
+							,"frozenColumn":"-1"
+							,"showSerialNumber":true
+							,"fullTableHeight": true
+							,"rowHeight":30
+							
+						}
+	,"columnConfiguration"	: {	
+								"1":"tyreNumber"
+								,"2":"mountDate"
+								,"3":"disMountDate"
+								,"4":"tyreCost"
+								,"5":"costPerKm" 
+								,"6":"usageKm" 
+								,"7":"location" 
+								,"8":"Axle" 
+								,"9":"Position" 
+						} 
+	
+	,"tyreNumber"	: {	 "tableDtoName":"tyre_NUMBER"
+							,"dataType":"text"
+							,"labelid":"Tyre Number"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+						
+						
+	,"mountDate"	: {	 "tableDtoName":"tyre_MOUNT_DATE"
+							,"dataType":"text"
+							,"labelid":"Tyre Mount Date"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	
+	,"disMountDate" : { "tableDtoName":"tyre_DIS_MOUNT_DATE"
+							,"dataType":"text"
+							,"labelid":"Tyre DisMount Date"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	,"tyreCost"			: {	 "tableDtoName":"tyre_COST"
+							,"dataType":"text"
+							,"labelid":"Tyre Cost"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : false
+							,"show":true
+						}
+	,"costPerKm"		: {	 "tableDtoName":"cost_PER_KM"
+							,"dataType":"text"
+							,"labelid":"Cost Per Km"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : false
+							,"show":true
+						}
+	,"usageKm"		: {	 "tableDtoName":"tyre_USEAGE"
+							,"dataType":"text"
+							,"labelid":"Tyre Usage Km"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : false
+							,"show":true
+						}
+	,"location"		: {	 "tableDtoName":"warehouse_LOCATION"
+							,"dataType":"text"
+							,"labelid":"Location"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}
+	,"Axle"		: {	 "tableDtoName":"axle"
+							,"dataType":"text"
+							,"labelid":"Axle"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":false
+						}
+	,"Position"		: {	 "tableDtoName":"position"
+							,"dataType":"text"
+							,"labelid":"Position"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":false
+						}										
+	
+}

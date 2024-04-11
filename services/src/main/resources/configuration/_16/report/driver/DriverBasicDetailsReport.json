@@ -1,0 +1,81 @@
+{
+	   "tableProperties"	: {"enableColumnReOrder":true
+							,"showPrintButton":true
+							,"showExcelButton":true
+							,"gridDataId":"editReport"
+							,"gridDataHeight":"500px"
+							,"enableCellNavigation":false
+							,"divId":"container"
+							,"frozenColumn":"-1"
+							,"showSerialNumber":true
+							,"fullTableHeight": true
+							,"rowHeight":30
+							,"showGrouping":true
+							,"columnNumber":0
+							
+						}
+	,"columnConfiguration"	: {	
+								 "1":"Driver_Name"
+								,"2":"Details_Type"
+								,"3":"Quantity"
+								,"4":"Assign_Date"
+								,"5":"Remark"
+
+																 
+						} 
+	
+						
+	,"Driver_Name"		: {	 "tableDtoName":"driverName"
+							,"dataType":"text"
+							,"labelid":"Driver_Name"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						
+						}
+						
+	,"Details_Type"		: {	 "tableDtoName":"detailsType"
+							,"dataType":"text"
+							,"labelid":"Details_Type"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						
+						}
+						
+						
+	,"Quantity"		: {	 "tableDtoName":"quantity"
+							,"dataType":"text"
+							,"labelid":"Quantity"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+						
+						
+
+	
+	,"Assign_Date"		: {	 "tableDtoName":"assignDateStr"
+							,"dataType":"text"
+							,"labelid":"Assign_Date"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	,"Remark"		: {	 "tableDtoName":"remark"
+							,"dataType":"text"
+							,"labelid":"Remark"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+	
+						
+								
+}

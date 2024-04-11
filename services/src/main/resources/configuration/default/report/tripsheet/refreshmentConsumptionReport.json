@@ -1,0 +1,134 @@
+{
+	  "tableProperties"	: {"enableColumnReOrder":true
+							,"showPrintButton":true
+							,"showExcelButton":true
+							,"gridDataId":"editReport"
+							,"gridDataHeight":"500px"
+							,"enableCellNavigation":false
+							,"divId":"container"
+							,"frozenColumn":"-1"
+							,"showSerialNumber":true
+							,"fullTableHeight": true
+							,"rowHeight":30
+							
+						}
+	,"columnConfiguration"	: {	
+								 "1":"Vehicle_Number"
+								,"2":"tripSheetNumber"
+								,"3":"partName"
+								,"4":"asignDate"
+								,"5":"quantity"
+								,"6":"unitPrice"
+								,"7":"totalAmount"
+								,"8":"returnedQuantity"
+								,"9":"returnDate" 
+								,"10":"returnAmount" 
+								,"11":"grandTotal" 
+								,"12":"route" 
+								
+																 
+						} 
+	
+						
+	,"Vehicle_Number"		: {	 "tableDtoName":"vehicle_registration"
+							,"dataType":"text"
+							,"labelid":"Vehicle_Number"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							,"buttonCallback" : "showVehicle"
+							,"inputElement" : "link"
+						}
+	,"tripSheetNumber"		: {	 "tableDtoName":"tripSheetNumber"
+							,"dataType":"text"
+							,"labelid":"TripSheet"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	,"asignDate"		: {	 "tableDtoName":"asignmentDateStr"
+							,"dataType":"text"
+							,"labelid":"Asign Date"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+	,"partName"		: {	 "tableDtoName":"partname"
+							,"dataType":"text"
+							,"labelid":"Part Name"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	
+	,"quantity"			: {	 "tableDtoName":"quantity"
+							,"dataType":"text"
+							,"labelid":"Quantity"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}
+	,"unitPrice"			: {	 "tableDtoName":"unitprice"
+							,"dataType":"text"
+							,"labelid":"Unit Price"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	,"totalAmount"			: {	 "tableDtoName":"totalAmount"
+							,"dataType":"text"
+							,"labelid":"Amount"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}
+	,"returnedQuantity"			: {	 "tableDtoName":"returnQuantity"
+							,"dataType":"text"
+							,"labelid":"Return Qty"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}
+	,"returnDate"		: {	 "tableDtoName":"returnDateStr"
+							,"dataType":"text"
+							,"labelid":"Return Date"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	,"returnAmount"		: {	 "tableDtoName":"returnAmount"
+							,"dataType":"text"
+							,"labelid":"Return Amount"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : false
+							,"show":true
+						}
+	,"grandTotal"		: {	 "tableDtoName":"balanceAmount"
+							,"dataType":"text"
+							,"labelid":"Balance"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}
+
+	,"route"		: {	 "tableDtoName":"routeName"
+							,"dataType":"text"
+							,"labelid":"Route"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}	
+}

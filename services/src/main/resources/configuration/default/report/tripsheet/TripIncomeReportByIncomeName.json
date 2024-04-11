@@ -1,0 +1,76 @@
+{
+	  "tableProperties"	: {"enableColumnReOrder":true
+							,"showPrintButton":true
+							,"showExcelButton":true
+							,"gridDataId":"myGrid"
+							,"gridDataHeight":"500px"
+							,"enableCellNavigation":false
+							,"divId":"container"
+							,"frozenColumn":"-1"
+							,"showSerialNumber":false
+							,"fullTableHeight": false
+							,"rowHeight":30
+							,"showGrouping":true
+							,"columnNumber":"3,0"
+							,"collapseOnLoad":true
+							,"showMultiGrouping":true
+							
+							
+							
+						}
+	,"columnConfiguration"	: {	
+								"1":"VEHICLE"
+								,"2":"INCOME_AMOUNT"
+								,"3":"INCOME_DATE"
+								,"4":"INCOME_NAME"
+								,"5":"TRIPSHEET_NUMBER"
+						} 
+	
+	,"VEHICLE"		: {	 "tableDtoName":"vehicleRegistration"
+							,"dataType":"text"
+							,"labelid":"VEHICLE"
+							,"columnhidden":true
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+							,"inputElement" : "link"
+						}	
+	,"INCOME_DATE"		: {	 "tableDtoName":"incomeCreated"
+							,"dataType":"text"
+							,"labelid":"INCOME_DATE"
+							,"columnhidden":true
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}									
+	
+	,"INCOME_NAME"			: {	 "tableDtoName":"incomeName"
+							,"dataType":"text"
+							,"labelid":"INCOME_NAME"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+	,"TRIPSHEET_NUMBER"			: {	 "tableDtoName":"tripSheetNumber"
+							,"dataType":"text"
+							,"labelid":"TRIPSHEET_NUMBER"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+							,"inputElement" : "link"
+						}
+						
+	,"INCOME_AMOUNT"			: {	 "tableDtoName":"tripIncomeAmount"
+							,"dataType":"text"
+							,"labelid":"INCOME_AMOUNT"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : false
+							,"show":true
+						}					
+						
+	
+}

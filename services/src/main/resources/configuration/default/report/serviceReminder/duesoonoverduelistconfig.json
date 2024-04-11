@@ -1,0 +1,85 @@
+{
+	  "tableProperties"	: {"enableColumnReOrder":true
+							,"showPrintButton":true
+							,"showExcelButton":true
+							,"gridDataId":"myGrid"
+							,"gridDataHeight":"500px"
+							,"enableCellNavigation":false
+							,"divId":"container"
+							,"frozenColumn":"-1"
+							,"showSerialNumber":false
+							,"fullTableHeight": false
+							,"rowHeight":30
+							,"showGrouping":true
+							,"columnNumber":"0,1"
+							,"collapseOnLoad":true
+							,"showMultiGrouping":true
+							
+							
+							
+						}
+	,"columnConfiguration"	: {	
+								"1":"ServiceProgram"
+								,"2":"ServiceSchedule"
+								,"3":"serviceReminder"
+								,"4":"vehicle"
+								,"5":"serviceTask"
+								,"6":"nextDue"
+						} 
+	
+	,"ServiceProgram"		: {	 "tableDtoName":"serviceProgram"
+							,"dataType":"text"
+							,"labelid":"Service Program"
+							,"columnhidden":true
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+							,"inputElement" : "link"
+						}	
+	,"ServiceSchedule"		: {	 "tableDtoName":"serviceSchedule"
+							,"dataType":"text"
+							,"labelid":"Service Schedule"
+							,"columnhidden":true
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}									
+	
+	,"serviceReminder"	: {	 "tableDtoName":"serviceNumberStr"
+							,"dataType":"text"
+							,"labelid":"Service Reminder"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							,"inputElement" : "aLink"
+							
+						}
+	,"vehicle"			: {	 "tableDtoName":"vehicleNumberLink"
+							,"dataType":"text"
+							,"labelid":"Vehicle"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+							,"inputElement" : "aLink"
+						}
+						
+	,"serviceTask"			: {	 "tableDtoName":"taskAndSchedule"
+							,"dataType":"text"
+							,"labelid":"Task"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}					
+	,"nextDue"			: {	 "tableDtoName":"nextDue"
+							,"dataType":"text"
+							,"labelid":"nextDue"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}		
+	
+}

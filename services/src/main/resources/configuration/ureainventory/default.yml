@@ -1,0 +1,18 @@
+{
+showBatteryInventoryPrint     : false,
+tallyIntegrationRequired      : false,
+addUreaInventoryDocument      : false,
+editUreaInventoryDocument     : false,
+downloadUreaInventoryDocument : false,
+showSubLocation               : false,  
+mainLocationIds               : "",
+discountTaxTypeId	            : 1 ,
+roundupAmount                 : false,
+addNotification                : false,
+ureaNotificationThreashold    : "700"  ,
+hideDriverAndRoute : false ,
+showFilledLocation : false ,
+manufacturerMandatory : true,
+storeLocationLabel  : false,
+showPOnumberField : true
+}

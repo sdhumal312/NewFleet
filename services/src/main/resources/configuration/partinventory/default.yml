@@ -1,0 +1,18 @@
+{
+NoOfPartsAllowedToAdd	 : 50,
+editAllPartInventory     : true,
+addMorePartsAtBottom     : true,  
+addPartDocument      : false,
+editPartDocument     : false,
+viewPartDocument     : false,
+allowNewVendor       : false,
+showNotifyUser       : false,
+tallyIntegrationRequired : false,
+showSubLocation      : false,  
+mainLocationIds      : "",
+discountTaxTypeId	 : 1,
+roundupAmount       : false,
+groupInventoryOnPartName : false,
+validateVendor			: true,
+showPendindStock		: false   
+}

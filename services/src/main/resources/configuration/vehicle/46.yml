@@ -1,0 +1,5 @@
+{
+  importDataToTally        : true,
+  asignAnySizeTyre         : true,
+  allowVehicleNameInLedger : true
+}

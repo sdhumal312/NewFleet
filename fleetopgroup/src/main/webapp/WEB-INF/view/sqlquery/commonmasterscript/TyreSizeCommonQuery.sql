@@ -1,0 +1,23 @@
+select * from inventorytyre where TYRE_SIZE_ID = 10;
+
+SELECT TYRE_SIZE,TS_ID,COUNT(TYRE_SIZE) FROM VehicleTyreSize GROUP BY TYRE_SIZE HAVING COUNT(TYRE_SIZE) > 1;
+
+select * from VehicleTyreSize where TYRE_SIZE = '10x20';
+
+SELECT CONCAT('UPDATE ',TABLE_NAME,' SET ',COLUMN_NAME,' = 19 WHERE ',COLUMN_NAME,' = 10; ') 
+FROM INFORMATION_SCHEMA.COLUMNS
+    WHERE COLUMN_NAME like '%SIZE_ID%'
+        AND TABLE_SCHEMA='fleetopgroup';
+        
+        
+UPDATE InventoryTyre SET TYRE_SIZE_ID = 19 WHERE TYRE_SIZE_ID = 10; 
+UPDATE InventoryTyreAmount SET TYRE_SIZE_ID = 19 WHERE TYRE_SIZE_ID = 10; 
+UPDATE InventoryTyreRetreadAmount SET TYRE_SIZE_ID = 19 WHERE TYRE_SIZE_ID = 10; 
+UPDATE PurchaseOrdersToParts SET TYRE_SIZE_ID = 19 WHERE TYRE_SIZE_ID = 10; 
+UPDATE VehicleTyreLayout SET TYRE_FRONT_SIZE_ID = 19 WHERE TYRE_FRONT_SIZE_ID = 10; 
+UPDATE VehicleTyreLayout SET TYRE_REAR_SIZE_ID = 19 WHERE TYRE_REAR_SIZE_ID = 10; 
+UPDATE VehicleTyreLayoutPosition SET TYRE_SIZE_ID = 19 WHERE TYRE_SIZE_ID = 10; 
+UPDATE purchaseorderstodebitnote SET TYRE_SIZE_ID = 19 WHERE TYRE_SIZE_ID = 10; 
+
+
+update VehicleTyreSize set markForDelete = 0 where TS_ID = 10;

@@ -1,0 +1,8 @@
+{ 
+ silverTripSlabForSingleTrip  : 1100,
+ silverTripSlabForRoundTrip   : 1400,
+ goldenTripSlabForSingleTrip  : 1500,
+ goldenTripSlabForRoundTrip   : 1800,
+ goldenSlabTripCount          : 13,
+ showDriverAdvancePaymentType : true
+}

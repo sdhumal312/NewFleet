@@ -1,0 +1,5 @@
+{showVehicleServiceEntriesBreakDown			   : true,
+showVehicleWorkOrdersBreakDown			       : true,
+showVehicleIssuesBreakDown			           : false,
+showVehicleCommentsBreakDown	               : true,
+showVehicleTripSheetsBreakDown		           : true}

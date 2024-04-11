@@ -1,0 +1,112 @@
+{
+	 "tableProperties"				: {"enableColumnReOrder":true
+										,"showPrintButton":true
+										,"showExcelButton":true
+										,"gridDataId":"editReport"
+										,"gridDataHeight":"500px"
+										,"enableCellNavigation":false
+										,"divId":"container"
+										,"frozenColumn":"-1"
+										,"showSerialNumber":true
+										,"fullTableHeight": true
+										,"rowHeight":30
+										,"showGrouping":true
+										,"columnNumber":1
+							
+									}
+									
+	,"columnConfiguration"			: {	
+										"1":"VEHICLE NUMBER"
+										,"2":"VEHICLE GROUP"
+										,"3":"UPHOLSTERY ASSIGN DATE"
+										,"4":"TYPE OF UPHOLSTERY"
+										,"5":"UPHOLSTERY QUANTITY" 
+										,"6":"ASSIGN BY" 
+										,"7":"LOCATION" 
+										,"8":"PREVIOUS CHANGE ON" 								 
+									} 
+	
+	,"VEHICLE NUMBER"				: {	 
+										 "tableDtoName":"vehicleRegistration"
+										,"dataType":"text"
+										,"labelid":"VEHICLE NUMBER"
+										,"columnhidden":false
+										,"showColumnTotal":false
+										,"sortable" : true
+										,"show":true
+										,"buttonCallback" : "showVehicle"
+										,"inputElement" : "link"
+									}
+						
+						
+	,"VEHICLE GROUP"				: {	 
+										 "tableDtoName":"vehicleGroup"
+										,"dataType":"text"
+										,"labelid":"VEHICLE GROUP"
+										,"columnhidden":false
+										,"showColumnTotal":false
+										,"sortable" : true
+										,"show":true
+									}
+	
+	,"UPHOLSTERY ASSIGN DATE"		: {	 
+										 "tableDtoName":"createdOnStr"
+										,"dataType":"text"
+										,"labelid":"UPHOLSTERY ASSIGN DATE"
+										,"columnhidden":false
+										,"showColumnTotal":false
+										,"sortable" : true
+										,"show":true
+									}
+									
+	,"TYPE OF UPHOLSTERY"			: {	 
+										 "tableDtoName":"clothTypeName"
+										,"dataType":"text"
+										,"labelid":"TYPE OF UPHOLSTERY"
+										,"columnhidden":false
+										,"showColumnTotal":false
+										,"sortable" : true
+										,"show":true
+									}
+									
+	,"UPHOLSTERY QUANTITY"			: {	 
+										"tableDtoName":"quantity"
+										,"dataType":"text"
+										,"labelid":"UPHOLSTERY QUANTITY"
+										,"columnhidden":false
+										,"showColumnTotal":true
+										,"sortable" : true
+										,"show":true
+									}
+									
+	,"ASSIGN BY"					: {	 
+										 "tableDtoName":"createdByName"
+										,"dataType":"text"
+										,"labelid":"ASSIGN BY"
+										,"columnhidden":false
+										,"showColumnTotal":false
+										,"sortable" : true
+										,"show":true
+									}
+									
+	,"LOCATION"						: {	 
+										"tableDtoName":"locationName"
+										,"dataType":"text"
+										,"labelid":"LOCATION"
+										,"columnhidden":false
+										,"showColumnTotal":false
+										,"sortable" : true
+										,"show":true
+									}
+	,"PREVIOUS CHANGE ON"						: {	 
+										"tableDtoName":"preAsignedDateStr"
+										,"dataType":"text"
+										,"labelid":"PREVIOUS CHANGE ON"
+										,"columnhidden":false
+										,"showColumnTotal":false
+										,"sortable" : true
+										,"show":true
+									}
+										
+		
+}

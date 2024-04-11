@@ -1,0 +1,9 @@
+{ 
+editAllTyreInventory : true,
+showTyreStatusAtAdd : true,
+showTyreUsesColumn : true,
+
+addTyreDocument      : false,
+editTyreDocument     : false,
+viewTyreDocument     : false  
+}

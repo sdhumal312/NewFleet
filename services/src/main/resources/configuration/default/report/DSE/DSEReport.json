@@ -1,0 +1,152 @@
+{ 
+"tableProperties"	: {"enableColumnReOrder":true
+							,"showPrintButton":true
+							,"showExcelButton":true
+							,"gridDataId":"editReport"
+							,"gridDataHeight":"500px"
+							,"enableCellNavigation":false
+							,"divId":"container"
+							,"frozenColumn":"-1"
+							,"showSerialNumber":true
+							,"fullTableHeight": true
+							,"rowHeight":30
+							,"showGrouping":false
+							,"columnNumber":0
+							
+					}
+		,"columnConfiguration"	: {	
+							     "1":"DSE No"
+								,"2":"Vehicle"
+								,"3":"driver"
+								,"4":"Invoice Number"
+								,"5":"Invoice Date"
+								,"6":"partCost"
+								,"7":"labourCost"
+								,"8":"Cost"
+								,"9":"Vendor"
+								,"10":"Status"
+								
+
+						} 
+												
+	,"driver"		: {	 "tableDtoName":"driverFullName"
+							,"dataType":"text"
+							,"labelid":"Driver"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+												
+	,"partCost"		: {	 "tableDtoName":"totalPartstr"
+							,"dataType":"text"
+							,"labelid":"Part Part Cost"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+	,"labourCost"		: {	 "tableDtoName":"totalLabourstr"
+							,"dataType":"text"
+							,"labelid":"Labour Total Cost"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+						
+	
+						
+	,"DSE No"		: {	 "tableDtoName":"dealerServiceEntriesNumberStr"
+							,"dataType":"text"
+							,"labelid":"DSE No"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+						
+	,"Vehicle"		: {	 "tableDtoName":"vehicleNumber"
+							,"dataType":"text"
+							,"labelid":"Vehicle"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+						
+					
+			
+	,"Vendor"		: {	 "tableDtoName":"vendorName"
+							,"dataType":"text"
+							,"labelid":"Vendor"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+						
+
+	
+	,"Invoice Number"		: {	 "tableDtoName":"invoiceNumber"
+							,"dataType":"text"
+							,"labelid":"Invoice Number"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+						
+	,"Invoice Date"		: {	 "tableDtoName":"invoiceDateStr"
+							,"dataType":"text"
+							,"labelid":"Invoice Date"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+						
+						
+	,"Job Number"		: {	 "tableDtoName":"jobNumber"
+							,"dataType":"text"
+							,"labelid":"Job Number"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+						
+	,"Cost"		: {	 "tableDtoName":"totalInvoiceCost"
+							,"dataType":"text"
+							,"labelid":"Cost"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+							
+						}
+						
+						
+	,"Status"		: {	 "tableDtoName":"status"
+							,"dataType":"text"
+							,"labelid":"Status"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+
+
+
+						
+
+								
+}

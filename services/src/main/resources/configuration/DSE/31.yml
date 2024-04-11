@@ -1,0 +1,6 @@
+{
+partWarranty                  : true,
+tyreAssginFromDSE     : true,  
+validateOdometer              : true,
+showServiceProgram            : true 
+}

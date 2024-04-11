@@ -1,0 +1,23 @@
+{ 
+API_KEY : AE901B4070AEC51F9E62470E72097A18763A62033DE667273395DD4598DBBF3D1C3389,
+APIClient_ID : 10006159,
+CustomerId : 00000000,
+TollExpenseName : TOLL CHARGES,
+TollExpenseId   : 2836,
+allowTollApiIntegration : false,
+AllowKVBBankTollApi : false,
+KVBBankTokenKey : "na",
+KVBBankSharedKey : A1234&ABCDE/98745#000078,
+KVBBankSharedVector : "8,7,5,6,4,1,2,3,18,17,15,16,14,11,12,13",
+KVBBankClientMobileNumber : "0000000000",
+ICICIBankUrl            : "https://fastaglogin.icicibank.com/ISRCUSTAPI/Customer/GetTransactionDetails",
+multipleAccountForSameVendor : false,
+allowHDFCBankFastTag         : false,
+hdfcBankFastTagUrl           : "https://hdfcbankfastag.in/walletmware/api/wallet/txn/tollenquiry",
+userName                     : "OnePay" ,
+password                     : "Test123",
+saltValue                    : "",
+allowYesBankFastTag          : true,
+yesBankApiToken				 : "Lyegz-fP_SURyKG4zTgM",
+yesBankFastTagUrl			 : "https://loconav.com/api/v3/expense_engine/yesbank/fastag/121074/txns?start_time=29-09-2022&end_time=02-10-2022&start_index=1&end_index=90&ignore_dup_txns=true"
+}

@@ -1,0 +1,82 @@
+{
+		 "tableProperties"	: {
+	 							 "enableColumnReOrder":true
+								,"showPrintButton":true
+								,"showExcelButton":true
+								,"gridDataId":"editReport"
+								,"gridDataHeight":"500px"
+								,"enableCellNavigation":false
+								,"divId":"container"
+								,"frozenColumn":"-1"
+								,"showSerialNumber":true
+								,"fullTableHeight": true
+								,"rowHeight":30
+							}
+	,"columnConfiguration" 	: {	
+								 "1":"Requisition_no"
+								,"2":"Requisition_date"
+								,"3":"Requisition_location"
+								,"4":"Asignee"
+								,"5":"Status"
+								,"6":"Requisition_type"
+							} 
+	
+						
+	,"Requisition_no"		: {	 
+								 "tableDtoName":"requisitionNumStr"
+								,"dataType":"text"
+								,"labelid":"Requisition No"
+								,"columnhidden":false
+								,"showColumnTotal":false
+								,"sortable" : true
+								,"show":true
+								
+							}
+	,"Requisition_date"		: {	 
+								 "tableDtoName":"creationOnStr"
+								,"dataType":"text"
+								,"labelid":"Requisition Date"
+								,"columnhidden":false
+								,"showColumnTotal":false
+								,"sortable" : true
+								,"show":true
+							}	
+						
+	,"Requisition_location"	: {	 
+								 "tableDtoName":"locationName"
+								,"dataType":"text"
+								,"labelid":"Requisition Location"
+								,"columnhidden":false
+								,"showColumnTotal":false
+								,"sortable" : true
+								,"show":true
+								
+							}										
+	,"Asignee"				: {	 
+								 "tableDtoName":"assignToName"
+								,"dataType":"text"
+								,"labelid":"Asignee"
+								,"columnhidden":false
+								,"showColumnTotal":true
+								,"sortable" : true
+								,"show":true
+							}
+	,"Status"				: {	 
+								 "tableDtoName":"requisitionStatusName"
+								,"dataType":"text"
+								,"labelid":"Status"
+								,"columnhidden":false
+								,"showColumnTotal":true
+								,"sortable" : true
+								,"show":true
+							}
+	,"Requisition_type"		: {	 
+								 "tableDtoName":"requisitionTypeName"
+								,"dataType":"text"
+								,"labelid":"Requisition Type"
+								,"columnhidden":false
+								,"showColumnTotal":false
+								,"sortable" : true
+								,"show":true
+							}							
+}

@@ -1,0 +1,7 @@
+{ 
+vehicleHaltOnDriverHalt : false,
+flavorWiseDriverSalary  : false,
+firstDriverExpenseId       : 154,
+secondDriverExpenseId      : 155,
+cleanerExpenseId           : 156
+}

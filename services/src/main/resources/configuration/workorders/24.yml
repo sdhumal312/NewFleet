@@ -1,0 +1,8 @@
+{
+noOfDaysForWorkOrderBackDate       : 15,
+noOfDaysToReOpenWorkOrder          : 15,
+allowToCreateWOInTripRouteStatus   : true,
+showJobTypeRemarkCol               : true,
+showEditJobTypeRemark              : true,
+allowReasonRepairType              : false
+}

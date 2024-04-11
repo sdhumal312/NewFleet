@@ -1,0 +1,110 @@
+{
+	  "tableProperties"	: 	{"enableColumnReOrder":true
+							,"showPrintButton":true
+							,"showExcelButton":true
+							,"gridDataId":"editReport"
+							,"gridDataHeight":"500px"
+							,"enableCellNavigation":false
+							,"divId":"container"
+							,"frozenColumn":"-1"
+							,"showSerialNumber":true
+							,"fullTableHeight": true
+							,"rowHeight":30
+							
+						}
+	,"columnConfiguration"	: {	
+								"1":"ROUTE NAME"
+								,"2":"TOTAL TRIPSHEET"
+								,"3":"TOTAL KM"
+								,"4":"TOTAL FUEL"
+								,"5":"TOTAL TRIP INCOME" 
+								,"6":"TOTAL TRIP EXPENSE" 
+								,"7":"TOATL FUEL EXPENSE"
+								,"8":"TOTAL TOLL EXPENSE" 
+								,"9":"TOTAL BALANCE AMOUNT" 
+								
+						} 
+						
+	,"ROUTE NAME"			: {	
+								 "tableDtoName":"routeName"
+								,"dataType":"text"
+								,"labelid":"ROUTE NAME"
+								,"columnhidden":false
+								,"showColumnTotal":false
+								,"sortable" : false
+								,"show":true
+								,"buttonCallback" : "showProfitAndLossDetails"
+								,"inputElement" : "link"
+						}
+	,"TOTAL TRIPSHEET"			: {	
+								 "tableDtoName":"tripSheetCount"
+								,"dataType":"text"
+								,"labelid":"TOTAL TRIPSHEET"
+								,"columnhidden":false
+								,"showColumnTotal":false
+								,"sortable" : false
+								,"show":true
+						}
+	,"TOTAL KM"			: {	
+								 "tableDtoName":"tripTotalUsageKM"
+								,"dataType":"text"
+								,"labelid":"TOTAL KM"
+								,"columnhidden":false
+								,"showColumnTotal":false
+								,"sortable" : false
+								,"show":true
+						}
+	,"TOTAL FUEL"			: {	
+								 "tableDtoName":"fuel_liters"
+								,"dataType":"text"
+								,"labelid":"TOTAL FUEL"
+								,"columnhidden":false
+								,"showColumnTotal":false
+								,"sortable" : false
+								,"show":true
+						}
+	,"TOTAL TRIP INCOME"	: {	 "tableDtoName":"tripTotalincome"
+								,"dataType":"text"
+								,"labelid":"TOTAL TRIP INCOME"
+								,"columnhidden":false
+								,"showColumnTotal":false
+								,"sortable" : true
+								,"show":true
+						}					
+	,"TOTAL TRIP EXPENSE"	: {	 
+								"tableDtoName":"expenseAmount"
+								,"dataType":"text"
+								,"labelid":"TOTAL TRIP EXPENSE"
+								,"columnhidden":false
+								,"showColumnTotal":true
+								,"sortable" : true
+								,"show":true
+						}
+						
+	,"TOATL FUEL EXPENSE"	: {"tableDtoName":"fuelExpenseAmount"  
+								,"dataType":"text"
+								,"labelid":"TOATL FUEL EXPENSE"
+								,"columnhidden":false
+								,"showColumnTotal":true
+								,"sortable" : true
+								,"show":true
+						}
+	,"TOTAL TOLL EXPENSE"	: {	 "tableDtoName":"tollExpenseAmount"
+								,"dataType":"text"
+								,"labelid":"TOTAL TOLL EXPENSE"
+								,"columnhidden":false
+								,"showColumnTotal":false
+								,"sortable" : true
+								,"show":true
+						}
+	,"TOTAL BALANCE AMOUNT"	: {	 "tableDtoName":"totalBalance"
+								,"dataType":"text"
+								,"labelid":"TOTAL BALANCE AMOUNT"
+								,"columnhidden":false
+								,"showColumnTotal":false
+								,"sortable" : true
+								,"show":true
+						}
+
+	
+}

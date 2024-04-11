@@ -1,0 +1,9 @@
+{ 
+showVehicle                : true,
+validateVehicle            : true,
+editInActiveDriver         : true,
+firstDriverExpenseId       : 2921,
+secondDriverExpenseId      : 2912,
+cleanerExpenseId           : 0
+
+}

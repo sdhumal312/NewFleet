@@ -1,0 +1,9 @@
+{
+ branchWiseVehicleInspection      : true,
+ selectServiceProgramOnModal      : true,
+ validateVehicleType              : true,
+ validateVehicleModal             : true,
+ showTotalVehicleCount            : true,
+ vehicleModelTyreLayout           : true,
+ assignDiffTyreModel              : true  
+}

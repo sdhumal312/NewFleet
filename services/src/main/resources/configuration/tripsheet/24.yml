@@ -1,0 +1,15 @@
+{
+allowIVLoadingSheetEntry            : false,
+allowBackDateEntry                  : true,
+noOfDaysForBackDate                 : 30,
+loadingSheetSyncLink                : "https://ivcargo.com/ivwebservices/LoadingSheetToTripSheetWS/getLoadingSheetToTripSheetData.do",
+allowITSGatewayBusIncome            : true,
+verifyCallForITSGateway             : "hQ3A55qg553Y7V24e4e72zT8Aw39f2436kf45rv584524e37hMFT",
+urlForTcktIncmApi                   : "http://apicargotrack.itspl.net/ITSGateway/API/GetBus_Collection",
+allowITSGatewayDriverDetails        : true,
+urlForDriverDetailsItsGatewayApi    : "http://apicargotrack.itspl.net/ITSGateway/API/GetBus_DriverDetail",
+driverBalanceWithNarration            : true,
+payToDriverText                       : "To Be Paid To Driver",
+payToOfficeText                       : "Have To Take From Driver",
+showAlwaysDispatchTime                : false
+}

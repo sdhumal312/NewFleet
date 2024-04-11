@@ -1,0 +1,4 @@
+{
+vehicleExcludingSurrenderAndInactive : true,
+inactiveVehicleInRR                  : true     
+}

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "635743887298",
+    "project_id": "fleetop-3e360",
+    "storage_bucket": "fleetop-3e360.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:635743887298:android:3ec08f97119ef3531d805b",
+        "android_client_info": {
+          "package_name": "com.ivgroup.fleetop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "635743887298-43e0dpn151orn2d0a70tfibr2akqfsj5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtTGhuuMHzvZ_nR2i9NbZ9x2ZUTRunb4k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "635743887298-43e0dpn151orn2d0a70tfibr2akqfsj5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,24 @@
+allowBankPaymentDetails  : true
+validateBankPaymentDetails : true	
+bankPaymentStatementIvPath : "http://demo.ivcargo.in/ivwebservices/BankAccountStatementWS/saveBankStatementFromIVFleet.do"
+castStatementIvPath : "http://demo.ivcargo.in/ivwebservices/CashStateementTxnWS/saveCashStateementTxnFromIVFleet.do"
+showIvCargoLogoWithLink 	: true
+tallyHeaderForFuelExpense : "Fuel And Oil Account"
+tallyHeaderForCashPaymentOfApproval : "Miscellaneous Expenses"
+driverBalanceDebitLedger : "Cash"
+allowToTakeVehicleNoAsLedgerNameIfNotConfigure : true
+allowTallyIntegrationWithoutApproval	: true
+
+getBankPaymentDetails : true
+
+selectDefaultTallyCompany : true
+
+defaultTallyCompanyId	: 21
+
+doNotBifurcateTripExpense : true
+
+tyreExpenseLedgeName : "Tyre And Tube A/C"
+
+setFixedRenewalLedgerName : true
+
+renewalLedgerName : "TAX and INSURANCE A/C"

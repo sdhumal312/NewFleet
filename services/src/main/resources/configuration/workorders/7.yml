@@ -1,0 +1,21 @@
+{
+showOutWorkStationCol			   : true,
+showDriverNumberCol                : true,
+showRouteCol                       : true,
+AddNewWorkLocation                 : true,
+autoCapitalAllTestFeilds           : true,
+showStartAndDueTimeField           : true,
+showCompanyWisePrint               : true,
+showJobTypeRemarkCol               : true,
+showEditJobTypeRemark              : true,
+showDieselCol                      : true,
+companyWisePrintOnClosedStatus     : true,
+workshopInvoiceAmount              : false,
+validateInvNumForServEnt           : false,
+validateInvDateForServEnt          : false,
+validatePaidDateForServEnt         : false,
+showAddInvoiceDeatils              : true,
+noOfDaysForWorkOrderBackDate       : 90,
+noOfDaysToReOpenWorkOrder          : 90,
+allowReasonRepairType              : false
+}

@@ -1,0 +1,128 @@
+{
+	"tableProperties": {
+		"enableColumnReOrder": true,
+		"showPrintButton": true,
+		"showExcelButton": true,
+		"gridDataId": "editReport",
+		"gridDataHeight": "500px",
+		"enableCellNavigation": false,
+		"divId": "container",
+		"frozenColumn": "-1",
+		"showSerialNumber": true,
+		"fullTableHeight": true,
+		"rowHeight": 30,
+		"forceFitColumns" : true,
+		"showGrouping": false,
+		"columnNumber": 0
+	},
+	"columnConfiguration": {
+		"1": "Vehicle",
+		"2": "Depot",
+		"3": "Vehicle Type",
+		"4": "Fuel_Consumption",
+		"5": "Mileage_of_Vehicle",
+		"6": "Number_Of_Vehicle_BreakDown",
+		"7": "Number_Of_Vehicle_Issue",
+		"8": "Number_Of_Vehicle_WO/DSE",
+		"9": "Number_Of_Vehicle_Inspection_Penlaty",
+		"10": "Number_Of_Vehicle_Accident"
+	},
+		"Depot": {
+		"tableDtoName": "vehicle_Location",
+		"dataType": "text",
+		"labelid": "Depot",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	},
+
+	"Fuel_Consumption": {
+		"tableDtoName": "consumptionFuel",
+		"dataType": "text",
+		"labelid": "Fuel Consumption",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	},	
+	"Mileage_of_Vehicle": {
+		"tableDtoName": "milageFuel",
+		"dataType": "text",
+		"labelid": "Mileage of Vehicle",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	},
+	"Number_Of_Vehicle_BreakDown": {
+		"tableDtoName": "breakDownIssueCount",
+		"dataType": "text",
+		"labelid": "Number Of Vehicle BreakDown",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	},
+	
+	"Number_Of_Vehicle_Issue": {
+		"tableDtoName": "vehicleIssueCount",
+		"dataType": "text",
+		"labelid": "Number Of Vehicle Issue",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	},
+	
+	"Vehicle": {
+		"tableDtoName": "vehicle_registration",
+		"dataType": "text",
+		"labelid": "Vehicle (RTO) Number",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	,
+	"Vehicle Type": {
+		"tableDtoName": "vehicle_Type",
+		"dataType": "text",
+		"labelid": "Vehicle Type",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	,
+	"Number_Of_Vehicle_WO/DSE": {
+		"tableDtoName": "woCount",
+		"dataType": "text",
+		"labelid": "Number Of Vehicle WO/DSE",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	,
+	"Number_Of_Vehicle_Inspection_Penlaty": {
+		"tableDtoName": "penaltyCount",
+		"dataType": "text",
+		"labelid": "Number Of Vehicle Inspection Penlaty",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	,
+	"Number_Of_Vehicle_Accident": {
+		"tableDtoName": "accCount",
+		"dataType": "text",
+		"labelid": "Number Of Vehicle Accident",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+			
+}

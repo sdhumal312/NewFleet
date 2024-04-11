@@ -1,0 +1,4 @@
+{ 
+allowBackDateEntry                    : true,
+noOfDaysForBackDate                   : 20
+}

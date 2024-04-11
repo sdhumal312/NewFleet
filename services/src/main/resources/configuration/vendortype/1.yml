@@ -1,0 +1,4 @@
+{useCommonVendorType			   : true,
+vehicleGroup					   : true,
+showtotalAmountVendorPaymentReport : true
+}

@@ -1,0 +1,81 @@
+{
+ "tableProperties"	: {
+	 						"enableColumnReOrder":true
+							,"showPrintButton":true
+							,"showExcelButton":true
+							,"gridDataId":"editReport"
+							,"gridDataHeight":"500px"
+							,"enableCellNavigation":false
+							,"divId":"container"
+							,"frozenColumn":"-1"
+							,"showSerialNumber":true
+							,"fullTableHeight": true
+							,"rowHeight":30
+							,"showGrouping":true
+							,"columnNumber":0
+								
+							}
+	,"columnConfiguration" 	: {	
+								"1":"Vehicle"
+								,"2":"Old Route"
+								,"3":"New Route"
+								,"4":"Updated By"
+								,"5":"Updated On"
+							
+							} 
+	
+						
+	,"Vehicle"			: {	 
+								 "tableDtoName":"vehicle_registration"
+								,"dataType":"text"
+								,"labelid":"VEHICLE"
+								,"columnhidden":false
+								,"showColumnTotal":false
+								,"sortable" : true
+								,"show":true
+								,"buttonCallback" : "showVehicle"
+								,"inputElement" : "link"
+							}		
+	,"Old Route"					: {	 
+								 "tableDtoName":"oldRouteName"
+								,"dataType":"text"
+								,"labelid":"Old Route"
+								,"columnhidden":false
+								,"showColumnTotal":false
+								,"sortable" : true
+								,"show":true
+							}	
+						
+	,"New Route"			: {	 
+								 "tableDtoName":"newRouteName"
+								,"dataType":"text"
+								,"labelid":"New Route"
+								,"columnhidden":false
+								,"showColumnTotal":false
+								,"sortable" : true
+								,"show":true
+								,"buttonCallback" : "showVendor"
+								
+							}										
+									
+	,"Updated By"			: {	 
+								 "tableDtoName":"userName"
+								,"dataType":"text"
+								,"labelid":"Updated By"
+								,"columnhidden":false
+								,"showColumnTotal":false
+								,"sortable" : true
+								,"show":true
+								
+							}										
+	,"Updated On"				: {	 
+								 "tableDtoName":"lastupdatedStr"
+								,"dataType":"text"
+								,"labelid":"Updated On"
+								,"columnhidden":false
+								,"showColumnTotal":false
+								,"sortable" : true
+								,"show":true
+							}
+
+}

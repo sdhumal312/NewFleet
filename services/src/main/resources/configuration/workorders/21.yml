@@ -1,0 +1,5 @@
+{
+showCompanyWisePrint               : true ,
+companyWisePrintOnClosedStatus     : true,
+allowReasonRepairType              : false
+}

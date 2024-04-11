@@ -1,0 +1,12 @@
+{
+showBatteryInventoryPrint    : false,
+tallyIntegrationRequired     : true,
+addClothInventoryDocument    : true,
+editClothInventoryDocument    : false,
+downloadClothInventoryDocument : true,
+showSubLocation      : true,  
+mainLocationIds      : "33",
+addVehicleLaundry    : true,
+validateInvoiceNumber                 : true   
+
+}

@@ -1,0 +1,6 @@
+{
+allowBackDateEntry                    : true ,
+noOfDaysForBackDate                   : 30,
+showDriverBalance                     	: true,
+getDriverBalance					  : true
+}

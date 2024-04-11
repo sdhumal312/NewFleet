@@ -1,0 +1,87 @@
+{
+	  "tableProperties"	: {"enableColumnReOrder":true
+							,"showPrintButton":true
+							,"showExcelButton":true
+							,"gridDataId":"editReport"
+							,"gridDataHeight":"500px"
+							,"enableCellNavigation":false
+							,"divId":"container"
+							,"frozenColumn":"-1"
+							,"showSerialNumber":true
+							,"fullTableHeight": true
+							,"rowHeight":30
+							
+						}
+	,"columnConfiguration"	: {	
+								 "1":"approvalId"
+								,"2":"vendorName"
+								,"3":"vendorType"
+								,"4":"createDate"
+								,"5":"approvedBy" 
+								,"6":"place" 
+								,"7":"amount" 																	
+						} 
+	
+	,"approvalId"	: {	 "tableDtoName":"approvalNumbers"
+							,"dataType":"text"
+							,"labelid":"Approval Id"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}
+						
+						
+	,"vendorName"		: {	 "tableDtoName":"approvalvendorName"
+							,"dataType":"text"
+							,"labelid":"Vendor Name"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false								
+							,"show":true
+						}
+	
+	,"vendorType"			: {	 "tableDtoName":"approvalvendorType"
+							,"dataType":"text"
+							,"labelid":"Vendor Type"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false									
+							,"show":true
+						}
+	,"createDate"			: {	 "tableDtoName":"approvalCreateDateStr"
+							,"dataType":"text"
+							,"labelid":"Created Date"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}
+	 ,"approvedBy"		: {	 "tableDtoName":"approvalCreateBy"
+							,"dataType":"text"
+							,"labelid":"Approved By"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						} 
+	,"place"		: {	 "tableDtoName":"approvalPlace"
+							,"dataType":"text"
+							,"labelid":"Place"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"buttonCallback" : "showVendorDetails"
+							,"inputElement" : "link"
+							,"sortable" : false
+							,"show":true
+						}
+	,"amount"		: {	 "tableDtoName":"approvalTotal"
+							,"dataType":"number"
+							,"labelid":"Amount"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}
+	
+}

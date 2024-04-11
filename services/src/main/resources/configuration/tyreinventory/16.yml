@@ -1,0 +1,10 @@
+{
+addTyreDocument      : true,
+editTyreDocument     : true,
+viewTyreDocument     : true,
+tallyIntegrationRequired : true,
+showSubLocation      : true,  
+mainLocationIds      : "33",
+editAllTyreInventory : true,
+validateInvoiceNumber                 : true   
+}

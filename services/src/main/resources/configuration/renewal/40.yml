@@ -1,0 +1,8 @@
+{
+receiptnumbershow                     : true,
+modeofaaymentshow                     : true,
+cashtransactionshow                   : true,
+ignoreRenewal                         : true,
+dateValidation                        : false,
+hideRenewalTypes                      : true
+}

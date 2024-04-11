@@ -1,0 +1,19 @@
+{
+  showBookingDate : true,
+  showGstNumber : true,
+  showMobileNumber : true,
+  showPartyAddress : true,
+  showReportTo : true,
+  showReportToMob : true,
+  showReportToAddress : true,
+  showVehicleType : true,
+  showPlaceOfVisit : true,
+  showPerKMRate : true,
+  showHireAmount : true,
+  validateRate   : false,
+  validateBookingRef : true,
+  showBookingRef : true,
+  showPOV : true,
+  showRemark : true,
+  busBookedBy : false
+}

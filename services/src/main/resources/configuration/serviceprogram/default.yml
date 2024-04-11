@@ -1,0 +1,4 @@
+{
+ allowToAddVendorProgram              : false,
+ vehicleBranchWiseProgram             : false          
+}

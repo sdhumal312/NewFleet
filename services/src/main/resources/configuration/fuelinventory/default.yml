@@ -1,0 +1,10 @@
+{ 
+  discountTaxTypeId               : 1,
+  tallyIntegrationRequired        : false,
+  addFuelInventoryDocument        : false,
+  addNotification                 : false,
+  fuelThreasholValue              : "700",
+  showBalanceStockInFuelInvoice         : false,
+  showTransferedStatus           : false, 
+  showBalanceStockInvoiceList         : false 
+}

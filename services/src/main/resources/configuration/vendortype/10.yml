@@ -1,0 +1,4 @@
+{
+directPayment                  : true,
+vendorApprovalPayment          : true
+}

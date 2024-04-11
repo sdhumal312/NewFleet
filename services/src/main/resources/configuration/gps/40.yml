@@ -1,0 +1,11 @@
+{ 
+  intangleFuelAPI_AsscessToken : "7d7713646d57a75e2f76a7cfdbdb8fa5",
+  intangleFuelPreURL : "https://indium-apis.intangles.io/api/v1/fuel/",
+  intangleFuelPostURL : "?types=filling,pilfrage&pnum=1&psize=5000",
+  intangleAccountingURL : "https://indium-apis.intangles.io/api/v1/account/list?pnum=1&psize=5000",
+  intangleTripMileageURL : "https://indium-apis.intangles.io/api/v1/trip/mileage/",
+  intangleVehicleListURL : "https://indium-apis.intangles.io/api/v1/vehicle/list?pnum=1&psize=5000",
+  allowGPSIntegration : true,
+  # 1 = manual,  2 = only gps , 3 = both
+  gpsFlavor : 3
+}

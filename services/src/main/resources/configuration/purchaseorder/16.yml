@@ -1,0 +1,12 @@
+{
+tallyIntegrationRequired     : true,
+showBuyerGstNumber           : true,
+editPartDetails              : true,
+eachTotalCost                : true,
+totalGstCost                 : true,
+totalDiscountCost            : true,
+finalTotalCost               : true,
+finalBalanceCost             : true,
+editVendorInPO               : true,
+editShipToLocation           : true
+}

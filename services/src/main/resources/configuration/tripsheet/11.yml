@@ -1,0 +1,17 @@
+{
+ validateServiceReminder	: false,
+ driver2	                : false,
+ conductor                  : false,
+ cleaner                    : false,
+ showSubroute               : true,
+ showClosingKMOnRoute       : true,
+ allowBackDateEntry         : true,
+ noOfDaysForBackDate        : 140,
+ updateClosingKm            : true,
+ updateOpeningKm            : true,
+ showDriverBalance          : true,
+ reverseDriverBalance       : true,
+ roundFigureAmount          : true,
+ validateDirectOdometerUpdate : false
+ 
+}

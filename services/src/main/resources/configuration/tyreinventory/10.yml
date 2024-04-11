@@ -1,0 +1,6 @@
+{ 
+editAllTyreInventory : true,
+showTyreStatusAtAdd : true,
+showTyreUsesColumn : true,
+showTyreAssignmentHistoryReportDateRange    : true  
+}

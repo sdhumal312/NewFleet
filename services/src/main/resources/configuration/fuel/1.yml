@@ -1,0 +1,7 @@
+{showVehicleCol				: false,
+showVehicleDepotCol			: false,
+showFuelTypeCol				: false,
+showReferenceCol			: false,
+showPersonalExpenceCheck	: false,
+showFuelDocumentSelection	: false,
+showFuelCommentField		: false}

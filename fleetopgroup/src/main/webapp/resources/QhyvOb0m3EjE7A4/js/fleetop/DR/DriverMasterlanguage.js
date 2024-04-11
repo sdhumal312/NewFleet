@@ -1,0 +1,1 @@
+$(document).ready(function(){$("#DocTypeTable").DataTable({sScrollX:"100%",bScrollcollapse:!0,dom:"Blfrtip",buttons:["excel","print"]}),$("#TrainingTypeTable").DataTable({sScrollX:"100%",bScrollcollapse:!0,dom:"Blfrtip",buttons:["excel","print"]}),$("#JobTypeTable").DataTable({sScrollX:"100%",bScrollcollapse:!0,dom:"Blfrtip",buttons:["excel","print"]})});
