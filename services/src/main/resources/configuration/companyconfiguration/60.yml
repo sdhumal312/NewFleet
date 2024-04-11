@@ -1,5 +1,0 @@
-{
-allowBankPaymentDetails        : true,
-bankPaymentStatementIvPath : "http://demo.ivcargo.net/ivwebservices/BankAccountStatementWS/saveBankStatementFromIVFleet.do",
-castStatementIvPath        : "http://demo.ivcargo.net/ivwebservices/CashStateementTxnWS/saveCashStateementTxnFromIVFleet.do"
-}

@@ -1,5 +1,0 @@
-{ 
-  discountTaxTypeId : 1,
-  tallyIntegrationRequired : true,
-  addFuelInventoryDocument : true
-}

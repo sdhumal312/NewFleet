@@ -1,1 +1,0 @@
-$(document).ready(function(){$("#VehicleDocument").DataTable({sScrollX:"100%",bScrollcollapse:!0,dom:"Blfrtip",buttons:["excel","print"],order:[[0,"desc"]]})});

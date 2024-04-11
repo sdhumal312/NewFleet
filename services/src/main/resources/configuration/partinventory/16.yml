@@ -1,9 +1,0 @@
-{
-addPartDocument      : true,
-editPartDocument     : true,
-viewPartDocument     : true,
-showNotifyUser       : true,
-tallyIntegrationRequired : true,
-showSubLocation      : true,  
-mainLocationIds      : "33"
-}

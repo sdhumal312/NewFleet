@@ -1,9 +1,0 @@
-{
-showBatteryInventoryPrint    : false,
-tallyIntegrationRequired     : true,
-addUreaInventoryDocument     : true,
-editUreaInventoryDocument     : true,
-downloadUreaInventoryDocument     : true,
-showSubLocation      : true,  
-mainLocationIds      : "33"   
-}

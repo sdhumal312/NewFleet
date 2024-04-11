@@ -1,1 +1,0 @@
-$(document).ready(function(){var e=document.getElementById("statues").value;switch(e){case"ALL":document.getElementById("All").className="active";break;case e:document.getElementById(e).className="active"}});

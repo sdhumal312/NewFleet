@@ -1,7 +1,0 @@
-{
-hideDriverAndRoute : true,
-showFilledLocation : true,
-manufacturerMandatory : false ,
-storeLocationLabel  : true,
-showPOnumberField : false
-}

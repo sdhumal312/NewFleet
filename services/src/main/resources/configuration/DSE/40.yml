@@ -1,7 +1,0 @@
-{
-partWarranty                  : true,
-tyreAssginFromDSE             : true,  
-validateOdometer              : true,
-multipleQuotation             : true,
-showServiceProgram            : true 
-}

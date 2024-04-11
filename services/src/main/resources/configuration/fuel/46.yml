@@ -1,7 +1,0 @@
-{
-  tallyImportRequired          : false,
-  paidByOptionInAddFuleEntry   : true,
-  showBranchToUserWiseReport   : true,
-  fuleEntryPaymentOptions	   : true,
-  showPaymentMode			   : true
-}

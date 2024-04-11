@@ -1,6 +1,0 @@
-{
-allowReasonRepairType              : false,
-removeFeildFromLaborTab            : true,
-getPerDayWorkingHourForDriver      : 8,
-showLaborDataInWO                  : true
-}

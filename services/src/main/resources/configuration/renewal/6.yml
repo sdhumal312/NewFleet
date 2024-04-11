@@ -1,9 +1,0 @@
-{ 
-alwaysApprovedRenewal                 : false,
-receiptnumbershow                     : true,
-modeofaaymentshow                     : true,
-cashtransactionshow                   : true,
-paidbyshow                            : true,
-showAuthorizationState                : true,
-createApproval                        : true
-}

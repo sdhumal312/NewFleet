@@ -1,6 +1,0 @@
-{
-driverSignatureInWorkOrderPrint      : true,
-HideAmountInWorkOrderPrint			 : true,
-addWOCompletionRemark                : true,
-allowReasonRepairType                : false
-}

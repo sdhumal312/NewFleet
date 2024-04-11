@@ -1,5 +1,0 @@
-{
-  validateOdometerInTripDailySheet : true,
-  allowedPerDiffInOdometer         : 10,
-  maxBackDateEntryAloowed          : 15
-}

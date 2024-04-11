@@ -1,5 +1,0 @@
-{
-allowToAddFuelAmount          : true,
-noOfDaysForBackDate          : 365,
-doNotValidateBackDateEntries  : true
-}

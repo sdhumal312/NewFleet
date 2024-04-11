@@ -1,8 +1,0 @@
-{
-   showDocColumnInDailyConsReport : true,
-   blockGalleryImageSelection     : true,
-   setFuelEntryDefaultDateAndTime : true,
-   getStockFromInventory          : true,
-   showCurrnetDateAndTime         : true,
-   showAmountPerLiterCol          : true
-}

@@ -1,7 +1,0 @@
-{
-showBalanceStockInFuelInvoice         : true,
- addNotification                 : true,
-   fuelThreasholValue             : "700",
-   showTransferedStatus           : true, 
-   showBalanceStockInvoiceList         : true 
-}

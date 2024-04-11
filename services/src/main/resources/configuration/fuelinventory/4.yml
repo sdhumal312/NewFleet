@@ -1,5 +1,0 @@
-{
-showBalanceStockInFuelInvoice         : true,
- addNotification                 : true,
-   fuelThreasholValue             : "700" 
-}

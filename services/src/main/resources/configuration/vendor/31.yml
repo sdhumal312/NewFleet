@@ -1,7 +1,0 @@
-{
-VendorInputFieldInPOAdd               : true,
-VendorInputFieldInPOAddPart           : false,
-PanCardMandatory				      : true,
-TDSPercent							  : true,
-validatePanNO						  : true
-}

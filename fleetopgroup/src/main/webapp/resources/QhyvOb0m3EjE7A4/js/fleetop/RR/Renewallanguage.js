@@ -1,1 +1,0 @@
-$(document).ready(function(){$("#RenewalReportTable").DataTable({sScrollX:"100%",bScrollcollapse:!0,dom:"Bflrtip",buttons:["excel","print"],order:[[0,"desc"]]})});

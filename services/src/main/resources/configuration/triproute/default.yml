@@ -1,7 +1,0 @@
-{
-   showFromTo                        : true,
-   showAttandancePoint               : false,
-   showIncomeExpense                 : true,
-   tripRouteExpenseMaxLimit          : false,
-   addAllowanceToRoute               : false
-}

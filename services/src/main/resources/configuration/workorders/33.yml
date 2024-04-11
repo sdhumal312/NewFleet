@@ -1,8 +1,0 @@
-{
-workOrderTaskToPartDocument : false,
-noOfDaysForWorkOrderBackDate       : 60,
-noOfDaysToReOpenWorkOrder          : 60,
-validatePaidDateForServEnt         : false,
-validatePaidDateForServEntOnCash   : true,
-allowReasonRepairType              : false
-}

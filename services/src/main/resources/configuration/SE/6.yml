@@ -1,8 +1,0 @@
-{ 
-TallyCompanyMasterInSE                : false,
-TallyCompanyMasterInWO                : false,
-allowServiceEntriesBackDate           : false,
-noOfDaysForServiceEntriesBackDate     : 488,
-noOfDaysToReOpenServiceEntries        : 488,
-allowDecimalValue                     : false
-}

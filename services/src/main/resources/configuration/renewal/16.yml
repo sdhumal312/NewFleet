@@ -1,7 +1,0 @@
-{
-showVendorCol                         : true,
-modeofaaymentshow                     : true ,
-cashtransactionshow                   : true,
-tallyIntegrationRequired              : true,
-createApproval                        : true         
-}
