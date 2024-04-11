@@ -1,0 +1,1 @@
+$(document).ready(function(){$("#partTable").DataTable({sScrollX:"100%",bScrollcollapse:!0,dom:"Bfrtip",buttons:["excel","print"],order:[[0,"desc"]]})});

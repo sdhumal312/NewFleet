@@ -1,0 +1,130 @@
+{
+	 "tableProperties"				: {"enableColumnReOrder":true
+										,"showPrintButton":true
+										,"showExcelButton":true
+										,"gridDataId":"editReport"
+										,"gridDataHeight":"500px"
+										,"enableCellNavigation":false
+										,"divId":"container"
+										,"frozenColumn":"-1"
+										,"showSerialNumber":true
+										,"fullTableHeight": true
+										,"rowHeight":30
+										
+							
+									}
+									
+	,"columnConfiguration"			: {	
+										"1":"TRANSFER DATE"
+										,"2":"FROM LOCATION"
+										,"3":"TO LOCATION"
+										,"4":"UPHOLSTERY TYPE"
+										,"5":"UPHOLSTERY QUANTITY"
+										,"6":"TRANSFER BY" 
+										,"7":"TYPE" 
+										,"8":"STATUS" 
+										,"9":"RECIEVED BY" 
+										,"10":"RECIEVED DATE" 								 
+									} 
+	
+	,"TRANSFER DATE"				: {	 
+										 "tableDtoName":"transferDateStr"
+										,"dataType":"text"
+										,"labelid":"TRANSFER DATE"
+										,"columnhidden":false
+										,"showColumnTotal":false
+										,"sortable" : true
+										,"show":true
+										
+									}
+						
+						
+	,"FROM LOCATION"				: {	 
+										 "tableDtoName":"fromLocationStr"
+										,"dataType":"text"
+										,"labelid":"FROM LOCATION"
+										,"columnhidden":false
+										,"showColumnTotal":false
+										,"sortable" : true
+										,"show":true
+									}
+	
+	,"TO LOCATION"		: {	 
+										 "tableDtoName":"toLocationStr"
+										,"dataType":"text"
+										,"labelid":"TO LOCATION"
+										,"columnhidden":false
+										,"showColumnTotal":false
+										,"sortable" : true
+										,"show":true
+									}
+	,"UPHOLSTERY TYPE"		: {	 
+										 "tableDtoName":"clothTypeName"
+										,"dataType":"text"
+										,"labelid":"UPHOLSTERY TYPE"
+										,"columnhidden":false
+										,"showColumnTotal":false
+										,"sortable" : true
+										,"show":true
+									}
+									
+	,"UPHOLSTERY QUANTITY"			: {	 
+										 "tableDtoName":"quantity"
+										,"dataType":"text"
+										,"labelid":"UPHOLSTERY QUANTITY"
+										,"columnhidden":false
+										,"showColumnTotal":true
+										,"sortable" : true
+										,"show":true
+									}
+									
+	,"TRANSFER BY"			: {	 
+										"tableDtoName":"transferByIdStr"
+										,"dataType":"text"
+										,"labelid":"TRANSFER BY"
+										,"columnhidden":false
+										,"showColumnTotal":false
+										,"sortable" : true
+										,"show":true
+									}
+									
+	,"TYPE"					: {	 
+										 "tableDtoName":"stockTypeStr"
+										,"dataType":"text"
+										,"labelid":"TYPE"
+										,"columnhidden":false
+										,"showColumnTotal":false
+										,"sortable" : true
+										,"show":true
+									}
+	,"STATUS"					: {	 
+										 "tableDtoName":"transferStatusStr"
+										,"dataType":"text"
+										,"labelid":"STATUS"
+										,"columnhidden":false
+										,"showColumnTotal":false
+										,"sortable" : true
+										,"show":true
+									}
+									
+	,"RECIEVED BY"						: {	 
+										"tableDtoName":"transferReceivedByIdStr"
+										,"dataType":"text"
+										,"labelid":"RECIEVED BY"
+										,"columnhidden":false
+										,"showColumnTotal":false
+										,"sortable" : true
+										,"show":true
+									}
+	,"RECIEVED DATE"						: {	 
+										"tableDtoName":"transferReceivedDateStr"
+										,"dataType":"text"
+										,"labelid":"RECIEVED DATE"
+										,"columnhidden":false
+										,"showColumnTotal":false
+										,"sortable" : true
+										,"show":true
+									}
+										
+		
+}

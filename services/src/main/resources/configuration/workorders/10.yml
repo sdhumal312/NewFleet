@@ -1,0 +1,6 @@
+{
+noOfDaysForWorkOrderBackDate       : 60,
+noOfDaysToReOpenWorkOrder          : 60,
+allowReasonRepairType              : false
+
+}

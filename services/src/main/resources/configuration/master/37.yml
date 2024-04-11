@@ -1,0 +1,8 @@
+{
+ vehicleTyreSizeMasterCommon     : false,
+ isCommonTyreModel               : false,
+ commonPartCategory              : false,
+ commonManufacturer              : false,
+ commonMasterParts               : false,
+showExtendedPartSave          	 : true
+}

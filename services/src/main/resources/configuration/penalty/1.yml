@@ -1,0 +1,4 @@
+{showModeOfPaymentCol			: false,
+showCashReceiptCol			    : false,
+showPenaltyDateCol				: false,
+showPenaltyPaidByCol			: false}

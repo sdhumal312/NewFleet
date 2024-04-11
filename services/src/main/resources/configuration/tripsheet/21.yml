@@ -1,0 +1,10 @@
+{
+allowBackDateEntry                    : true,
+noOfDaysForBackDate                   : 10,
+showExtraReceived                      : false,
+allowMultipleExpensesOfSameType       : true,
+allowMultipleIncomeOfSameType         : true,
+dispatchTripPrint                     : true,  
+showTripsheetNetIncomeAmount          : true,
+validateClosingOdometerOnRoute        : true
+}

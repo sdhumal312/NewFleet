@@ -1,0 +1,12 @@
+{
+  validateOdometerInFuel				 : true,
+  validateOdometerInIssues               : true,
+  validateOdometerInTripSheet            : true,
+  validateOdometerInWorkOrder            : true,
+  validateMinOdometerInWorkOrder         : false,
+  validateMinOdometerInFuel              : false,
+  validateMinOdometerInTripSheet         : false,
+  validateMinOdometerInIssues            : false,
+  showDriverNameInAddOwnerShip           : true,
+  showDriverPhoneNoInAddOwnerShip        : true 
+}

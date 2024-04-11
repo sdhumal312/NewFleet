@@ -1,0 +1,13 @@
+{ 
+sendSMSforServiceReminder : false,
+sendSMSforServRemindByCompId : 6,
+smsWorkingKey : A9dceeba85e87b643b5988abc39727398, 
+smsMaskingKey : FLTSPL,
+# Flavor 1= solutionsinfini , 2 = zestwings
+smsAPIFlavor  : 1,
+username : NA,
+password : NA,
+smsAPIFlavor1Url : "http://api-alerts.solutionsinfini.com/v3/",
+smsAPIFlavor2Url : "https://sms.zestwings.com/smpp.sms",
+from             : ""
+}

@@ -1,0 +1,7 @@
+{ 
+  allowGPSIntegration : true,
+  gpsFlavor : 3,
+  gpsUrl : "https://api.fleetx.io/api/v1/trips/distance/day-wise",  
+  gpsToken : "4f3a0820-c106-4ff3-8665-5da31eab31e6"  
+
+}

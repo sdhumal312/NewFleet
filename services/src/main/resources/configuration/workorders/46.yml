@@ -1,0 +1,4 @@
+{
+  allowToCreateWOInTripRouteStatus    : true,
+  allowReasonRepairType              : false
+}

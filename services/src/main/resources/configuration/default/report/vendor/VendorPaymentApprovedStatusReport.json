@@ -1,0 +1,82 @@
+{
+	  "tableProperties"	: {"enableColumnReOrder":true
+							,"showPrintButton":true
+							,"showExcelButton":true
+							,"gridDataId":"editReport"
+							,"gridDataHeight":"500px"
+							,"enableCellNavigation":false
+							,"divId":"container"
+							,"frozenColumn":"-1"
+							,"showSerialNumber":true
+							,"fullTableHeight": true
+							,"rowHeight":30
+							,"showGrouping":true
+							,"columnNumber":1
+							
+						}
+						
+						
+	,"columnConfiguration"	: {	
+								 "1":"approvalId"
+								,"2":"approvedDate"
+								,"3":"approvedBy" 
+								,"4":"PaymentMode"
+								,"5":"invoiceAmnt"
+								,"6":"approvedPaidAmnt" 																	
+						} 
+	
+	,"approvalId"	: {	 "tableDtoName":"approvalNumbers"
+							,"dataType":"text"
+							,"labelid":"Approval Id"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}
+	
+	,"approvedDate"			: {	 "tableDtoName":"approvalCreateDateStr"
+							,"dataType":"text"
+							,"labelid":"Approved Date"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}
+						
+	 ,"approvedBy"		: {	 "tableDtoName":"approvalCreateBy"
+							,"dataType":"text"
+							,"labelid":"Approved By"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}
+						
+	,"PaymentMode"		: {	 "tableDtoName":"approvalStatus"
+							,"dataType":"text"
+							,"labelid":"Payment Mode"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}
+	
+	,"invoiceAmnt"		: {	 "tableDtoName":"subApprovalTotal"
+							,"dataType":"number"
+							,"labelid":"Invoice Amount"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}
+						
+	,"approvedPaidAmnt"		: {	 "tableDtoName":"subApprovalpaidAmount"
+							,"dataType":"number"
+							,"labelid":"Approved Amount"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}					
+	
+}

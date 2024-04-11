@@ -1,0 +1,4 @@
+{ 
+  allowGPSIntegration : true,
+  gpsFlavor : 3
+}

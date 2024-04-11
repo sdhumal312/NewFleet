@@ -1,0 +1,7 @@
+{
+partsCreatedBy					   : true,
+showStartAndDueTimeField           : true,
+noOfDaysForWorkOrderBackDate       : 180,
+noOfDaysToReOpenWorkOrder          : 180,
+allowReasonRepairType              : false
+}

@@ -1,0 +1,18 @@
+{
+ branchWiseVehicleInspection      : true,
+ selectServiceProgramOnModal      : true,
+ validateVehicleType              : true,
+ validateVehicleModal             : true,
+ showTotalVehicleCount            : true,
+ vehicleModelTyreLayout           : true,
+ assignDiffTyreModel              : true,
+ validateTyreSize                 : true,
+ accidentClaim                    : true,
+ accidentSpotservay               : true,
+ accidentDocValidate              : true,
+ accidentAdditionalFields         : true,
+ addVehicleStatusRemark           : true,
+ showOnlyCompanyVehicleType       : true,
+ showVehicleBodyMaker			  : true,
+ showVehicleBody  				  : false
+ }

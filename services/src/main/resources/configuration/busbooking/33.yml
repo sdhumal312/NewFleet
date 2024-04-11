@@ -1,0 +1,14 @@
+{
+  showBookingDate : false,
+  showGstNumber : false,
+  showBookingRef : false,
+  showPOV : false,
+  showHireAmount : false,
+  showRemark : false,
+  showPlaceOfVisit : false,
+  showReportTo : false,
+  showReportToMob : false,
+  showReportToAddress : false,
+  validateBookingRef : false,
+  busBookedBy : true
+}

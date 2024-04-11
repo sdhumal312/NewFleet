@@ -1,0 +1,7 @@
+{
+  vehicleMonthlyEMIPayment         : true,
+  vehicleTyreMountCostInPLReport   : true,
+  showDriverMonthlySalary		   : true,
+  asignAnySizeTyre                 : true,
+  showTollIdFeild				   : true
+  }

@@ -1,0 +1,107 @@
+{
+	  "tableProperties"	: {"enableColumnReOrder":true
+							,"showPrintButton":true
+							,"showExcelButton":true
+							,"gridDataId":"editReport"
+							,"gridDataHeight":"500px"
+							,"enableCellNavigation":false
+							,"divId":"container"
+							,"frozenColumn":"-1"
+							,"showSerialNumber":true
+							,"fullTableHeight": true
+							,"rowHeight":30
+							,"showGrouping":true
+							,"columnNumber":1
+							
+							
+							
+						}
+	,"columnConfiguration"	: {	
+								"1":"BANK"
+								,"2":"ACCOUNT NO"
+								,"3":"LOAN AMOUNT"
+								,"4":"DOWNPAYMENT AMOUNT" 
+								,"5":"MONTHLY EMI" 
+								,"6":"EMI DATE" 
+								,"7":"PAID DATE" 
+								,"8":"PAID AMOUNT" 
+								,"9":"STATUS" 
+						} 
+	
+	
+						
+	,"BANK"		: {	 "tableDtoName":"bankName"
+							,"dataType":"text"
+							,"labelid":"BANK"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}
+	
+	,"ACCOUNT NO"			: {	 "tableDtoName":"accountNumber"
+							,"dataType":"text"
+							,"labelid":"ACCOUNT NO"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	,"LOAN AMOUNT"			: {	 "tableDtoName":"loanAmount"
+							,"dataType":"text"
+							,"labelid":"LOAN AMOUNT"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : false
+							,"show":false
+						}
+	,"DOWNPAYMENT AMOUNT"		: {	 "tableDtoName":"downPaymentAmount"
+							,"dataType":"text"
+							,"labelid":"DOWNPAYMENT AMOUNT"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":false
+						}
+	,"MONTHLY EMI"		: {	 "tableDtoName":"monthlyEmiAmount"
+							,"dataType":"text"
+							,"labelid":"MONTHLY EMI"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}
+	,"EMI DATE"		: {	 "tableDtoName":"loanEmiDate"
+							,"dataType":"text"
+							,"labelid":"EMI DATE"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	,"PAID DATE"		: {	 "tableDtoName":"emiPaidDateStr"
+							,"dataType":"text"
+							,"labelid":"PAID DATE"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	,"PAID AMOUNT"		: {	 "tableDtoName":"emiPaidAmount"
+							,"dataType":"text"
+							,"labelid":"PAID AMOUNT"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	,"STATUS"	: {	 "tableDtoName":"paymentStatus"
+							,"dataType":"text"
+							,"labelid":"STATUS"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	
+}

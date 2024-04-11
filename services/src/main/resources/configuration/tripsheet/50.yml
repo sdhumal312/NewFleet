@@ -1,0 +1,10 @@
+{
+allowBackDateEntry                    : true ,
+noOfDaysForBackDate                   : 30 ,
+showAlwaysDispatchTime                : true,
+allowIVLoadingSheetEntry              : true,
+loadingSheetSyncLink                  : "https://ivcargo.in/ivwebservices/LoadingSheetToTripSheetWS/getLoadingSheetToTripSheetData.do",
+customeTripsheetPrint 				  : true,
+getDriverBalance					  : true,
+showLsSourceAndDestination			  : true
+}

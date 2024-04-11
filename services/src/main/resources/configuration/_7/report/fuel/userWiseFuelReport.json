@@ -1,0 +1,151 @@
+{
+		 "tableProperties"	: {
+	 							 "enableColumnReOrder":true
+								,"showPrintButton":true
+								,"showExcelButton":true
+								,"gridDataId":"editReport"
+								,"gridDataHeight":"500px"
+								,"enableCellNavigation":false
+								,"divId":"container"
+								,"frozenColumn":"-1"
+								,"showSerialNumber":true
+								,"fullTableHeight": true
+								,"rowHeight":30
+							}
+	,"columnConfiguration" 	: {	
+								 "1":"FUEL NUMBER"
+								,"2":"DATE"
+								,"3":"VENDOR NAME"
+								,"4":"VEHICLE"
+								,"5":"VEHICLE GROUP"
+								,"6":"OPEN KM"
+								,"7":"CLOSE KM"
+								,"8":"USAGE"
+								,"9":"VOLUME"
+								,"10":"AMOUNT" 
+								,"11":"Km/L"
+								,"12":"COST" 
+							} 
+	
+						
+	,"FUEL NUMBER"			: {	 
+								 "tableDtoName":"fuelNumber"
+								,"dataType":"text"
+								,"labelid":"FUEL NUMBER"
+								,"columnhidden":false
+								,"showColumnTotal":false
+								,"sortable" : true
+								,"show":true
+								,"buttonCallback" : "showFuelEntry"
+								,"inputElement" : "link"
+							}
+	,"DATE"					: {	 
+								 "tableDtoName":"fuel_date"
+								,"dataType":"text"
+								,"labelid":"DATE"
+								,"columnhidden":false
+								,"showColumnTotal":false
+								,"sortable" : true
+								,"show":true
+							}	
+						
+	,"VENDOR NAME"			: {	 
+								 "tableDtoName":"vendor_name"
+								,"dataType":"text"
+								,"labelid":"VENDOR NAME"
+								,"columnhidden":false
+								,"showColumnTotal":false
+								,"sortable" : true
+								,"show":true
+								,"buttonCallback" : "showVendor"
+								,"inputElement" : "link"
+							}										
+	,"VEHICLE"			: {	 
+								 "tableDtoName":"vehicle_registration"
+								,"dataType":"text"
+								,"labelid":"VEHICLE"
+								,"columnhidden":false
+								,"showColumnTotal":false
+								,"sortable" : true
+								,"show":true
+								,"buttonCallback" : "showVehicle"
+								,"inputElement" : "link"
+							}										
+	,"VEHICLE GROUP"			: {	 
+								 "tableDtoName":"vehicle_group"
+								,"dataType":"text"
+								,"labelid":"VEHICLE GROUP"
+								,"columnhidden":false
+								,"showColumnTotal":false
+								,"sortable" : true
+								,"show":true
+								
+							}										
+	,"OPEN KM"				: {	 
+								 "tableDtoName":"fuel_meter_old"
+								,"dataType":"text"
+								,"labelid":"OPEN KM"
+								,"columnhidden":false
+								,"showColumnTotal":true
+								,"sortable" : true
+								,"show":true
+							}
+	,"CLOSE KM"				: {	 
+								 "tableDtoName":"fuel_meter"
+								,"dataType":"text"
+								,"labelid":"CLOSE KM"
+								,"columnhidden":false
+								,"showColumnTotal":true
+								,"sortable" : true
+								,"show":true
+							}
+	,"USAGE"				: {	 
+								 "tableDtoName":"fuel_usage"
+								,"dataType":"text"
+								,"labelid":"USAGE"
+								,"columnhidden":false
+								,"showColumnTotal":true
+								,"sortable" : true
+								,"show":true
+							}
+	
+	,"VOLUME"				: {	 
+								 "tableDtoName":"fuel_liters"
+								,"dataType":"text"
+								,"labelid":"VOLUME"
+								,"columnhidden":false
+								,"showColumnTotal":true
+								,"sortable" : true
+								,"show":true
+							}
+	,"AMOUNT"				: {	 
+								 "tableDtoName":"fuel_amount"
+								,"dataType":"text"
+								,"labelid":"AMOUNT"
+								,"columnhidden":false
+								,"showColumnTotal":true
+								,"sortable" : true
+								,"show":true
+							}					
+	,"Km/L"					: {	 
+								 "tableDtoName":"fuel_kml"
+								,"dataType":"text"
+								,"labelid":"Km/L"
+								,"columnhidden":false
+								,"showColumnTotal":false
+								,"sortable" : true
+								,"show":true
+							}
+
+	,"COST"					: {	 
+								 "tableDtoName":"fuelCost"
+								,"dataType":"text"
+								,"labelid":"COST"
+								,"columnhidden":false
+								,"showColumnTotal":false
+								,"sortable" : true
+								,"show":true
+							}
+
+	
+}

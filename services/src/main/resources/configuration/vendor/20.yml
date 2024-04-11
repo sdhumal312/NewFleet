@@ -1,0 +1,6 @@
+{
+   showPaymentTerm                   : false,
+   showWebsite                       : false,
+   showPrimaryEmail                  : false,
+   validatePrimaryContactEmail        : false
+}

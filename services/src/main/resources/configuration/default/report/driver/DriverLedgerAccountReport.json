@@ -1,0 +1,70 @@
+{
+	  "tableProperties"	: {"enableColumnReOrder":true
+							,"showPrintButton":true
+							,"showExcelButton":true
+							,"gridDataId":"editReport"
+							,"gridDataHeight":"500px"
+							,"enableCellNavigation":false
+							,"divId":"container"
+							,"frozenColumn":"-1"
+							,"showSerialNumber":true
+							,"fullTableHeight": true
+							,"rowHeight":30
+							,"columnNumber":4
+							
+						}
+	,"columnConfiguration"	: {	
+								"1":"tripSheet"
+								,"2":"date"
+								,"3":"opening_Balance"
+								,"4":"closing_Balance"
+								,"5":"transaction_Amount" 
+								 
+								 								 
+						} 
+	
+	,"tripSheet"	: {	 "tableDtoName":"tripSheetNumber"
+							,"dataType":"text"
+							,"labelid":"TripSheet"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+						
+						
+	,"date"		: {	 "tableDtoName":"txnDateTimeStr"
+							,"dataType":"text"
+							,"labelid":"Date"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	
+	,"opening_Balance"			: {	 "tableDtoName":"openingBalance"
+							,"dataType":"text"
+							,"labelid":"Opening balance"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}
+	,"closing_Balance"			: {	 "tableDtoName":"closingBalance"
+							,"dataType":"text"
+							,"labelid":"Closing Balance"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}
+	,"transaction_Amount"		: {	 "tableDtoName":"transactionAmount"
+							,"dataType":"text"
+							,"labelid":"Transaction Amount"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}
+	
+}

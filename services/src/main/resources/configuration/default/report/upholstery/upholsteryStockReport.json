@@ -1,0 +1,96 @@
+{
+	  "tableProperties"	: {"enableColumnReOrder":true
+							,"showPrintButton":true
+							,"showExcelButton":true
+							,"gridDataId":"editReport"
+							,"gridDataHeight":"500px"
+							,"enableCellNavigation":false
+							,"divId":"container"
+							,"frozenColumn":"-1"
+							,"showSerialNumber":true
+							,"fullTableHeight": true
+							,"rowHeight":30
+							
+						}
+	,"columnConfiguration"	: {	
+								"1":"upholsteryType"
+								,"2":"location"
+								,"3":"newStockQty"
+								,"4":"oldStockQty"
+								,"5":"inServiceQty" 
+								,"6":"inWashingQty" 
+								,"7":"damagedQty" 
+								,"8":"losedQty" 								 
+						} 
+	
+	,"upholsteryType"	: {	 "tableDtoName":"clothTypeName"
+							,"dataType":"text"
+							,"labelid":"Upholstery Type"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+						
+						
+	,"location"		: {	 "tableDtoName":"locationName"
+							,"dataType":"text"
+							,"labelid":"Location"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	
+	,"newStockQty"			: {	 "tableDtoName":"newStockQuantity"
+							,"dataType":"text"
+							,"labelid":"New/Fresh Stock Qty"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}
+	,"oldStockQty"			: {	 "tableDtoName":"usedStockQuantity"
+							,"dataType":"text"
+							,"labelid":"Old/Used Stock Qty"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}
+	,"inServiceQty"		: {	 "tableDtoName":"inServiceQuantity"
+							,"dataType":"text"
+							,"labelid":"In Service Qty"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"buttonCallback" : "serviceQtyDetails"
+							,"show":true
+						}
+	,"inWashingQty"		: {	 "tableDtoName":"inWashingQuantity"
+							,"dataType":"text"
+							,"labelid":"In Washing Qty"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"buttonCallback" : "washingQtyDetails" 
+							,"show":true
+						}
+	,"damagedQty"		: {	 "tableDtoName":"damagedQuantity"
+							,"dataType":"text"
+							,"labelid":"Damaged Qty"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"buttonCallback" : "damagedQtyDetails"
+							,"show":true
+						}
+	,"losedQty"		: {	 "tableDtoName":"losedQuantity"
+							,"dataType":"text"
+							,"labelid":"Losed Qty"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}	
+}

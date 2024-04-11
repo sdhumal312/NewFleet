@@ -1,0 +1,86 @@
+{
+		 "tableProperties"	: {
+	 							 "enableColumnReOrder":true
+								,"showPrintButton":true
+								,"showExcelButton":true
+								,"gridDataId":"editReport"
+								,"gridDataHeight":"500px"
+								,"enableCellNavigation":false
+								,"divId":"container"
+								,"frozenColumn":"-1"
+								,"showSerialNumber":true
+								,"fullTableHeight": true
+								,"rowHeight":30
+							}
+	,"columnConfiguration" 	: {	
+								 "1":"Part_Number"
+								,"2":"Part_Name"
+								,"3":"Category"
+								,"4":"Quantity"
+								,"5":"Liters"
+								,"6":"Location"
+								
+							} 
+	
+						
+	,"Part_Number"			: {	 
+								 "tableDtoName":"partnumber"
+								,"dataType":"text"
+								,"labelid":"Part_Number"
+								,"columnhidden":false
+								,"showColumnTotal":false
+								,"sortable" : true
+								,"show":true
+								
+							}
+	,"Part_Name"					: {	 
+								 "tableDtoName":"partname"
+								,"dataType":"text"
+								,"labelid":"Part_Name"
+								,"columnhidden":false
+								,"showColumnTotal":false
+								,"sortable" : true
+								,"show":true
+							}	
+						
+	,"Category"			: {	 
+								 "tableDtoName":"category"
+								,"dataType":"text"
+								,"labelid":"Category"
+								,"columnhidden":false
+								,"showColumnTotal":false
+								,"sortable" : true
+								,"show":true
+								
+							}										
+	,"Quantity"				: {	 
+								 "tableDtoName":"location_quantity"
+								,"dataType":"text"
+								,"labelid":"Quantity"
+								,"columnhidden":false
+								,"showColumnTotal":true
+								,"sortable" : true
+								,"show":true
+							}
+	,"Liters"				: {	 
+								 "tableDtoName":"liter_quantity"
+								,"dataType":"text"
+								,"labelid":"Liters"
+								,"columnhidden":false
+								,"showColumnTotal":true
+								,"sortable" : true
+								,"show":true
+							}
+	,"Location"				: {	 
+								 "tableDtoName":"location"
+								,"dataType":"text"
+								,"labelid":"Location"
+								,"columnhidden":false
+								,"showColumnTotal":false
+								,"sortable" : true
+								,"show":true
+							}
+	
+	
+	
+}

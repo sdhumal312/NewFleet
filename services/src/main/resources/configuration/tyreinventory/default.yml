@@ -1,0 +1,18 @@
+{ 
+editAllTyreInventory : false,
+showTyreStatusAtAdd : true,
+showTyreUsesColumn : true,
+addTyreDocument      : false,
+editTyreDocument     : false,
+viewTyreDocument     : false,
+showTyreAssignmentHistoryReportDateRange    : true,
+tallyIntegrationRequired : false,
+showSubLocation      : false,  
+mainLocationIds      : "",
+discountTaxTypeId	 : 1,
+roundFigureInvoiceAmount  : false,
+roundupAmount : false,
+showDateRangeInTyreAssignmentReport : true,
+validateInvoiceNumber                 : false,  
+ vehicleModelTyreLayout           : false   
+}

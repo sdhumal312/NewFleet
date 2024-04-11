@@ -1,0 +1,101 @@
+{
+	   "tableProperties"	: {"enableColumnReOrder":true
+							,"showPrintButton":true
+							,"showExcelButton":true
+							,"gridDataId":"editReport"
+							,"gridDataHeight":"250px"
+							,"enableCellNavigation":false
+							,"divId":"container"
+							,"frozenColumn":"-1"
+							,"showSerialNumber":true
+							,"fullTableHeight": true
+							,"rowHeight":30
+							,"showGrouping":true
+							,"columnNumber":0
+							
+						}
+	,"columnConfiguration"	: {	
+								 "1":"Vehicle_Group"
+								,"2":"Route_Name"
+								,"3":"TripSheet_Number"
+								,"4":"Vehicle_registration"
+								,"5":"Driver_1"
+								,"6":"Driver_2"
+								,"7":"Cleaner"
+
+																 
+						} 
+	
+						
+	,"Vehicle_Group"		: {	 "tableDtoName":"vehicle_Group"
+							,"dataType":"text"
+							,"labelid":"Vehicle_Group"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						
+						}
+						
+	,"Route_Name"		: {	 "tableDtoName":"routeName"
+							,"dataType":"text"
+							,"labelid":"Route_Name"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						
+						}
+						
+						
+	,"TripSheet_Number"		: {	 "tableDtoName":"tripSheetNumberStr"
+							,"dataType":"text"
+							,"labelid":"TripSheet_Number"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+						
+						
+
+	
+	,"Vehicle_registration"		: {	 "tableDtoName":"vehicle_registration"
+							,"dataType":"text"
+							,"labelid":"Vehicle_registration"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	,"Driver_1"		: {	 "tableDtoName":"tripFristDriverName"
+							,"dataType":"text"
+							,"labelid":"Driver_1"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+	,"Driver_2"		: {	 "tableDtoName":"tripSecDriverName"
+							,"dataType":"text"
+							,"labelid":"Driver_2"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+						
+
+						
+	,"Cleaner"		: {	 "tableDtoName":"tripCleanerName"
+							,"dataType":"text"
+							,"labelid":"Cleaner"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+						
+								
+}

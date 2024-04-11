@@ -1,0 +1,6 @@
+{
+  showPONoFeild                      : true,
+  noOfDaysForWorkOrderBackDate       : 367,
+  noOfDaysToReOpenWorkOrder          : 367,
+  allowReasonRepairType              : false
+}

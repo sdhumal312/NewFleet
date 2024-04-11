@@ -1,0 +1,7 @@
+{ 
+tataTokenURL      : "https://cvpauth.api.tatamotors/auth/realms/external/protocol/openid-connect/token",
+tataClientId      : "0428d073-c0ef-4f9b-a830-f8d59daa1086",
+tataClientSecret  : "bf8cc0db-8dae-46cf-be4c-33f1f7cdd72a",
+tataCookies       : "AWSALB=+VrrYZ5kVhW0PN3583qdSDKqronLedFI1ZexryGL9VPjbdY78dK+rqGg0oY8eLUcZFdmfnDbXxnxmhvU+eAxOcINlhvNxVoAmhVTB/nUq5qA0L1wBll7QBV6zfqz; AWSALBCORS=+VrrYZ5kVhW0PN3583qdSDKqronLedFI1ZexryGL9VPjbdY78dK+rqGg0oY8eLUcZFdmfnDbXxnxmhvU+eAxOcINlhvNxVoAmhVTB/nUq5qA0L1wBll7QBV6zfqz",
+tataUnirestLink   : "https://cvp.api.tatamotors/external/telemetry/vehicles/"
+}

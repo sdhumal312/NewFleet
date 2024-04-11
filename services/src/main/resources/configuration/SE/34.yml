@@ -1,0 +1,5 @@
+{
+allowServiceEntriesBackDate           : true,
+noOfDaysForServiceEntriesBackDate     : 20,
+noOfDaysToReOpenServiceEntries        : 20 
+}

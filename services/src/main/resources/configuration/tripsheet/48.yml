@@ -1,0 +1,7 @@
+{
+allowBackDateEntry                    : true,
+noOfDaysForBackDate                   : 120,
+showAlwaysDispatchTime                : true,
+saveDriverLedgerDetails               : true,
+showPaymentTypeInIncomeExpense		  : true
+}

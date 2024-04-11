@@ -1,0 +1,15 @@
+{
+allowBackDateEntry                    : true,
+noOfDaysForBackDate                   : 60,
+driverBalanceWithNarration            : true,
+showCreditAndVendorAtExpense          : true,
+payToDriverText                       : "To Be Paid To Driver",
+payToOfficeText                       : "Have To Take From Driver",
+showDriverExcludeAtIncome             : true,
+allowMultipleExpensesOfSameType       : true,
+allowMultipleIncomeOfSameType         : true,
+showPFAmount                          : true,
+dailyAllowanceIds                     : "3138,3108,3102",
+vehicleHeaderOnPrint                  : true,
+routeHeaderOnPrint                    : true
+}

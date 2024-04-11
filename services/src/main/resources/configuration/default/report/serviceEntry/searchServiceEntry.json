@@ -1,0 +1,98 @@
+{
+	  "tableProperties"	: {"enableColumnReOrder":true
+							,"showPrintButton":true
+							,"showExcelButton":true
+							,"gridDataId":"editReport"
+							,"gridDataHeight":"500px"
+							,"enableCellNavigation":false
+							,"divId":"container"
+							,"frozenColumn":"-1"
+							,"showSerialNumber":true
+							,"fullTableHeight": true
+							,"rowHeight":30
+							,"showGrouping":true
+							,"columnNumber":1
+							
+						}
+	,"columnConfiguration"	: {	
+								 "1":"ServiceNumber"
+								,"2":"Vehicle"
+								,"3":"Vendor"
+								,"4":"InvoiceNumber"
+								,"5":"JobNumber"
+								,"6":"Cost" 
+								,"7":"PaidBy" 																
+								,"8":"Document" 																
+								,"9":"Edit" 																
+								,"10":"Delete" 																
+						} 
+	
+	,"invoiceNumber"	: {	 "tableDtoName":"invoiceNumStr"
+							,"dataType":"text"
+							,"labelid":"Invoice No"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+						
+						
+	,"partyName"		: {	 "tableDtoName":"vendorName"
+							,"dataType":"text"
+							,"labelid":"Party Name"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}
+	
+	,"invoiceDate"			: {	 "tableDtoName":"invoiceDateStr"
+							,"dataType":"text"
+							,"labelid":"Invoice Date"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true							
+							,"show":true
+						}
+	,"Amount"			: {	 "tableDtoName":"totalAmount"
+							,"dataType":"text"
+							,"labelid":"Amount"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true							
+							,"show":true
+						}
+	,"paymentType"			: {	 "tableDtoName":"paymentTypeStr"
+							,"dataType":"text"
+							,"labelid":"Payment Type"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}
+	 ,"paymentMode"		: {	 "tableDtoName":"paymentModeStr"
+							,"dataType":"text"
+							,"labelid":"Payment Mode"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						} 
+	,"PaidDate"			: {	 "tableDtoName":"paidDateStr"
+							,"dataType":"text"
+							,"labelid":"Paid Date"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false							
+							,"show":true
+						}					
+	,"PaidAmount"			: {	 "tableDtoName":"paidAmount"
+							,"dataType":"text"
+							,"labelid":"Paid Amount"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true							
+							,"show":true
+						}					
+	
+}

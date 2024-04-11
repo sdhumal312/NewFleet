@@ -1,0 +1,176 @@
+{
+		 "tableProperties"	: {
+	 							 "enableColumnReOrder":true
+								,"showPrintButton":true
+								,"showExcelButton":true
+								,"gridDataId":"editReport"
+								,"gridDataHeight":"500px"
+								,"enableCellNavigation":false
+								,"divId":"container"
+								,"frozenColumn":"-1"
+								,"showSerialNumber":true
+								,"fullTableHeight": true
+								,"rowHeight":30
+							}
+	,"columnConfiguration" 	: {	
+								 "1":"UREA NUMBER"
+								,"2":"DATE"
+								,"3":"VEHICLE"
+								,"4":"OPEN KM"
+								,"5":"CLOSE KM"
+								,"6":"USAGE"
+								,"7":"VOLUME"
+								,"8":"COST"
+								,"9":"AMOUNT"
+								,"10":"DRIVER 1" 
+								,"11":"DRIVER 2"
+								,"12":"CLEANER" 
+								,"13":"ROUTE" 
+								,"14":"KMPL" 
+							} 
+	
+						
+	,"UREA NUMBER"			: {	 
+								 "tableDtoName":"ureaEntriesNumberStr"
+								,"dataType":"text"
+								,"labelid":"UREA NUMBER"
+								,"columnhidden":false
+								,"showColumnTotal":false
+								,"sortable" : true
+								,"show":true
+								,"buttonCallback" : "showUreaEntry"
+								,"inputElement" : "link"
+							}
+	,"DATE"					: {	 
+								 "tableDtoName":"ureaDateStr"
+								,"dataType":"text"
+								,"labelid":"DATE"
+								,"columnhidden":false
+								,"showColumnTotal":false
+								,"sortable" : true
+								,"show":true
+							}	
+						
+	,"VEHICLE"			: {	 
+								 "tableDtoName":"vehicle_registration"
+								,"dataType":"text"
+								,"labelid":"VEHICLE"
+								,"columnhidden":false
+								,"showColumnTotal":false
+								,"sortable" : true
+								,"show":true
+								,"buttonCallback" : "showVehicle"
+								,"inputElement" : "link"
+							}										
+							
+	,"OPEN KM"				: {	 
+								 "tableDtoName":"ureaOdometerOld"
+								,"dataType":"text"
+								,"labelid":"OPEN KM"
+								,"columnhidden":false
+								,"showColumnTotal":true
+								,"sortable" : true
+								,"show":true
+							}
+	,"CLOSE KM"				: {	 
+								 "tableDtoName":"ureaOdometer"
+								,"dataType":"text"
+								,"labelid":"CLOSE KM"
+								,"columnhidden":false
+								,"showColumnTotal":true
+								,"sortable" : true
+								,"show":true
+							}
+	,"USAGE"				: {	 
+								 "tableDtoName":"totalOdometer"
+								,"dataType":"number"
+								,"labelid":"USAGE"
+								,"columnhidden":false
+								,"showColumnTotal":true
+								,"sortable" : true
+								,"show":true
+							}
+	
+	,"VOLUME"				: {	 
+								 "tableDtoName":"ureaLiters"
+								,"dataType":"number"
+								,"labelid":"VOLUME"
+								,"columnhidden":false
+								,"showColumnTotal":true
+								,"sortable" : true
+								,"show":true
+							}
+	,"COST"					: {	 
+								 "tableDtoName":"ureaRate"
+								,"dataType":"number"
+								,"labelid":"COST"
+								,"columnhidden":false
+								,"showColumnTotal":false
+								,"sortable" : true
+								,"show":true
+							}						
+	,"AMOUNT"				: {	 
+								 "tableDtoName":"ureaAmount"
+								,"dataType":"number"
+								,"labelid":"AMOUNT"
+								,"columnhidden":false
+								,"showColumnTotal":true
+								,"sortable" : true
+								,"show":true 
+							}					
+	,"DRIVER 1"				: {	 
+								 "tableDtoName":"firsDriverName"
+								,"dataType":"text"
+								,"labelid":"DRIVER 1"
+								,"columnhidden":false
+								,"showColumnTotal":false
+								,"sortable" : true
+								,"show":true
+								,"buttonCallback" : "showDriver"
+								,"inputElement" : "link"
+							}					
+	,"DRIVER 2"				: {	 
+								 "tableDtoName":"secDriverName"
+								,"dataType":"text"
+								,"labelid":"DRIVER 2"
+								,"columnhidden":false
+								,"showColumnTotal":false
+								,"sortable" : true
+								,"show":true
+								,"buttonCallback" : "showDriver2"
+								,"inputElement" : "link"
+							}					
+	,"CLEANER"				: {	 
+								 "tableDtoName":"cleanerName"
+								,"dataType":"text"
+								,"labelid":"CLEANER"
+								,"columnhidden":false
+								,"showColumnTotal":false
+								,"sortable" : true
+								,"show":true
+								,"buttonCallback" : "showCleaner"
+								,"inputElement" : "link"
+							}					
+	,"ROUTE"				: {	 
+								 "tableDtoName":"routeName"
+								,"dataType":"text"
+								,"labelid":"ROUTE"
+								,"columnhidden":false
+								,"showColumnTotal":false
+								,"sortable" : true
+								,"show":true
+							}					
+	
+,"KMPL"				: {	 
+								 "tableDtoName":"kmpl"
+								,"dataType":"number"
+								,"labelid":"kmpl"
+								,"columnhidden":false
+								,"sortable" : true
+								,"show":true
+								,"showColumnTotalAvg":true
+							}
+	
+
+	
+}

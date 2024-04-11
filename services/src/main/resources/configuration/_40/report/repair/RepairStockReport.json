@@ -1,0 +1,87 @@
+{
+	 "tableProperties"				: {"enableColumnReOrder":true
+										,"showPrintButton":true
+										,"showExcelButton":true
+										,"gridDataId":"editReport"
+										,"gridDataHeight":"500px"
+										,"enableCellNavigation":false
+										,"divId":"container"
+										,"frozenColumn":"-1"
+										,"showSerialNumber":false
+										,"fullTableHeight": true
+										,"rowHeight":30
+										,"showGrouping":true
+										,"columnNumber":0
+							
+									}
+	,"columnConfiguration"	: {	
+								"1":"Repair Number"
+								,"2":"Repair Stock Part"
+								,"3":"Issue Details"
+								,"4":"To Location"
+								,"5":"Sent Date" 
+								,"6":"Additional Part" 
+								,"7":"Labour" 
+						} 
+	
+	,"Repair Number"	: {	 "tableDtoName":"repairNumberStr"
+							,"dataType":"text"
+							,"labelid":"Repair Number"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+						
+						
+	,"Repair Stock Part"	: {	 "tableDtoName":"repairStockPart"
+							,"dataType":"text"
+							,"labelid":"Repair Stock Part"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	
+	,"Issue Details" : { "tableDtoName":"workDetails"
+							,"dataType":"text"
+							,"labelid":"Issue Details"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	,"To Location"			: {	 "tableDtoName":"additionalPartLocation"
+							,"dataType":"text"
+							,"labelid":"To Location"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}
+	,"Sent Date"		: {	 "tableDtoName":"dateOfSentStr"
+							,"dataType":"text"
+							,"labelid":"Sent Date"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}
+	,"Additional Part"		: {	 "tableDtoName":"additionalPartDetails"
+							,"dataType":"text"
+							,"labelid":"Additional Part"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}
+	,"Labour"		: {	 "tableDtoName":"labourDetails"
+							,"dataType":"text"
+							,"labelid":"Labour"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}
+	
+}

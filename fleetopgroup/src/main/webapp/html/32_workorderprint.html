@@ -1,0 +1,293 @@
+<style>
+	.width100 {
+		width: 100%;
+	}
+	.width80 {
+		width: 80%;
+	}
+	.width70 {
+		width: 70%;
+	}
+	.width50 {
+		width: 50%;
+	}
+	.alignCenter {
+		text-align: center;
+	}
+	.alignLeft {
+		text-align: left;
+	}
+	.alignRight {
+		text-align: right;
+	}
+	.borderBottom {
+		border-bottom: 1px solid black;
+	}
+
+	.borderLeft {
+		border-left: 1px solid black;
+	}
+	
+	.borderRight {
+		border-right: 1px solid black;
+	}
+	
+	.borderTop {
+		border-top: 1px solid black;
+	}
+	.font25px {
+		font-size: 25px;
+	}
+	.font20px {
+		font-size: 20px;
+	}
+	.font18px {
+		font-size: 18px;
+	}
+	.font16px {
+		font-size: 16px;
+	}
+	.font14px {
+		font-size: 14px;
+	}
+	.font12px {
+		font-size: 12px;
+	}
+	.bold {
+		font-weight: bold;
+	}
+	.paddingTop10px {
+		padding-top: 10px;
+	}
+	.paddingBottom10px {
+		padding-bottom: 10px;
+	}
+	.paddingRight10px {
+		padding-right: 10px;
+	}
+	.width50px {
+		width: 150px;
+	}
+	
+	table.detailsTable{
+  empty-cells: show;
+}
+
+.blank_row
+{
+    height: 20px !important; /* overwrites any other rules */
+}
+	
+</style>
+<table class="width100">
+	<tr>
+		<td>
+			<table class="width100">
+				<tr>
+					<td class="width100 alignCenter">
+						<span class="companyName font25px bold"></span>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td class="width100 alignCenter borderTop borderBottom font18px bold">
+			<span>JOB CARD</span>
+		</td>
+	</tr>
+	<tr>
+		<td class="width100">
+			<table class="width100" border="1">
+				<tr>
+					<td>
+						<span>Mechanic :</span>
+						<span class="assigneeName"></span>
+					</td>
+					<td>
+						<span>Status :</span>
+						<span class="workOrderStatus bold"></span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span>Work Order No :</span>
+						<span class="workOrderNo"></span>
+					</td>
+					<td>
+						<span>Start Date & Time :</span>
+						<span class="startDateTime"></span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span>Due Date & Time :</span>
+						<span class="dueDateTime"></span>
+					</td>
+					<td>
+						<span>Complete Date & Time :</span>
+						<span class="completeDateTime"></span>
+						
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span>Regi No :</span>
+						<span class="registrationNo"></span>
+					</td>
+					<td>
+						<span>Chasis No :</span>
+						<span class="chasisNo"></span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span>Engine No :</span>
+						<span class="engineNo"></span>
+					</td>
+					<td>
+						<span>Fuel :</span>
+						<span class="fuel"></span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span>KM :</span>
+						<span class="odometer"></span>
+					</td>
+					<td>
+						<span>Route :</span>
+						<span class="route"></span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span>Driver Name :</span>
+						<span class="driverName"></span>
+					</td>
+					<td>
+						<span>Driver Number :</span>
+						<span class="driverNumber"></span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span>Created By :</span>
+						<span class="createdBy"></span>
+					</td>
+					<td>
+						&nbsp;
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<span>Initial Notes :</span>
+						<span class="initialNotes"></span>
+					</td>
+					
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td class="width100">
+			<table class="width100" border="1">
+				<thead class="bold alignCenter">
+					<tr>
+						<td>
+							<span>Sr. No</span>
+						</td>
+						<td>
+							<span>Sub Job Type</span>
+						</td>
+						<td>
+							<span>Remark</span>
+						</td>
+					</tr>
+				</thead>
+				<tbody class="workOrdersTasks">
+				</tbody>
+			</table>
+		</td>
+	</tr>
+	<!-- <tr>
+		<td class="borderBottom bold paddingTop10px font14px">
+			<span>Initial Notes :  </span>
+			<span class="initialNotes"></span>
+		</td>
+	</tr> -->
+	<tr>
+		<td class="borderBottom bold paddingTop10px font14px">
+			<span>Total Estimated Repair Cost (Parts + Labour) </span>
+			<span class="workOrderCost"></span>
+		</td>
+		
+	</tr>
+	
+		
+	<tr>
+		<td>
+		</br>
+		</br>
+			<table class="table table-bordered" id="detailsTable">
+				<thead>
+				<tr>
+				<th>Date</th>
+					<th>Part No.</th>
+					<th>Destination</th>
+					<th>Handover Qty.</th>
+					<th>Return Qty.</th>
+					<th>Technician</th>
+				</tr>
+				</thead>
+			<tr class="blank_row"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+				<tr class="blank_row"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+					<tr class="blank_row"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+						<tr class="blank_row"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+							<tr class="blank_row"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+								<tr class="blank_row"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+									<tr class="blank_row"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+										<tr class="blank_row"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+											<tr class="blank_row"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+												<tr class="blank_row"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+													<tr class="blank_row"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+														<tr class="blank_row"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+															<tr class="blank_row"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+																<tr class="blank_row"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+																	<tr class="blank_row"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+			</table>
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+			<table class="width100 borderBottom">
+				<tr>
+					<td colspan="2">
+						<span>&nbsp;</span>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<span>&nbsp;</span>
+					</td>
+				</tr>
+				<tr class="bold paddingTop10px paddingBottom10px font14px">
+					<td>Customer's Sign</td>
+					<td class="alignRight">Work Manager's Sign</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	
+	<tr>
+		<td class="width50px"></td>
+	</tr>
+	
+	<tr>
+		<td class="alignRight">
+			<span>Powered By </span>
+			<img alt="" width="70" height="28" src="resources/QhyvOb0m3EjE7A4/images/FleetopLogo.png">
+		</td>
+	</tr>
+</table>

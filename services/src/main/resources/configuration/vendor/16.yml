@@ -1,0 +1,11 @@
+{
+editVendorName                        : true,
+showVendorInputField                  : true,
+allVendorTypeAutoComplete             : true,
+VendorInputFieldInPOAdd               : false,
+VendorInputFieldInPOAddPart           : true,
+addVehicleDetailsInPOAddPart          : true,
+showVehicleDetailsInPO                : true,
+allowOwnPetrolPump                    : true,
+fuelTypeId                            : 21
+}

@@ -1,0 +1,6 @@
+{
+  showUserInVehicleRepairReport                 : false,
+  showVehicleFilter                             : false,
+  hideSomeVehicleReportOptions	  				: false,
+  showVehicleNo					   				: false 
+ }

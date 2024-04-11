@@ -1,0 +1,6 @@
+{
+ showROTCode                     : true,
+ showNoOfHour                    : true,
+ showROTAmount                   : true 
+ 
+}

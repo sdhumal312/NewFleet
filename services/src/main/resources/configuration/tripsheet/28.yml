@@ -1,0 +1,11 @@
+{
+allowBackDateEntry                    : true,
+noOfDaysForBackDate                   : 365,
+driverBalanceWithNarration            : true,
+payToDriverText                       : "Have To Take From Driver",
+payToOfficeText                       : "To Be Paid To Driver",
+removeAdvanceFromDriverBalance        : true,
+showTotalKmpl                         : true,
+validateOdometerInTripSheet           : false,
+dateRangeInDateWiseExpenseReport      : true
+}

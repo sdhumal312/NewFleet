@@ -1,0 +1,5 @@
+{
+allowIVLoadingSheetEntry              : true,
+loadingSheetSyncLink                  : "https://ivcargo.in/ivwebservices/LoadingSheetToTripSheetWS/getLoadingSheetToTripSheetData.do",
+showLsSourceAndDestination			  : true
+}

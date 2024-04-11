@@ -1,0 +1,8 @@
+.battery{
+	background-color: lightgrey;
+    width: 30px;
+    border: 2px solid;
+    padding: 25px;
+    margin: 25px;
+    height:40px;
+}

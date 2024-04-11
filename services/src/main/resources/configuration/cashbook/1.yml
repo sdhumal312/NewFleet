@@ -1,0 +1,6 @@
+{ 
+showCashBookStatus                : true,
+showLinkRefLink                   : true,
+showGstNoCol                      : false,
+isAutoVoucherNumber               : true
+}

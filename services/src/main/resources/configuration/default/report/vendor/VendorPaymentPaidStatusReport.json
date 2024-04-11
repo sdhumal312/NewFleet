@@ -1,0 +1,102 @@
+{
+	  "tableProperties"	: {"enableColumnReOrder":true
+							,"showPrintButton":true
+							,"showExcelButton":true
+							,"gridDataId":"editReport"
+							,"gridDataHeight":"500px"
+							,"enableCellNavigation":false
+							,"divId":"container"
+							,"frozenColumn":"-1"
+							,"showSerialNumber":true
+							,"fullTableHeight": true
+							,"rowHeight":30
+							,"showGrouping":true
+							,"columnNumber":1
+							
+						}
+						
+						
+	,"columnConfiguration"	: {	
+								 "1":"approvalId"
+								,"2":"paidDate"
+								,"3":"paidBy" 
+								,"4":"PaymentMode"
+								,"5":"PaymentType" 
+								,"6":"transactionNo" 
+								,"7":"invoiceAmnt"
+								,"8":"approvedPaidAmnt" 																	
+						} 
+	
+	,"approvalId"	: {	 "tableDtoName":"approvalNumbers"
+							,"dataType":"text"
+							,"labelid":"Approval Id"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}
+	
+	,"paidDate"			: {	 "tableDtoName":"approvalCreateDateStr"
+							,"dataType":"text"
+							,"labelid":"Payment Date"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}
+						
+	 ,"paidBy"		: {	 "tableDtoName":"approvalCreateBy"
+							,"dataType":"text"
+							,"labelid":"Paid By"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}
+						
+	,"PaymentMode"		: {	 "tableDtoName":"approvalStatus"
+							,"dataType":"text"
+							,"labelid":"Payment Mode"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}
+						
+	,"PaymentType"		: {	 "tableDtoName":"approvalPaymentType"
+							,"dataType":"text"
+							,"labelid":"Payment Type"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}
+						 
+	,"transactionNo"		: {	 "tableDtoName":"approvalPayNumber"
+							,"dataType":"text"
+							,"labelid":"Transaction No"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						} 										 
+	
+	,"invoiceAmnt"		: {	 "tableDtoName":"subApprovalTotalStr"
+							,"dataType":"number"
+							,"labelid":"Invoice Amnt"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}
+						
+	,"approvedPaidAmnt"		: {	 "tableDtoName":"subApprovalpaidAmount"
+							,"dataType":"number"
+							,"labelid":"Approved Paid Amnt"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}					
+	
+}

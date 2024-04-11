@@ -1,0 +1,5 @@
+{
+allowBackDateEntry                    : true,
+noOfDaysForBackDate                   : 10,
+driverFuelMileageAlert                : true
+}

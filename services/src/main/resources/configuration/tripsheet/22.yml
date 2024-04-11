@@ -1,0 +1,14 @@
+{
+allowBackDateEntry                    : true,
+noOfDaysForBackDate                   : 45,
+loadingSheetSyncLink                   : "https://ivcargo.com/ivwebservices/LoadingSheetToTripSheetWS/getLoadingSheetToTripSheetData.do",
+allowIVLoadingSheetEntry               : true,
+substractTimeFromDate                  : true,
+noOfHourToSubstract                    : 4,
+roundFigureAmount                     : false,
+allowBitlaApiIncome                   : true,
+bitlaApiKeyUrl                        : "http://cbus.charteredbus.in/api/login.json",
+bitlaApiUserName                      : "cbus.ivcargo",
+bitlaApiPassword                      : "api@789",
+bitlaApiTransactionDetailsUrl         : "http://cbus.charteredbus.in/api/get_coach_revenue_details"
+}

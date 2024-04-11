@@ -1,0 +1,11 @@
+{
+failedParameterPenalty : false,
+penaltyAmount          : 1000.00,
+createIssueOnparameterFail : false,
+sheetToVehicleType : false,
+skipInspection          : false,
+mandatoryRemarkIfFail   : false,
+compressImage        : true,
+issueAsignId           : "admin",
+multiCompress             : false
+}

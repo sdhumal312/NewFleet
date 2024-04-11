@@ -1,0 +1,131 @@
+{
+	  "tableProperties"	: {"enableColumnReOrder":true
+							,"showPrintButton":true
+							,"showExcelButton":true
+							,"gridDataId":"editReport"
+							,"gridDataHeight":"500px"
+							,"enableCellNavigation":false
+							,"divId":"container"
+							,"frozenColumn":"-1"
+							,"showSerialNumber":true
+							,"fullTableHeight": true
+							,"rowHeight":30
+							,"showGrouping":true
+							,"columnNumber":1
+							
+						}
+	,"columnConfiguration"	: {	
+								"1":"vehicle"
+								,"2":"currentCompany"
+								,"3":"tyreNum"
+								,"4":"km"
+								,"5":"cost" 
+								,"6":"usage" 
+								,"7":"dateOfFitment" 
+								,"8":"previousCompany" 
+								,"9":"previousTyreNum" 
+								,"10":"previousTyreKM" 
+								,"11":"previousTyreUsage" 
+								,"12":"previousTyreDate" 
+						} 
+	
+	,"vehicle"	: {	 "tableDtoName":"vehicle_REGISTRATION"
+							,"dataType":"text"
+							,"labelid":"vehicle"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+						
+						
+	,"currentCompany"		: {	 "tableDtoName":"tyre_MODEL"
+							,"dataType":"text"
+							,"labelid":"Tyre Manufacturer"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}
+	
+	,"tyreNum"			: {	 "tableDtoName":"tyre_NUMBER"
+							,"dataType":"text"
+							,"labelid":"Tyre Number"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	,"km"			: {	 "tableDtoName":"open_ODOMETER"
+							,"dataType":"text"
+							,"labelid":"Odometer"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}
+	,"cost"		: {	 "tableDtoName":"tyre_AMOUNT"
+							,"dataType":"text"
+							,"labelid":"Cost"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}
+	,"usage"		: {	 "tableDtoName":"tyre_USEAGE"
+							,"dataType":"text"
+							,"labelid":"Usage KM"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}
+	,"dateOfFitment"		: {	 "tableDtoName":"tyre_ASSIGN_DATE"
+							,"dataType":"text"
+							,"labelid":"Date of Fitment"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	,"previousCompany"		: {	 "tableDtoName":"previousTyreManufacturer"
+							,"dataType":"text"
+							,"labelid":"Old Tyre Company"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	,"previousTyreNum"	: {	 "tableDtoName":"previousSerialNumber"
+							,"dataType":"text"
+							,"labelid":"Old Tyre SerialNumber"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	,"previousTyreKM"		: {	 "tableDtoName":"previousTyreOpenOdo"
+							,"dataType":"text"
+							,"labelid":"Old Tyre Odometer"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	,"previousTyreUsage"		: {	 "tableDtoName":"previousTyreUsage"
+							,"dataType":"text"
+							,"labelid":"Old Tyre Usage KM"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	,"previousTyreDate"	: {	 "tableDtoName":"previousAssignedDate"
+							,"dataType":"text"
+							,"labelid":"Old Tyre Fitment Date"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+}

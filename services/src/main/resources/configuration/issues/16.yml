@@ -1,0 +1,5 @@
+{
+showIssuesLabelOption    : true,
+showBreakDownDetails     : true,
+showGroupInIssueSummary  : true
+}

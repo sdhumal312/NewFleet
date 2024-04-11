@@ -1,0 +1,131 @@
+{
+	  "tableProperties"	: {"enableColumnReOrder":true
+							,"showPrintButton":true
+							,"showExcelButton":true
+							,"gridDataId":"editReport"
+							,"gridDataHeight":"500px"
+							,"enableCellNavigation":false
+							,"divId":"container"
+							,"frozenColumn":"-1"
+							,"showSerialNumber":true
+							,"fullTableHeight": true
+							,"rowHeight":30
+							,"showGrouping":true
+							,"columnNumber":1
+							
+						}
+	,"columnConfiguration"	: {	
+								"1":"VEHICLE"
+								,"2":"BANK"
+								,"3":"ACCOUNT NO"
+								,"4":"LOAN AMOUNT"
+								,"5":"DOWNPAYMENT AMOUNT" 
+								,"6":"MONTHLY EMI" 
+								,"7":"TENURE TYPE" 
+								,"8":"TENURE" 
+								,"9":"LOAN START DATE" 
+								,"10":"LOAN END DATE" 
+								,"11":"INTEREST RATE" 
+								,"12":"REMARK" 
+						} 
+	
+	,"VEHICLE"	: {	 "tableDtoName":"vehicle_registration"
+							,"dataType":"text"
+							,"labelid":"VEHICLE"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+						
+						
+	,"BANK"		: {	 "tableDtoName":"bankName"
+							,"dataType":"text"
+							,"labelid":"BANK"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}
+	
+	,"ACCOUNT NO"			: {	 "tableDtoName":"accountNumber"
+							,"dataType":"text"
+							,"labelid":"ACCOUNT NO"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	,"LOAN AMOUNT"			: {	 "tableDtoName":"loanAmount"
+							,"dataType":"text"
+							,"labelid":"LOAN AMOUNT"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : false
+							,"show":true
+						}
+	,"DOWNPAYMENT AMOUNT"		: {	 "tableDtoName":"downPaymentAmount"
+							,"dataType":"text"
+							,"labelid":"DOWNPAYMENT AMOUNT"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}
+	,"MONTHLY EMI"		: {	 "tableDtoName":"monthlyEmiAmount"
+							,"dataType":"text"
+							,"labelid":"MONTHLY EMI"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}
+	,"TENURE TYPE"		: {	 "tableDtoName":"tenureTypeStr"
+							,"dataType":"text"
+							,"labelid":"TENURE TYPE"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	,"TENURE"		: {	 "tableDtoName":"tenure"
+							,"dataType":"text"
+							,"labelid":"TENURE"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	,"LOAN START DATE"	: {	 "tableDtoName":"loanStartDateStr"   
+							,"dataType":"text"
+							,"labelid":"LOAN START DATEr"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	,"LOAN END DATE"		: {	 "tableDtoName":"loanEndDateStr"
+							,"dataType":"text"
+							,"labelid":"LOAN END DATE"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	,"INTEREST RATE"		: {	 "tableDtoName":"interestRate"
+							,"dataType":"text"
+							,"labelid":"INTEREST RATE"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}
+	,"REMARK"	: {	 "tableDtoName":"remark"
+							,"dataType":"text"
+							,"labelid":"REMARK"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+}

@@ -1,0 +1,10 @@
+{
+showBatteryInventoryPrint                   : false,
+tallyIntegrationRequired                    : true,
+addBatteryInventoryDocument                 : true,
+editBatteryInventoryDocument                : true,
+downloadBatteryInventoryDocument            : true,
+showSubLocation                             : true,  
+mainLocationIds                             : "33",
+validateInvoiceNumber                       : true    
+}

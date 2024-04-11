@@ -1,0 +1,117 @@
+{
+	  "tableProperties"	: {"enableColumnReOrder":true
+							,"showPrintButton":true
+							,"showExcelButton":true
+							,"gridDataId":"editReport"
+							,"gridDataHeight":"500px"
+							,"enableCellNavigation":false
+							,"divId":"container"
+							,"frozenColumn":"-1"
+							,"showSerialNumber":true
+							,"fullTableHeight": true
+							,"rowHeight":30
+							,"callBackFunctionForPartial" : "callBackFunctionForPartial"
+							
+						}
+	,"columnConfiguration"	: {	
+								"1":"piNumber"
+								,"2":"invoiceNumber"
+								,"3":"invoiceDate"
+								,"4":"partName"
+								,"5":"quantity"
+								,"6":"each"
+								,"7":"discount"
+								,"8":"gst"
+								,"9":"total"
+								,"10":"invoiceAmount"
+								
+						} 
+	
+	,"piNumber"			: {	 "tableDtoName":"partInvoiceNumber"
+							,"dataType":"text"
+							,"labelid":"PI No"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"buttonCallback" : "showInvoiceNumber"
+							,"inputElement" : "link"
+							,"show":true
+						}
+						
+						
+	,"invoiceNumber"	: {	 "tableDtoName":"invoice_number"
+							,"dataType":"text"
+							,"labelid":"Invoice No"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	
+	,"invoiceDate"		: {	 "tableDtoName":"invoice_date"
+							,"dataType":"text"
+							,"labelid":"Invoice Date"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}
+	,"partName"			: {	 "tableDtoName":"partname"
+							,"dataType":"text"
+							,"labelid":"Part Name & Numbers"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":false
+						}
+	,"quantity"				: {	 "tableDtoName":"quantity"
+							,"dataType":"text"
+							,"labelid":"Quantity"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":false
+						}
+	,"each"				: {	 "tableDtoName":"unitprice"
+							,"dataType":"text"
+							,"labelid":"Each"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":false
+						}
+	,"discount"			: {	 "tableDtoName":"discount"
+							,"dataType":"text"
+							,"labelid":"Dis"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":false
+						}
+	,"gst"				: {	 "tableDtoName":"tax"
+							,"dataType":"text"
+							,"labelid":"GST"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":false
+						}
+	,"total"			: {	 "tableDtoName":"total"
+							,"dataType":"text"
+							,"labelid":"Total"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":false
+						}
+	,"invoiceAmount"	: {	 "tableDtoName":"invoice_amount"
+							,"dataType":"text"
+							,"labelid":"Invoice Amount"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"buttonCallback" : "showInvoiceAmount"
+							,"inputElement" : "link"
+							,"show":true
+						}
+}

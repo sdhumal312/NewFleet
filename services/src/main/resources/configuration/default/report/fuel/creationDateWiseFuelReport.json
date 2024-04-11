@@ -1,0 +1,144 @@
+{
+	  "tableProperties"	: {"enableColumnReOrder":true
+							,"showPrintButton":true
+							,"showExcelButton":true
+							,"gridDataId":"editReport"
+							,"gridDataHeight":"500px"
+							,"enableCellNavigation":false
+							,"divId":"container"
+							,"frozenColumn":"-1"
+							,"showSerialNumber":false
+							,"fullTableHeight": true
+							,"rowHeight":30
+							,"showGrouping":true
+							,"columnNumber":2
+							
+						}
+	,"columnConfiguration"	: {	
+								"1":"FuelNumber" 
+								,"2":"Vehicle_Number"
+								,"3":"Date"
+								,"4":"Open_KM"
+								,"5":"Close_KM"
+								,"6":"Total_KM"
+								,"7":"Diesel"
+								,"8":"Average"
+								,"9":"vendor_name"
+								,"10":"Driver_1" 
+								,"11":"Driver_2" 
+								,"12":"Route" 
+								
+																 
+						} 
+	
+						
+	,"Vehicle_Number"		: {	 "tableDtoName":"vehicle_registration"
+							,"dataType":"text"
+							,"labelid":"Vehicle_Number"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							,"buttonCallback" : "showVehicle"
+							,"inputElement" : "link"
+						}
+	,"Open_KM"		: {	 "tableDtoName":"fuel_meter_old"
+							,"dataType":"text"
+							,"labelid":"Open_KM"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	,"Close_KM"		: {	 "tableDtoName":"fuel_meter"
+							,"dataType":"text"
+							,"labelid":"Close_KM"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+	,"Total_KM"		: {	 "tableDtoName":"fuel_usage"
+							,"dataType":"text"
+							,"labelid":"Total_KM"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}
+	
+	,"Diesel"			: {	 "tableDtoName":"fuel_liters"
+							,"dataType":"text"
+							,"labelid":"Diesel"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}
+	,"Average"			: {	 "tableDtoName":"fuel_kml"
+							,"dataType":"text"
+							,"labelid":"Average"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	,"vendor_name"			: {	 "tableDtoName":"vendor_name"
+							,"dataType":"text"
+							,"labelid":"Vendor"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							,"buttonCallback" : "showVendor"
+							,"inputElement" : "link"
+						}
+	,"Driver_1"			: {	 "tableDtoName":"driver_name"
+							,"dataType":"text"
+							,"labelid":"Driver_1"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							,"buttonCallback" : "showDriver"
+							,"inputElement" : "link"
+						}
+	,"Driver_2"		: {	 "tableDtoName":"fuelSecDriverName"
+							,"dataType":"text"
+							,"labelid":"Driver_2"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":false
+							,"buttonCallback" : "showDriver2"
+							,"inputElement" : "link"
+						}
+	,"FuelNumber"		: {	 "tableDtoName":"fuelNumber"
+							,"dataType":"text"
+							,"labelid":"Fuel No."
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"buttonCallback" : "showFuelDetails" 
+							,"show":true
+							,"inputElement" : "link"
+						}
+	,"Route"		: {	 "tableDtoName":"fuelRouteName"
+							,"dataType":"text"
+							,"labelid":"Route"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}
+
+	,"Date"		: {	 "tableDtoName":"created"
+							,"dataType":"text"
+							,"labelid":"Date"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}	
+}

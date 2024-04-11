@@ -1,0 +1,22 @@
+{
+addDriverDetailsAjax       : true,
+validateDateOfBirth        : false,
+showDateOfBirth            : false,
+validateGroup              : false,
+validateSalaryType         : false,
+validatePerDaySalary       : false,
+validateMobileNo           : true,
+validateEmployeeNumber     : false,
+validateStartDate          : false,
+validateJobTitle           : false,
+validateDLNumber           : true,
+allowDLNumber              : true,
+showAadharNumber           : false,
+validateAadhar             : false,
+showInsuranceNumber        : true,
+validateRenwalType         : false,
+validateRenewalPeriod      : false,
+validateRenewalThreshold   : false,
+validateRenwalDoc          : false
+
+}

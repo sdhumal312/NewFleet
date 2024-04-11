@@ -1,0 +1,300 @@
+{
+	"tableProperties": {
+		"enableColumnReOrder": true,
+		"showPrintButton": true,
+		"showExcelButton": true,
+		"gridDataId": "editReport",
+		"gridDataHeight": "500px",
+		"enableCellNavigation": false,
+		"divId": "container",
+		"frozenColumn": "-1",
+		"showSerialNumber": true,
+		"fullTableHeight": true,
+		"rowHeight": 30,
+		"forceFitColumns" : false,
+		"showGrouping": false,
+		"columnNumber": 1
+	},
+	"columnConfiguration": {
+		"1":  "Emp No",
+		"2": "Driver Name",
+		"3": "Date Of Birth",
+		"4": "Joining Date",
+		"5": "Status",
+		"6": "Authorised To Drive",
+		"7": "DL Number",
+		"8": "dlexpiryDate",
+		"9": "Renewal Status",
+		"10": "Renewal Document",
+		"11": "Badge No.",
+		"12": "Mobile No.",
+		"13": "Home Phone No.",
+		"14": "Address",
+		"15": "Aadhar",
+		"16": "Pan",
+		"17": "Bank Name",
+		"18": "A/c Number",
+		"19": "IFSC Code"
+	},
+
+	"Status": {
+		"tableDtoName": "driver_active",
+		"dataType": "text",
+		"labelid": "Driver Status",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	},
+	"Authorised To Drive": {
+		"tableDtoName": "driver_authorised",
+		"dataType": "text",
+		"labelid": "Authorised To Drive",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	},
+	"DL Number": {
+		"tableDtoName": "driver_dlnumber",
+		"dataType": "text",
+		"labelid": "DL Number",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	},
+	"Badge No.": {
+		"tableDtoName": "driver_badgenumber",
+		"dataType": "text",
+		"labelid": "Badge No.",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	},
+	"Mobile No.": {
+		"tableDtoName": "driver_mobnumber",
+		"dataType": "text",
+		"labelid": "Mobile No.",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	},
+"Home Phone No.": {
+		"tableDtoName": "driver_homenumber",
+		"dataType": "text",
+		"labelid": "Home Phone No.",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	},
+	"Address": {
+		"tableDtoName": "driver_address",
+		"dataType": "text",
+		"labelid": "Address",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	},
+	"Joining Date": {
+		"tableDtoName": "driverJoinDate",
+		"dataType": "text",
+		"labelid": "Date Of Joining",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	},
+	
+	
+	"Aadhar": {
+		"tableDtoName": "driver_aadharnumber",
+		"dataType": "text",
+		"labelid": "Aadhar Card number",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	},
+	"Pan": {
+		"tableDtoName": "driver_pannumber",
+		"dataType": "text",
+		"labelid": "Pan Card Number",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	,
+	"Bank Name": {
+		"tableDtoName": "driver_bankname",
+		"dataType": "text",
+		"labelid": "Bank Name",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	,
+	"A/c Number": {
+		"tableDtoName": "driver_banknumber",
+		"dataType": "text",
+		"labelid": "Bank Account Number",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	,
+	"IFSC Code": {
+		"tableDtoName": "driver_bankifsc",
+		"dataType": "text",
+		"labelid": "Bank IFSC Code",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	,
+	"Renewal Status": {
+		"tableDtoName": "dlStatus",
+		"dataType": "text",
+		"labelid": "Renewal Status",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	,
+	"Renewal Document": {
+		"tableDtoName": "dlImageLink",
+		"dataType": "text",
+		"labelid": "DL Uploaded",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	,
+	"Temprory Solution": {
+		"tableDtoName": "tempSolution",
+		"dataType": "text",
+		"labelid": "Temprory Solution",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	,
+	"Fix Solution": {
+		"tableDtoName": "fixSolution",
+		"dataType": "text",
+		"labelid": "Fix Solution",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	,
+	"future Planning": {
+		"tableDtoName": "futurePlan",
+		"dataType": "text",
+		"labelid": "future Planning",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	,
+	"Trip no.": {
+		"tableDtoName": "tripNumber",
+		"dataType": "text",
+		"labelid": "Trip no.",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	,
+	"Location": {
+		"tableDtoName": "location",
+		"dataType": "text",
+		"labelid": "Location",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	,
+	"Resolved Date": {
+		"tableDtoName": "resolvingDate",
+		"dataType": "text",
+		"labelid": "Resolved Date",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	,
+
+"Odometer": {
+		"tableDtoName": "issues_ODOMETER",
+		"dataType": "text",
+		"labelid": "Odometer",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	,
+	"Assigned By": {
+		"tableDtoName": "assignByName",
+		"dataType": "text",
+		"labelid": "Assigned By",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+		,
+	"Date Of Birth": {
+		"tableDtoName": "driver_dateofbirth",
+		"dataType": "text",
+		"labelid": "Date Of Birth",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	},	"Driver Name": {
+		"tableDtoName": "driverFullName",
+		"dataType": "text",
+		"labelid": "Driver Name",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}, "Emp No" :
+	{
+		"tableDtoName": "driver_empnumber",
+		"dataType": "text",
+		"labelid": "DriverNo/Emp No",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}, "dlexpiryDate" :
+	{
+		"tableDtoName": "dlexpiryDate",
+		"dataType": "text",
+		"labelid": "DL Expiry Date",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	
+}

@@ -1,0 +1,8 @@
+{
+ showJobTypeRemarkCol               : true,
+ showEditJobTypeRemark              : true,
+ showCompanyWisePrint               : true,
+ companyWisePrintOnClosedStatus     : true,
+ autoLabourAdd                      : true,
+ allowReasonRepairType              : false
+}

@@ -1,0 +1,173 @@
+{
+	   "tableProperties"	: {"enableColumnReOrder":true
+							,"showPrintButton":true
+							,"showExcelButton":true
+							,"gridDataId":"editReport"
+							,"gridDataHeight":"250px"
+							,"enableCellNavigation":false
+							,"divId":"container"
+							,"frozenColumn":"-1"
+							,"showSerialNumber":true
+							,"fullTableHeight": true
+							,"rowHeight":30
+							,"showGrouping":false
+							,"columnNumber":0
+							
+						}
+	,"columnConfiguration"	: {	
+								 "1":"VehicleNumber"
+								,"2":"TripSheetNumber"
+								,"3":"Trip_Open_Date"
+								,"4":"Dispatch_Time"
+								,"5":"Trip_Close_Time"
+								,"6":"NoOfDays"
+								,"7":"noOfLS"
+								,"8":"no_Of_WayBill"
+								,"9":"total_Frieght"
+								,"10":"total_Booking"
+								,"11":"total_weight"
+								,"12":"trip_expense"
+								,"13":"Balance"
+								,"14":"Route"
+								,"15":"Status"
+								
+						} 
+	
+						
+	,"VehicleNumber"		: {	 "tableDtoName":"vehicle_registration"
+							,"dataType":"text"
+							,"labelid":"Vehicle"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						
+						}
+						
+	,"Trip_Open_Date"		: {	 "tableDtoName":"tripOpenDate"
+							,"dataType":"text"
+							,"labelid":"Trip Open Date"
+							,"columnhidden":true
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":false
+						
+						}
+						
+						
+	,"TripSheetNumber"		: {	 "tableDtoName":"tripSheetNumberStr"
+							,"dataType":"text"
+							,"labelid":"TripSheet_Number"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	
+	,"Dispatch_Time"		: {	 "tableDtoName":"dispatchedByTime"
+							,"dataType":"text"
+							,"labelid":"Dispatch Time"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	,"Trip_Close_Time"		: {	 "tableDtoName":"closedByTime"
+							,"dataType":"text"
+							,"labelid":"TripSheet Close Time"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+	,"Route"		: {	 "tableDtoName":"routeName"
+							,"dataType":"text"
+							,"labelid":"Route"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+    ,"Status"		: {	 "tableDtoName":"tripSheetCurrentStatus"
+							,"dataType":"text"
+							,"labelid":"Status"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true	
+						
+						}
+						
+	,"total_Booking"		: {	 "tableDtoName":"totalBooking"
+							,"dataType":"number"
+							,"labelid":"Total Booking"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}	
+						
+	,"no_Of_WayBill"		: {	 "tableDtoName":"noOfWayBill"
+							,"dataType":"text"
+							,"labelid":"No Of LR"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}										
+	,"total_Frieght"		: {	 "tableDtoName":"totalFrieght"
+							,"dataType":"number"
+							,"labelid":"Total Frieght"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}		
+	,"total_weight"		: {	 "tableDtoName":"dispatchedWeight"
+							,"dataType":"number"
+							,"labelid":"Total Weight"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}																	
+	
+	,"noOfLS"		: {	 "tableDtoName":"noOfLS"
+							,"dataType":"number"
+							,"labelid":"No Of LS"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+							
+	,"trip_expense"		: {	 "tableDtoName":"tripExpense"
+							,"dataType":"number"
+							,"labelid":"Trip Expense"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}	
+						
+  ,"Balance"		: {	 "tableDtoName":"balanceAmount"
+							,"dataType":"number"
+							,"labelid":"Balance"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}	
+  ,"NoOfDays"       : {
+  						"tableDtoName":"noOfDays"
+  						,"dataType"   :"text"
+  						,"labelid"    :"No Of Days"
+  						,"columnhidden" : false
+  						,"showColumnTotal":false
+  						,"sortable"   : true
+  						,"show"		  : true
+  					}
+						
+								
+}

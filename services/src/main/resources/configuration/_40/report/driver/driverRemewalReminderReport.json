@@ -1,0 +1,220 @@
+{
+	"tableProperties": {
+		"enableColumnReOrder": true,
+		"showPrintButton": true,
+		"showExcelButton": true,
+		"gridDataId": "editReport",
+		"gridDataHeight": "500px",
+		"enableCellNavigation": false,
+		"divId": "container",
+		"frozenColumn": "-1",
+		"showSerialNumber": true,
+		"fullTableHeight": true,
+		"rowHeight": 30,
+		"forceFitColumns" : false,
+		"showGrouping": false,
+		"columnNumber": 1
+	},
+	"columnConfiguration": {
+		"1": "Name",
+		"2": "Badge No.",
+		"3": "Driver Status",
+		"4": "Authorised To Drive",
+		"5": "DL Number",
+		"6": "Validity_From",
+		"7": "Validity_To",
+		"9": "Renewal Status",
+		"10": "Renewal Document",
+		"11": "Receipt No",
+		"12": "Receipt Date",
+		"13": "Uploaded Receipt",
+		"14": "Mobile No.",
+		"15": "Home Phone No.",
+		"16": "Address"
+	},
+
+	"Driver Status": {
+		"tableDtoName": "driverStatus",
+		"dataType": "text",
+		"labelid": "Driver Status",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	},
+	"Authorised To Drive": {
+		"tableDtoName": "driverAuthorised",
+		"dataType": "text",
+		"labelid": "Authorised To Drive",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	},
+	"DL Number": {
+		"tableDtoName": "driver_dlnumber",
+		"dataType": "text",
+		"labelid": "DL Number",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	},
+	"Badge No.": {
+		"tableDtoName": "drivedBadgeNo",
+		"dataType": "text",
+		"labelid": "Badge No.",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	},
+	"Mobile No.": {
+		"tableDtoName": "mobileNumber",
+		"dataType": "text",
+		"labelid": "Mobile No.",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	},
+"Home Phone No.": {
+		"tableDtoName": "homeNumber",
+		"dataType": "text",
+		"labelid": "Home Phone No.",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	},
+	"Address": {
+		"tableDtoName": "driverAddress",
+		"dataType": "text",
+		"labelid": "Address",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	},
+
+	"Renewal Status": {
+		"tableDtoName": "dlStatus",
+		"dataType": "text",
+		"labelid": "Renewal Status",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	,
+	"Renewal Document": {
+		"tableDtoName": "driver_filename",
+		"dataType": "text",
+		"labelid": "Renewal Document",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	,
+	"Validity_From": {
+		"tableDtoName": "driver_dlfrom_show",
+		"dataType": "text",
+		"labelid": "Validity From",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	,
+	"Validity_To": {
+		"tableDtoName": "driver_dlto_show",
+		"dataType": "text",
+		"labelid": "Validity To",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	,
+	"Receipt No": {
+		"tableDtoName": "receiptNumber",
+		"dataType": "text",
+		"labelid": "Receipt No",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	,
+	"Receipt Date": {
+		"tableDtoName": "receiptDate",
+		"dataType": "text",
+		"labelid": "Receipt Date",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	,
+	"Uploaded Receipt": {
+		"tableDtoName": "receiptDoc",
+		"dataType": "text",
+		"labelid": "Uploaded Receipt",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	,
+	"Resolved Date": {
+		"tableDtoName": "resolvingDate",
+		"dataType": "text",
+		"labelid": "Resolved Date",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	,
+
+"Odometer": {
+		"tableDtoName": "issues_ODOMETER",
+		"dataType": "text",
+		"labelid": "Odometer",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	,
+	"Assigned By": {
+		"tableDtoName": "assignByName",
+		"dataType": "text",
+		"labelid": "Assigned By",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+		,
+	"Date Of Birth": {
+		"tableDtoName": "driver_dateofbirth",
+		"dataType": "text",
+		"labelid": "Date Of Birth",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	,	"Name": {
+		"tableDtoName": "fullName",
+		"dataType": "text",
+		"labelid": "Name",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	
+}

@@ -1,0 +1,8 @@
+{
+lorryHireIncomeId					  : 2415,
+allowBackDateEntry                    : true,
+noOfDaysForBackDate                   : 90,
+showAlwaysDispatchTime                : true,
+tripsheetColorPrint      			  : true,
+showTwelveHourClockFormat			  : true
+}

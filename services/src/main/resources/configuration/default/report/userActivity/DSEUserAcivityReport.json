@@ -1,0 +1,141 @@
+{ 
+"tableProperties"	: {"enableColumnReOrder":true
+							,"showPrintButton":true
+							,"showExcelButton":true
+							,"gridDataId":"editReport"
+							,"gridDataHeight":"500px"
+							,"enableCellNavigation":false
+							,"divId":"container"
+							,"frozenColumn":"-1"
+							,"showSerialNumber":true
+							,"fullTableHeight": true
+							,"rowHeight":30
+							,"showGrouping":false
+							,"columnNumber":0
+							
+					}
+		,"columnConfiguration"	: {	
+								"10":"User_Name"
+								,"1":"DSE No"
+								,"2":"Vehicle"
+								,"3":"Vendor"
+								,"4":"Invoice Number"
+								,"5":"Invoice Date"
+								,"6":"Job Number"
+								,"7":"Cost"
+								,"8":"Created On"
+								,"9":"Last Updated On"
+
+						} 
+						
+						
+						
+	,"User_Name"		: {	 "tableDtoName":"createdBy"
+							,"dataType":"text"
+							,"labelid":"User_Name"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+	
+						
+	,"DSE No"		: {	 "tableDtoName":"dealerServiceEntriesNumberStr"
+							,"dataType":"text"
+							,"labelid":"DSE No"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+						
+	,"Vehicle"		: {	 "tableDtoName":"vehicleNumber"
+							,"dataType":"text"
+							,"labelid":"Vehicle"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+						
+						
+	,"Created On"		: {	 "tableDtoName":"creationDate"
+							,"dataType":"text"
+							,"labelid":"Created On"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+						
+			
+	,"Vendor"		: {	 "tableDtoName":"vendorName"
+							,"dataType":"text"
+							,"labelid":"Vendor"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+						
+
+	
+	,"Invoice Number"		: {	 "tableDtoName":"invoiceNumber"
+							,"dataType":"text"
+							,"labelid":"Invoice Number"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+						
+	,"Invoice Date"		: {	 "tableDtoName":"invoiceDateStr"
+							,"dataType":"text"
+							,"labelid":"Invoice Date"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+						
+						
+	,"Job Number"		: {	 "tableDtoName":"jobNumber"
+							,"dataType":"text"
+							,"labelid":"Job Number"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+						
+	,"Cost"		: {	 "tableDtoName":"totalInvoiceCost"
+							,"dataType":"text"
+							,"labelid":"Cost"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+							
+						}
+						
+
+
+	,"Last Updated On"		: {	 "tableDtoName":"lastUpdatedDate"
+							,"dataType":"text"
+							,"labelid":"Last Updated On"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+
+						
+
+								
+}

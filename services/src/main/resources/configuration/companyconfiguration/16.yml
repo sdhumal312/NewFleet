@@ -1,0 +1,13 @@
+# this is default property
+
+vehicleGroupWisePermission : true
+
+tallyCompanyWisePermission  : true
+
+subPartLocationTypeNeeded  : true
+
+subCompanyInPO  : true
+
+showVehicleGroupWiseCompany : true
+
+allowToTakeVehicleNoAsLedgerNameIfNotConfigure : false

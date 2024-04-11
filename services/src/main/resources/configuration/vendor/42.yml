@@ -1,0 +1,5 @@
+{
+   validatePrimaryContactName         : false,
+   validatePrimaryContactNum         : false,
+   validatePrimaryContactEmail        : false 
+}

@@ -1,0 +1,61 @@
+{
+	  "tableProperties"	: {"enableColumnReOrder":true
+							,"showPrintButton":true
+							,"showExcelButton":true
+							,"gridDataId":"editReport"
+							,"gridDataHeight":"500px"
+							,"enableCellNavigation":false
+							,"divId":"container"
+							,"frozenColumn":"-1"
+							,"showSerialNumber":true
+							,"fullTableHeight": true
+							,"rowHeight":30
+							
+						}
+	,"columnConfiguration"	: {	
+								"1":"vehicle"
+								,"2":"location"
+								,"3":"workOrderCount"
+								,"4":"workOrderCost"
+							  } 
+	
+	,"vehicle"				: {	 "tableDtoName":"vehicle_registration"
+							,"dataType":"text"
+							,"labelid":"Vehicle"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+						
+	,"location"		: {	 "tableDtoName":"partlocation_name"
+							,"dataType":"text"
+							,"labelid":"WareHouse Location"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"buttonCallback" : "workOrderDetails"
+							,"show":true
+						}
+						
+	,"workOrderCount"		: {	 "tableDtoName":"vehicleWorkOrdersCount"
+							,"dataType":"text"
+							,"labelid":"WorkOrder Count"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"buttonCallback" : "workOrderDetails"
+							,"show":true
+						}
+	
+	,"workOrderCost"		: {	 "tableDtoName":"totalworkorder_cost"
+							,"dataType":"text"
+							,"labelid":"WorkOrder Cost"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}
+						
+	
+}

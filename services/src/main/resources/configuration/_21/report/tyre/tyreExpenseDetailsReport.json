@@ -1,0 +1,85 @@
+{
+	  "tableProperties"	: {"enableColumnReOrder":true
+							,"showPrintButton":true
+							,"showExcelButton":true
+							,"gridDataId":"editReport"
+							,"gridDataHeight":"500px"
+							,"enableCellNavigation":false
+							,"divId":"container"
+							,"frozenColumn":"-1"
+							,"showSerialNumber":true
+							,"fullTableHeight": true
+							,"rowHeight":30
+							
+						}
+	,"columnConfiguration"	: {	
+								"1":"TYRE NO"
+								,"2":"INVOICE COST"
+								,"3":"ADDITIONAL EXPENSE"
+								,"4":"RETREAED COST"
+								,"5":"TOTAL" 
+								,"6":"TOTAL RUNNING KM" 
+								,"7":"COST PER KM" 
+						} 
+	
+	,"TYRE NO"	: {	 "tableDtoName":"tyreNumber"
+							,"dataType":"text"
+							,"labelid":"TYRE NO"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+						
+						
+	,"INVOICE COST"	: {	 "tableDtoName":"tyreInvoiceAmount"
+							,"dataType":"text"
+							,"labelid":"INVOICE COST"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}
+	
+	,"ADDITIONAL EXPENSE" : { "tableDtoName":"totalTyreExpenseAmount"
+							,"dataType":"text"
+							,"labelid":"ADDITIONAL EXPENSE"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}
+	,"RETREAED COST"			: {	 "tableDtoName":"retreadTyreInvoiceAmount"
+							,"dataType":"text"
+							,"labelid":"RETREAED COST"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : false
+							,"show":true
+						}
+	,"TOTAL"		: {	 "tableDtoName":"totalTyreExpenseCost"
+							,"dataType":"text"
+							,"labelid":"TOTAL"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : false
+							,"show":true
+						}
+	,"TOTAL RUNNING KM"		: {	 "tableDtoName":"tyreUsage"
+							,"dataType":"text"
+							,"labelid":"TOTAL RUNNING KM"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : false
+							,"show":true
+						}
+	,"COST PER KM"		: {	 "tableDtoName":"tyreCostPerKm"
+							,"dataType":"text"
+							,"labelid":"COST PER KM"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}
+	
+}

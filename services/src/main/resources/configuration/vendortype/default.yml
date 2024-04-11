@@ -1,0 +1,11 @@
+{
+useCommonVendorType			      : true,
+vehicleGroup					      : false,
+showtotalAmountVendorPaymentReport    : false,
+directPayment                         : true,
+vendorApprovalPayment                 : false,
+paymentMode                           : true,
+vendorPaymentFlavor3                  : true,
+showPartialPaymentOption			  : false,
+showTDSAndPayableAmount				  : false
+}

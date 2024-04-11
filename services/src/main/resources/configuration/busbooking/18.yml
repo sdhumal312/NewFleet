@@ -1,0 +1,14 @@
+{
+  showBookingDate : false,
+  showGstNumber : false,
+  showMobileNumber : false,
+  showPartyAddress : false,
+  showReportTo : false,
+  showReportToMob : false,
+  showReportToAddress : false,
+  showVehicleType : false,
+  showPlaceOfVisit : false,
+  showPerKMRate : true,
+  showHireAmount : false,
+  validateRate   : true
+}

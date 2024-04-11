@@ -1,0 +1,16 @@
+{
+ validateServiceReminder	              : true,
+ hideClosedTripSheet                    : false,
+ tripIncome                             : true,
+showTimeDuringCloseTripsheet            : true,
+allowIVLoadingSheetEntry                : true,
+loadingSheetSyncLink                    : "https://ivcargo.com/ivwebservices/LoadingSheetToTripSheetWS/getLoadingSheetToTripSheetData.do",
+showExpenseInPrintBeforeClosing         : false,
+loadingSheetIncomeId                    : 65,
+allTableRequiredBeforeClose                 : false,
+allowBackDateEntry                          : true,
+noOfDaysForBackDate                         : 45,
+dateRangeInDateWiseExpenseReport            : true,
+driverInputFieldInDateWiseExpenseReport     : true
+
+}

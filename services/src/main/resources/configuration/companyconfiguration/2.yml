@@ -1,0 +1,9 @@
+# this is boolean property
+
+
+
+vehicleGroupWisePermission : false
+
+cashBookWisePermission : false
+
+tripSheetFlavor : 2

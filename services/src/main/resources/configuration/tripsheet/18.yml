@@ -1,0 +1,7 @@
+{
+driver2	                              : false,
+conductor                             : false,
+cleaner                               : false,
+hideGroupService                      : true,
+showTypePlaceRefInIncomeExpense		  : false
+}

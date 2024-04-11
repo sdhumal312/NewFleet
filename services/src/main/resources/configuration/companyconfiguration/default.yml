@@ -1,0 +1,94 @@
+# this is default property
+
+vehicleGroupWisePermission : false
+
+cashBookWisePermission : false
+
+partLocationWisePermission : false
+
+cashBookClosedDateView : 30
+
+tripSheetFlavor : 1
+
+subRouteTypeNeeded  : true
+
+vehicleGroupWiseRoute : false
+
+vehicleGroupWisePerInRenewal : false
+
+serviceReminderListByDate : 7
+
+showVehicleCreationReport : false
+
+
+isOTPValidationAtLogin : false
+# 1= SMS , 2 = Email , 3 = BOTH
+OTPSendToType : 2
+
+forceUserToResetPassword : false
+
+noOfDaysToResetPassword  : 90
+
+tallyCompanyWisePermission  : false
+
+showBranchInchargeAndTime  : false
+
+showBranchProperty  : false
+
+showBranchOwnership  : false
+
+subPartLocationTypeNeeded  : false
+
+subCompanyInPO  : false
+
+showCompanyDropdownInConsumptionSummary : false
+
+showVehicleGroupWiseCompany : false
+
+allowBankPaymentDetails    : false
+
+validateBankPaymentDetails  : false
+
+bankPaymentStatementIvPath  : ""
+
+castStatementIvPath : ""
+
+showIvCargoLogoWithLink	: false
+
+tallyHeaderForFuelExpense : "Diesel Expense"
+
+tallyHeaderForCashPaymentOfApproval : "Miscellaneous Expenses"
+
+allowToTakeVehicleNoAsLedgerNameIfNotConfigure : false
+
+allowTallyIntegrationWithoutApproval	: false
+
+getBankPaymentDetails : false
+
+selectDefaultTallyCompany : false
+
+defaultTallyCompanyId	: 0
+
+doNotBifurcateTripExpense : false
+
+tyreExpenseLedgeName : "Motor Part Expense"
+
+setFixedRenewalLedgerName : false
+
+renewalLedgerName : "TAX and INSURANCE A/C"
+
+LMTautoUser : ""
+
+
+
+
+
+
+
+
+
+
+
+
+
+

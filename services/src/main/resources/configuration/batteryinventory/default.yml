@@ -1,0 +1,14 @@
+{
+showBatteryInventoryPrint    			: false,
+tallyIntegrationRequired     			: false,
+addBatteryInventoryDocument     		: false,
+editBatteryInventoryDocument     		: false,
+downloadBatteryInventoryDocument     	: false,
+showSubLocation      					: false,  
+mainLocationIds      					: "",
+discountTaxTypeId						: 1,
+roundupAmount 							: false,
+validateInvoiceNumber                   : false, 
+oldBatteryMove                          : false 
+
+}

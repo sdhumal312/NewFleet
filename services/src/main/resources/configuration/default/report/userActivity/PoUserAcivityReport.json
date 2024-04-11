@@ -1,0 +1,166 @@
+{ 
+"tableProperties"	: {"enableColumnReOrder":true
+							,"showPrintButton":true
+							,"showExcelButton":true
+							,"gridDataId":"editReport"
+							,"gridDataHeight":"500px"
+							,"enableCellNavigation":false
+							,"divId":"container"
+							,"frozenColumn":"-1"
+							,"showSerialNumber":true
+							,"fullTableHeight": true
+							,"rowHeight":30
+							,"showGrouping":false
+							,"columnNumber":0
+							
+					}
+	,"columnConfiguration"	: {	
+								"13":"User_Name"
+								,"1":"PO Number"
+								,"2":"PO Type"
+								,"11":"Created On"
+								,"3":"Date Required"
+								,"4":"Vendor"
+								,"5":"Buyer"
+								,"6":"Terms"
+								,"7":"Invoice No"
+								,"8":"Indent"
+								,"12":"Last Updated On"
+								,"9":"Amount"
+
+						} 
+						
+						
+						
+	,"User_Name"		: {	 "tableDtoName":"userName"
+							,"dataType":"text"
+							,"labelid":"User_Name"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+	
+						
+	,"PO Number"		: {	 "tableDtoName":"purchaseorderNumberStr"
+							,"dataType":"text"
+							,"labelid":"PO Number"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+						
+	,"PO Type"		: {	 "tableDtoName":"purchaseorder_type"
+							,"dataType":"text"
+							,"labelid":"PO Type"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+						
+						
+	,"Created On"		: {	 "tableDtoName":"purchaseorder_created_on"
+							,"dataType":"text"
+							,"labelid":"Created On"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+						
+			
+	,"Date Required"		: {	 "tableDtoName":"purchaseorder_requied_on"
+							,"dataType":"text"
+							,"labelid":"Date Required"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+						
+
+	
+	,"Buyer"		: {	 "tableDtoName":"purchaseorder_buyer"
+							,"dataType":"text"
+							,"labelid":"Buyer"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	,"Vendor"		: {	 "tableDtoName":"purchaseorder_vendor_name"
+							,"dataType":"text"
+							,"labelid":"Vendor"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+						
+						
+	,"Terms"		: {	 "tableDtoName":"purchaseorder_terms"
+							,"dataType":"text"
+							,"labelid":"Terms"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+						
+	,"Status"		: {	 "tableDtoName":"issues_STATUS"
+							,"dataType":"text"
+							,"labelid":"Status"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+						
+	,"Invoice No"		: {	 "tableDtoName":"purchaseorder_invoiceno"
+							,"dataType":"text"
+							,"labelid":"Invoice No"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+	,"Indent"		: {	 "tableDtoName":"purchaseorder_indentno"
+							,"dataType":"text"
+							,"labelid":"Indent"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+	,"Last Updated On"		: {	 "tableDtoName":"lastupdated"
+							,"dataType":"text"
+							,"labelid":"Last Updated On"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+	,"Amount"		: {	 "tableDtoName":"purchaseorder_totalcost"
+							,"dataType":"text"
+							,"labelid":"Amount"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+							
+						}
+						
+
+								
+}

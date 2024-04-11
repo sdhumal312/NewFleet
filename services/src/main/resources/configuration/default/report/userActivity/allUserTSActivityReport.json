@@ -1,0 +1,110 @@
+{ 
+"tableProperties"	: {"enableColumnReOrder":true
+							,"showPrintButton":true
+							,"showExcelButton":true
+							,"gridDataId":"editReport"
+							,"gridDataHeight":"500px"
+							,"enableCellNavigation":false
+							,"divId":"container"
+							,"frozenColumn":"-1"
+							,"showSerialNumber":true
+							,"fullTableHeight": true
+							,"rowHeight":30
+							,"showGrouping":true
+							,"columnNumber":0
+							
+					}
+	,"columnConfiguration"	: {	
+								"1":"User_Name"
+								,"2":"TS_Number"
+								,"3":"vehicle_registration"
+								,"4":"vehicle_Group"
+								,"5":"Trip_Open_Date"
+								,"6":"Trip_Close_Date"
+								,"7":"created"
+								,"8":"lastupdated"
+
+																 
+						} 
+						
+						
+						
+		,"User_Name"		: {	 "tableDtoName":"userName"
+							,"dataType":"text"
+							,"labelid":"User_Name"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+	,"TS_Number"		: {	 "tableDtoName":"tripSheetNumberStr"
+							,"dataType":"text"
+							,"labelid":"TS_Number"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+	,"vehicle_registration"		: {	 "tableDtoName":"vehicle_registration"
+							,"dataType":"text"
+							,"labelid":"vehicle_registration"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	
+						
+						
+	,"Trip_Open_Date"		: {	 "tableDtoName":"tripOpenDate"
+							,"dataType":"text"
+							,"labelid":"Trip_Open_Date"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+,"Trip_Close_Date"		: {	 "tableDtoName":"closetripDate"
+							,"dataType":"text"
+							,"labelid":"Trip_Close_Date"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+						
+						
+	,"vehicle_Group"		: {	 "tableDtoName":"vehicle_Group"
+							,"dataType":"text"
+							,"labelid":"vehicle_Group"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+						
+
+	
+	,"created"		: {	 "tableDtoName":"created"
+							,"dataType":"text"
+							,"labelid":"created"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	,"lastupdated"		: {	 "tableDtoName":"lastupdated"
+							,"dataType":"text"
+							,"labelid":"lastupdated"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+								
+}

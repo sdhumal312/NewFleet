@@ -1,0 +1,22 @@
+{showCategoryOption		      : true,
+showRouteOption		          : true,
+setDefaultServerDateAndTime   : true,
+allowedMobNotification        : true,
+showDateWiseOverdue           : true,
+hideLowStatus                 : true,
+hideHighStatus                : true,
+resolveIssueViaOnlyWODSE      : true,
+additionalInfoInIssueView     : true,
+showVehicleTypeAndMaker       : true,
+showVehicleGroup              : false,
+showLocation                  : true,
+
+multipleIssues                : true,
+closureWithRemark             : true,
+issueAnalysis                 : true,
+issueAsignId                  : "admin",
+tyreAssginFromIssue           : true,
+tyreCategoryId                : 612,
+createIssueFromHealth         : false,
+validateOdometer              : true
+}

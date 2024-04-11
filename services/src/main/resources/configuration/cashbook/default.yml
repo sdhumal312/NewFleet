@@ -1,0 +1,20 @@
+{ 
+showCashBookStatus                : true,
+showLinkRefLink                   : false,
+showGstNoCol                      : false,
+showApprovalButton                : true,
+AllowEditAfterClose               : false,
+isAutoVoucherNumber               : false,
+linkingNotNeededToGroup           : "0",
+closeDatePayment                  : 20,
+missingCashbookBackDateStart      : 1,
+missingCashbookBackDateEnd        : 153,
+oldCashbookBackDateStart          : 1,
+oldCashbookBackDateEnd            : 15,
+closeCashBookDaily                : false,
+allowZeroAmountCashBook           : false,
+addDriverBalanceInCashBook        : false,
+checkAuthorityForCashBook         : false,
+addDueExpenseInCashBook			  : false,
+viewCashReference			      : false
+}

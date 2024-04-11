@@ -1,0 +1,59 @@
+{
+	  "tableProperties"	: {"enableColumnReOrder":true
+							,"showPrintButton":true
+							,"showExcelButton":true
+							,"gridDataId":"editReport"
+							,"gridDataHeight":"500px"
+							,"enableCellNavigation":false
+							,"divId":"container"
+							,"frozenColumn":"-1"
+							,"showSerialNumber":true
+							,"fullTableHeight": true
+							,"rowHeight":30
+							
+						}
+	,"columnConfiguration"	: {	
+								 "1":"PartLocation"
+								,"2":"PartName"
+								,"3":"Date"
+								,"4":"Stock"
+								
+																 
+						} 
+	
+						
+	,"PartLocation"		: {	 "tableDtoName":"locationName"
+							,"dataType":"text"
+							,"labelid":"Location Name"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	,"PartName"		: {	 "tableDtoName":"partName"
+							,"dataType":"text"
+							,"labelid":"Part Name"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	,"Date"		: {	 "tableDtoName":"transactionDateStr"
+							,"dataType":"text"
+							,"labelid":"Date"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+	,"Stock"		: {	 "tableDtoName":"addedQuantity"
+							,"dataType":"text"
+							,"labelid":"Quantity"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}
+	
+}

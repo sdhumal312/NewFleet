@@ -1,0 +1,7 @@
+{
+  AllowWSFuelEntry             : true,
+  lastFuelAsOpen               : true,
+  showTripSheetDropDown        : true,
+  noOfDaysToShowTripSheet      : 10,
+  noOfDaysForBackDate          : 45
+}

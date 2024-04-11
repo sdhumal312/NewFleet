@@ -1,0 +1,33 @@
+{
+ hideAddPenalty	: false,
+ hideOverTimeColumn : false,
+ showFixedExpenseButton : true,
+ showChaloDetails : false,
+ 
+ # trip collection close and trip daily report configurations
+ 
+ routeInDiffColumn : false,
+ driverConductorDiffColumn : false,
+ showDieselAmount : false,
+ hideActualCollection : false,
+ hideWtPenalty : false,
+ hideOT : false,
+ diffBalanceFormula : false,
+
+
+subrouteService : true,
+
+
+showEPK : false,
+
+
+showRfidPass                  : false,
+showRifdAmnt                   : false,
+
+hideWT                          : true,
+hideEPK                         : true,
+netCollection                   : false,
+totalBalance                    : false,
+dieselAmount                    : false,
+diffTotalNetCollectionFormula   : false
+}

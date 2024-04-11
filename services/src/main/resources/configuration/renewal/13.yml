@@ -1,0 +1,10 @@
+{
+saveRenewalWithoutFile : true,
+optionalInformation	   : false,
+receiptnumbershow      : false,
+modeofaaymentshow      : false,
+cashtransactionshow    : false,
+paidDateshow           : false,
+paidbyshow             : false
+              
+}

@@ -1,0 +1,19 @@
+{ 
+  allowGPSIntegration : true,
+  gpsFlavor : 3,
+  smtcUsername : "shrinathcargo123@gmail.com",
+  smtcpassword : "Shrinath004",
+  smtcHashUrl : "http://track.smtcsystem.com/api-v2/user/auth",
+  smtcTrackerUrl : "http://track.smtcsystem.com/api-v2/contact/list",
+  smtcDataUrl : "http://track.smtcsystem.com/api-v2/track/list",
+  multipleAccountForSameVendor    : true,
+  trackNowAuthorization    : "c2hyaW5hdGh0OnNocmluYXRoQDQ1Ng==",
+  trackNowUrl : "https://api.tracknowgps.in/api/v1/index.php/getReportsDevName/cust_summary/",
+  tataAPILink : "http://env-5107063.cloudjiffy.net:7777/getOdometerInBetweenDates",
+  tataAPISingleDateLink : "http://env-5107063.cloudjiffy.net:7777/getTataOdometer",
+  fleetexURL : "https://api.fleetx.io/api/v1/trips/distance/bulk?",
+  fleetexCookie : "b3c25992-6fe1-453a-bc56-68ca7a7ff6f7",
+  eicherURL     : "https://partnerapi.vecv.net/tracking/vehicletracking",
+  X-IBM-Client-Id : "e035ba14-36d3-4ded-81e2-34168ed23a70",
+  X-IBM-Client-Secret : "vC3uD0wD1mT6uH5tO5tQ1uO1lB6dN4vB7wH3kB2tK1eS4eC8eL"
+}

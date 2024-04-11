@@ -1,0 +1,131 @@
+{
+	"tableProperties": {
+		"enableColumnReOrder": true,
+		"showPrintButton": true,
+		"showExcelButton": true,
+		"gridDataId": "editReport",
+		"gridDataHeight": "500px",
+		"enableCellNavigation": false,
+		"divId": "container",
+		"frozenColumn": "-1",
+		"showSerialNumber": true,
+		"fullTableHeight": true,
+		"rowHeight": 30,
+		"forceFitColumns" : true,
+		"showGrouping": true,
+		"columnNumber": 0
+	},
+	"columnConfiguration": {
+		"1": "Vehicle",
+		"2": "Depot",
+		"3": "Vehicle Type",
+		"4": "RenewalType",
+		"5": "RenewalSubType",
+		"6": "Policy Number",
+		"7": "Status",
+		"8": "Policy Expiry Date",
+		"9": "Uploaded Doc",
+		"10": "Amount"
+	},
+	"RenewalSubType": {
+		"tableDtoName": "renewal_subtype",
+		"dataType": "text",
+		"labelid": "Renewal SubType",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	},	
+
+	"Depot": {
+		"tableDtoName": "branchName",
+		"dataType": "text",
+		"labelid": "DEPOT",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	},
+	
+	"Status": {
+		"tableDtoName": "renewalDueStatus",
+		"dataType": "text",
+		"labelid": "Status",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	},
+	
+	"Vehicle": {
+		"tableDtoName": "vehicle_registration",
+		"dataType": "text",
+		"labelid": "Vehicle",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	,
+	"Vehicle Type": {
+		"tableDtoName": "vehicleType",
+		"dataType": "text",
+		"labelid": "Vehicle Type",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	,
+	"Policy Number": {
+		"tableDtoName": "renewal_receipt",
+		"dataType": "text",
+		"labelid": "Policy/Receipt Number",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	,
+	"Policy Expiry Date": {
+		"tableDtoName": "renewal_to",
+		"dataType": "text",
+		"labelid": "Expiry Date",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	,
+	"Uploaded Doc": {
+		"tableDtoName": "renewalBase64Document",
+		"dataType": "text",
+		"labelid": "Uploaded Doc",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	,
+	"Amount": {
+		"tableDtoName": "renewal_Amount",
+		"dataType": "text",
+		"labelid": "Amount",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	
+	,
+	"RenewalType": {
+		"tableDtoName": "renewal_type",
+		"dataType": "text",
+		"labelid": "Renewal Type",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+		
+}

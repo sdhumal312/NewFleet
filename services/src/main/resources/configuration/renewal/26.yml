@@ -1,0 +1,6 @@
+{
+saveRenewalWithoutFile                : false,
+optionalInformation                   : true,
+validateReferenceNumber               : false
+
+}

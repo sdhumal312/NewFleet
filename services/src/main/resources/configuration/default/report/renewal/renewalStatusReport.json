@@ -1,0 +1,88 @@
+{
+		 "tableProperties"	: {
+	 							 "enableColumnReOrder":true
+								,"showPrintButton":true
+								,"showExcelButton":true
+								,"gridDataId":"editReport"
+								,"gridDataHeight":"500px"
+								,"enableCellNavigation":false
+								,"divId":"container"
+								,"frozenColumn":"-1"
+								,"showSerialNumber":true
+								,"fullTableHeight": true
+								,"rowHeight":30
+							}
+	,"columnConfiguration" 	: {	
+								 "1":"Vehicle"
+								,"2":"RRNO"
+								,"3":"RenewalType"
+								,"4":"RenewalSubType"
+								,"5":"FromDate"
+								,"6":"ToDate"
+								
+							} 
+	
+						
+	,"Vehicle"			: {	 
+								 "tableDtoName":"vehicle_registration"
+								,"dataType":"text"
+								,"labelid":"Vehicle"
+								,"columnhidden":false
+								,"showColumnTotal":false
+								,"sortable" : true
+								,"show":true
+								,"buttonCallback" : "showUreaEntry"
+								,"inputElement" : "link"
+							}
+	,"RenewalType"					: {	 
+								 "tableDtoName":"renewal_type"
+								,"dataType":"text"
+								,"labelid":"Renewal Type"
+								,"columnhidden":false
+								,"showColumnTotal":false
+								,"sortable" : true
+								,"show":true
+							}	
+						
+	,"RRNO"			: {	 
+								 "tableDtoName":"renewal_R_Number"
+								,"dataType":"text"
+								,"labelid":"RR No"
+								,"columnhidden":false
+								,"showColumnTotal":false
+								,"sortable" : true
+								,"show":true
+								,"buttonCallback" : "showVehicle"
+								,"inputElement" : "link"
+							}										
+							
+	,"RenewalSubType"				: {	 
+								 "tableDtoName":"renewal_subtype"
+								,"dataType":"text"
+								,"labelid":"Renewal Sub Type"
+								,"columnhidden":false
+								,"showColumnTotal":false
+								,"sortable" : true
+								,"show":true
+							}
+	,"FromDate"				: {	 
+								 "tableDtoName":"renewal_from"
+								,"dataType":"text"
+								,"labelid":"Start Date"
+								,"columnhidden":false
+								,"showColumnTotal":false
+								,"sortable" : true
+								,"show":true
+							}
+	,"ToDate"				: {	 
+								 "tableDtoName":"renewal_to"
+								,"dataType":"text"
+								,"labelid":"Expiry Date"
+								,"columnhidden":false
+								,"showColumnTotal":false
+								,"sortable" : true
+								,"show":true
+							}
+	
+	
+}

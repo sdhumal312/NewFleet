@@ -1,0 +1,98 @@
+{
+	"tableProperties": {
+		"enableColumnReOrder": true,
+		"showPrintButton": true,
+		"showExcelButton": true,
+		"gridDataId": "editReport",
+		"gridDataHeight": "500px",
+		"enableCellNavigation": false,
+		"divId": "container",
+		"frozenColumn": "-1",
+		"showSerialNumber": true,
+		"fullTableHeight": true,
+		"rowHeight": 30,
+		"forceFitColumns" : true,
+		"showGrouping": false,
+		"columnNumber": 0
+	},
+	"columnConfiguration": {
+		"1": "Requisition_No",
+		"2": "RequireDate",
+		"3": "Location",
+		"4": "Assign To",
+		"5": "Status",
+		"6": "Reference Number",
+		"7": "Remark"
+		
+		
+	},
+		"Requisition_No": {
+		"tableDtoName": "requisitionNumStr",
+		"dataType": "text",
+		"labelid": "Requisition_No",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	},
+	"RequireDate": {
+		"tableDtoName": "requireOnStr",
+		"dataType": "text",
+		"labelid": "RequireDate",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+		},
+
+	"Location": {
+		"tableDtoName": "locationName",
+		"dataType": "text",
+		"labelid": "Location",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": false,
+		"show": true
+	},	
+	"Assign To": {
+		"tableDtoName": "assignToName",
+		"dataType": "text",
+		"labelid": "Assign To",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": false,
+		"show": true
+	},
+	"Status": {
+		"tableDtoName": "requisitionStatusName",
+		"dataType": "text",
+		"labelid": "Status",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+		},
+	"Reference Number": {
+		"tableDtoName": "refNumber",
+		"dataType": "text",
+		"labelid": "Reference Number",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": false,
+		"show": true
+	},
+	
+	"Remark": {
+		"tableDtoName": "remark",
+		"dataType": "text",
+		"labelid": "Remark",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": false,
+		"show": true
+	
+	}
+	
+	}
+	
+		

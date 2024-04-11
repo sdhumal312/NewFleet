@@ -1,0 +1,13 @@
+{
+eachTotalCost                : true,
+totalGstCost                 : true,
+totalDiscountCost            : true,
+finalTotalCost               : true,
+finalBalanceCost             : true,
+defaultShipVia               : true,
+showQuoteNumber              : false,
+ManualIndentNo               : false,
+WorkOrderNo                  : false,
+previousPOpartRate           : true,
+locationWisePartCount        : true
+}

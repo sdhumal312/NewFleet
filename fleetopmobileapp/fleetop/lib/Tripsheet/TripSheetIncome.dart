@@ -1,0 +1,1902 @@
+import 'dart:convert';
+import 'dart:io';
+
+//import 'package:awesome_dialog/awesome_dialog.dart';
+import 'package:datetime_picker_formfield/datetime_picker_formfield.dart';
+import 'package:fleetop/appTheme.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
+import 'package:rflutter_alert/rflutter_alert.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:flutter_typeahead/flutter_typeahead.dart';
+import 'package:image_picker/image_picker.dart';
+import 'package:flutter_image_compress/flutter_image_compress.dart';
+import '../apicall.dart';
+import '../fleetopuriconstant.dart';
+import '../flutteralert.dart';
+import 'TripsheetShow.dart';
+
+class TripSheetIncome extends StatefulWidget {
+
+  final Function tripsheetShowData;
+
+  TripSheetIncome({this.tripsheetShowData, this.tripsheetId});
+  final int tripsheetId;
+
+  @override
+  _TripSheetIncomeState createState() => _TripSheetIncomeState();
+}
+
+class _TripSheetIncomeState extends State<TripSheetIncome> {
+  bool showTripDetails = false;
+  bool showIncomeDetails = false;
+  bool AllowShortCutInTripSheet = false;
+  String companyId;
+  String email;
+  String userId;
+  int i = 0;
+  int tripsheetId;
+  String createdDate;
+  String tripsheetNumber;
+  String vehNumber;
+  String route;
+  String tripOpenDate;
+  String tripCloseDate;
+  String vehicle_Group;
+  String tripBookref;
+  String routeAttendancePoint;
+  String routeTotalLiter;
+  String tripFristDriverName;
+  String tripFristDriverMobile;
+  String tripSecDriverName;
+  String tripSecDriverMobile;
+  String tripCleanerName;
+  String tripCleanerMobile;
+  String tripOpeningKM;
+  String tripClosingKM;
+  String dispatchedBy;
+  String dispatchedLocation;
+  String dispatchedByTime;
+  String driverAdvanceId;
+  String incomeNameId;
+  var defaultSelectedIncome = "0";
+  String tripUsageKM;
+  String tripFristDriverRoutePoint;
+  String tripSecDriverRoutePoint;
+  String tripCleanerRoutePoint;
+  String closedBy;
+  String cloesdLocation;
+  String closedByTime;
+  String loadType;
+  String totalPOD;
+  String Remark;
+
+  TextEditingController incomeName = new TextEditingController();
+  TextEditingController incomeAmount = new TextEditingController();
+  TextEditingController incomeRef = new TextEditingController();
+
+  Map tripList = Map();
+  List incomeList = List();
+  List incomeDropDownList = List();
+  List incomeDropDownData = List();
+
+
+  @override
+  void initState() {
+    super.initState();
+    getTripsheetShowData(widget.tripsheetId);
+  }
+
+  getTripsheetShowData(int tripId) async {
+
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    companyId = prefs.getString("companyId");
+    userId = prefs.getString("userId");
+    email = prefs.getString("email");
+
+    var data = {'companyId': companyId, 'userId' : userId, 'email' : email, 'tripsheetId' : tripId.toString()};
+    var response = await ApiCall.getDataFromApi(
+        URI.ADD_INCOME_TRIPSHEET, data, URI.LIVE_URI, context);
+
+    tripList = response['TripSheet'];
+    incomeList = response['TripSheetIncome'];
+    AllowShortCutInTripSheet = response['AllowShortCutInTripSheet'];
+
+    setState(() {
+      tripsheetId = tripId;
+      createdDate = tripList['created'];
+      tripsheetNumber = tripList['tripSheetNumber'].toString();
+      vehNumber = tripList['vehicle_registration'];
+      route = tripList['routeName'];
+      tripOpenDate = tripList['tripOpenDate'];
+      tripCloseDate = tripList['closetripDate'];
+      vehicle_Group = tripList['vehicle_Group'];
+      tripBookref = tripList['tripBookref'];
+      routeAttendancePoint = tripList['routeAttendancePoint'].toString();
+      routeTotalLiter = tripList['routeTotalLiter'].toString();
+      tripFristDriverName = tripList['tripFristDriverName'];
+      tripFristDriverMobile = tripList['tripFristDriverMobile'];
+      tripSecDriverName = tripList['tripSecDriverName'];
+      tripSecDriverMobile = tripList['tripSecDriverMobile'];
+      tripCleanerName = tripList['tripCleanerName'];
+      tripCleanerMobile = tripList['tripCleanerMobile'];
+      tripOpeningKM = tripList['tripOpeningKM'].toString();
+      tripClosingKM = tripList['tripClosingKM'].toString();
+      dispatchedBy = tripList['dispatchedBy'];
+      dispatchedLocation = tripList['dispatchedLocation'];
+      dispatchedByTime = tripList['dispatchedByTime'];
+      tripUsageKM = tripList['tripUsageKM'].toString();
+      tripFristDriverRoutePoint = tripList['tripFristDriverRoutePoint'].toString();
+      tripSecDriverRoutePoint = tripList['tripSecDriverRoutePoint'].toString();
+      tripCleanerRoutePoint = tripList['tripCleanerRoutePoint'].toString();
+      closedBy = tripList['closedBy'];
+      cloesdLocation = tripList['cloesdLocation'];
+      closedByTime = tripList['closedByTime'];
+      loadType = tripList['loadTypeName'];
+      totalPOD = tripList['noOfPOD'].toString();
+      Remark = tripList['routeRemark'];
+    });
+
+    getTripIncomeList();
+
+  }
+
+  Future addIncome() async {
+    if (!fieldValidation()) {
+      return;
+    } else {
+
+      var incomeData = {
+        'email': email,
+        'userId': userId,
+        'companyId': companyId,
+        'tripsheetId': tripsheetId.toString(),
+        'incomeNameId': defaultSelectedIncome,
+        'incomeAmount': incomeAmount.text,
+        'incomeRef': incomeRef.text,
+      };
+
+      var response = await ApiCall.getDataFromApi(
+          URI.SAVE_INCOME_TRIPSHEET, incomeData, URI.LIVE_URI, context);
+
+      if(response != null){
+        if(response['alreadyIncome'] != null && response['alreadyIncome'] == true){
+          FlutterAlert.onErrorAlert(context, "Income Already Added !", "Error");
+        } else {
+          FlutterAlert.onSuccessAlert(context, " Tripsheet Income Added Successfully !", " Tripsheet Income ");
+        }
+      }
+      refreshData();
+      getTripsheetShowData(tripsheetId);
+    }
+
+  }
+
+  bool fieldValidation() {
+
+    if (defaultSelectedIncome == '0') {
+      FlutterAlert.onErrorAlert(
+          context, "Please Select Income Name !", "Error");
+      return false;
+    }
+
+    if (incomeAmount.text == '' || incomeAmount.text == '0') {
+      FlutterAlert.onErrorAlert(
+          context, "Please Select Income Amount Greater Than 0 !", "Error");
+      return false;
+    }
+
+    return true;
+  }
+
+  refreshData() {
+    incomeNameId = '';
+    incomeAmount.text = '';
+    incomeRef.text = '';
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.amber,
+        iconTheme: IconThemeData(
+          color: Colors.black,
+        ),
+        centerTitle: true,
+        title: Text(
+          "Add Income",
+          style: new TextStyle(
+            fontSize: 22,
+            color: Colors.white,
+            fontWeight: FontWeight.w700,
+          ),
+        ),
+        leading: new IconButton(
+          icon: new Icon(Icons.arrow_back, color: Colors.white),
+          onPressed: () =>
+          {
+            /*Navigator.push(context,new MaterialPageRoute(builder: (context) => new TripsheetShow (tripsheetId :tripsheetId)))*/
+            Navigator.pop(context),
+            Navigator.pop(context),
+            widget.tripsheetShowData()
+          },
+        ),
+      ),
+
+
+      backgroundColor: AppTheme.white,
+      body: Container(
+          child: SingleChildScrollView(
+              child: Center(
+                  child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: <Widget>[
+
+                        SizedBox(height: 5),
+                        RichText(
+                          text: TextSpan(
+                            children: <TextSpan>[
+                              new TextSpan(
+                                  text: " Created Date : ",
+                                  style: new TextStyle(
+                                    color: AppTheme.darkText,
+                                    fontWeight: FontWeight.w700,
+                                    fontSize: 17,
+                                  )
+                              ),
+
+                              new TextSpan(
+                                  text: " ${createdDate} ",
+                                  style: new TextStyle(
+                                    color: Colors.blue,
+                                    fontWeight: FontWeight.w700,
+                                    fontSize: 17,
+                                  )
+                              ),
+                            ],
+                          ),
+                        ),
+
+                        SizedBox(height: 25),
+                        Container(
+                          child: Align(
+                            alignment: Alignment.center,
+                            child: Text(
+                                "Trip Number : TS - ${tripsheetNumber}",
+                                style: TextStyle(fontWeight: FontWeight.w700, color: Colors.red, fontSize: 19)
+                            ),
+                          ),
+                        ),
+
+                        SizedBox(height: 5),
+                        Container(
+                          child: Align(
+                            alignment: Alignment.center,
+                            child: Text(
+                                "${vehNumber}",
+                                style: TextStyle(fontWeight: FontWeight.w700, color: Colors.green, fontSize: 15)
+                            ),
+                          ),
+                        ),
+
+                        SizedBox(height: 5),
+                        Container(
+                          child: Align(
+                            alignment: Alignment.center,
+                            child: Text(
+                                "${route}",
+                                style: TextStyle(fontWeight: FontWeight.w700, color: Colors.green, fontSize: 15)
+                            ),
+                          ),
+                        ),
+
+                        SizedBox(height: 15),
+                        Card(
+                          color: Colors.blue,
+                          child: Container(
+                            height: 50,
+                            child: Padding(
+                                padding: const EdgeInsets.only(left: 10, right: 10),
+                                child: Row(
+                                    mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Text(
+                                        "Tripsheet Details ",
+                                        style: new TextStyle(
+                                          fontSize: 18,
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.w600,
+                                        ),
+                                      ),
+
+                                      DialogButton(
+                                        width: 95,
+                                        height: 33,
+                                        color: Colors.white,
+                                        child: Text(
+                                          showTripDetails ? "Close" : "Open",
+                                          style: TextStyle(
+                                              color: Colors.purpleAccent,
+                                              fontSize: 20,
+                                              fontWeight:FontWeight.w500
+                                          ),
+                                        ),
+                                        /*gradient: LinearGradient(colors: [
+                                          Colors.greenAccent,
+                                          Colors.blueAccent
+                                        ]),*/
+                                        onPressed: () => {
+                                          setState(() {
+                                            showTripDetails =
+                                            !showTripDetails;
+                                          })
+                                        },
+                                      )
+                                    ])),
+                          ),
+                        ),
+                        Visibility(
+                            visible: showTripDetails,
+                            child:Stack(
+                              children: <Widget>[
+                                showTripInfo(context),
+                                /*ola(context),*/
+                              ],
+                            )
+                        ),
+
+
+                        SizedBox(height: 15),
+                        Card(
+                          color: Colors.pink,
+                          child: Container(
+                            height: 50,
+                            child: Padding(
+                                padding: const EdgeInsets.only(left: 10, right: 10),
+                                child: Row(
+                                    mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Text(
+                                        "Income Details ",
+                                        style: new TextStyle(
+                                          fontSize: 18,
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.w600,
+                                        ),
+                                      ),
+
+                                      DialogButton(
+                                        width: 95,
+                                        height: 33,
+                                        color: Colors.white,
+                                        child: Text(
+                                          showIncomeDetails ? "Close" : "Open",
+                                          style: TextStyle(
+                                              color: Colors.purpleAccent,
+                                              fontSize: 20,
+                                              fontWeight:FontWeight.w500
+                                          ),
+                                        ),
+                                        /*gradient: LinearGradient(colors: [
+                                          Colors.greenAccent,
+                                          Colors.blueAccent
+                                        ]),*/
+                                        onPressed: () => {
+                                          setState(() {
+                                            showIncomeDetails =
+                                            !showIncomeDetails;
+                                          })
+                                        },
+                                      )
+                                    ])),
+                          ),
+                        ),
+                        Visibility(
+                            visible: showIncomeDetails,
+                            child:Column(
+                              children: <Widget>[
+
+                                if(incomeList != null)
+                                  for(int i = 0;i<incomeList.length;i++)
+                                    showIncomePaymentDetails(incomeList[i],context),
+
+                              ],
+                            )
+                        ),
+//
+
+                        SizedBox(height: 30),
+                        Container(
+                          child: Align(
+                            alignment: Alignment.center,
+                            child: Text(
+                                "Add Income Details ",
+                                style: new TextStyle(
+                                  color: Colors.blueAccent,
+                                  fontWeight: FontWeight.w700,
+                                  fontSize: 15,
+                                )
+                            ),
+                          ),
+                        ),
+                        Container(
+                          height: 2.0,
+                          width: MediaQuery.of(context).size.width,
+                          color: Colors.blueAccent,
+                          margin: const EdgeInsets.only(left: 50.0, right: 50.0),
+                        ),
+
+                        SizedBox(height: 15),
+                         Container(
+                            height: 70,
+                            child: Padding(
+                              padding: const EdgeInsets.only(
+                                  top: 5.0, left: 10),
+                              child: Container(
+                                child: DropdownButtonHideUnderline(
+                                  child: Card(
+                                      elevation: 0.5,
+                                      color: Colors.white70,
+                                      child: Container(
+                                          padding:
+                                          EdgeInsets.all(17),
+                                          child: DropdownButton<
+                                              String>(
+                                            hint: Text(
+                                                "Income List"),
+                                            value:
+                                            defaultSelectedIncome,
+                                            isExpanded: true,
+                                            onChanged:
+                                                (String newValue) {
+                                              setState(() {
+                                                defaultSelectedIncome =
+                                                    newValue;
+                                              });
+                                            },
+                                            items: incomeDropDownData
+                                                .map((item) {
+                                              return new DropdownMenuItem(
+                                                child: new Text(
+                                                    item[
+                                                    'incomeName'],
+                                                    style: TextStyle(
+                                                        color: Colors
+                                                            .black,
+                                                        fontSize:
+                                                        20.0,
+                                                        fontFamily:
+                                                        "WorkSansBold")),
+                                                value: item[
+                                                'incomeId']
+                                                    .toString(),
+                                              );
+                                            }).toList(),
+                                          ))),
+                                ),
+                              ),
+                            ),
+                          ),
+
+
+                        SizedBox(height: 15),
+                        Container(
+                          child: Padding(
+                            padding: const EdgeInsets.only(
+                                top: 1.0, left: 10),
+                            child: Container(
+                              child: TextField(
+                                maxLines: 1,
+                                controller: incomeAmount,
+                                keyboardType: TextInputType.number,
+                                style:
+                                TextStyle(color: Colors.black),
+                                decoration: InputDecoration(
+                                  labelText: 'Income Amount',
+                                  hintText: "",
+                                  hintStyle: TextStyle(
+                                      color: Colors.black),
+                                  border: OutlineInputBorder(
+                                      borderRadius:
+                                      BorderRadius.circular(
+                                          5.0)),
+                                  icon: Icon(
+                                    Icons.credit_card,
+                                    color: Colors.blueAccent,
+                                  ),
+
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+
+                        SizedBox(height: 15),
+                        Container(
+                          child: Padding(
+                            padding: const EdgeInsets.only(
+                                top: 5.0, left: 10),
+                            child: Container(
+                              child: TextField(
+                                maxLines: 1,
+                                controller: incomeRef,
+                                style:
+                                TextStyle(color: Colors.black),
+                                decoration: InputDecoration(
+                                    labelText: 'Income Reference',
+                                    hintText: "",
+                                    hintStyle: TextStyle(
+                                        color: Colors.black),
+                                    border: OutlineInputBorder(
+                                        borderRadius:
+                                        BorderRadius.circular(
+                                            5.0)),
+                                    icon: Icon(
+                                      Icons.library_books,
+                                      color: Colors.amber,
+                                    )),
+                              ),
+                            ),
+                          ),
+                        ),
+
+                        SizedBox(height: 15),
+                        Container(
+                          child: Padding(
+                            padding: const EdgeInsets.only(
+                                top: 5.0, left: 10),
+                            child:
+                            new  RaisedButton(
+                              padding: const EdgeInsets.all(8.0),
+                              textColor: Colors.white,
+                              color: Colors.pink,
+                              onPressed: addIncome,
+                              child: Padding(
+                                padding:
+                                const EdgeInsets.symmetric(
+                                    vertical: 2.0,
+                                    horizontal: 15.0),
+                                child: Text(
+                                  "Add Income",
+                                  style: TextStyle(
+                                      fontSize: 18,
+                                      color: Colors.white,
+                                      fontWeight:
+                                      FontWeight.w500),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+
+                        SizedBox(height: 25),
+
+                      ]
+                  )
+              )
+          )
+      ),
+    );
+  }
+
+
+  Widget showIncomePaymentDetails(data,context)
+  {
+    Map incomeData = new Map();
+    incomeData = data;
+    if(incomeList.isNotEmpty)
+    {
+      return  Column(
+        children: <Widget>[
+          Card(
+            color:Colors.white70,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.only(
+                  bottomRight: Radius.circular(30),
+                  topRight: Radius.circular(30),
+                  bottomLeft: Radius.circular(30),
+                  topLeft: Radius.circular(30)),
+              //side: BorderSide(width: 5, color: Colors.green)
+            ),
+            child: Container(
+              height: 50,
+              child: Padding(
+                  padding: const EdgeInsets.only(left: 10, right: 10,top: 10),
+                  child: Row(
+                      mainAxisAlignment:
+                      MainAxisAlignment.spaceBetween,
+                      children: [
+
+                        new IconButton(
+                          icon: new Icon(
+                            Icons.info_outline,
+                            color: Colors.green,
+                          ),
+                          onPressed: () {
+                            showIncomePaidDetails(context, incomeData, "Income Details");
+                          },
+                        ),
+
+                        RichText(
+                          text: TextSpan(
+                            children: <TextSpan>[
+                              new TextSpan(
+                                  text: " Income : ",
+                                  style: new TextStyle(
+                                    color: AppTheme.darkText,
+                                    fontWeight: FontWeight.w700,
+                                    fontSize: 16,
+                                  )
+                              ),
+
+                              new TextSpan(
+                                  text: " \u20B9${data['incomeAmount'].toString()} ",
+                                  style: new TextStyle(
+                                    color: Colors.purple,
+                                    fontWeight: FontWeight.w700,
+                                    fontSize: 16,
+                                  )
+                              ),
+                            ],
+                          ),
+                        ),
+
+                        /*Text(
+                          " Income",
+                          style: new TextStyle(
+                            fontSize: 18,
+                            color: Colors.deepPurpleAccent,
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),*/
+
+                        new IconButton(
+                          icon: new Icon(
+                            Icons.delete,
+                            color: Colors.redAccent,
+                          ),
+                          onPressed: () {
+                            deleteIncome(incomeData);
+                          },
+                        ),
+
+                      ]
+                  )
+              ),
+            ),
+          ) ,
+        ],
+      );
+    }
+    else
+    {
+      return Container();
+    }
+  }
+
+
+  void showIncomePaidDetails(BuildContext context, Map data , String title) {
+
+    var alertStyle = AlertStyle(
+      animationType: AnimationType.fromBottom,
+      isCloseButton: false,
+      isOverlayTapDismiss: true,
+      descStyle: TextStyle(fontWeight: FontWeight.w700),
+      animationDuration: Duration(milliseconds: 400),
+      alertBorder: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(20.0),
+        side: BorderSide(
+          color: Colors.grey,
+        ),
+      ),
+      titleStyle: TextStyle(
+        color: Colors.red,
+      ),
+    );
+
+    Alert(
+      context: context,
+      style: alertStyle,
+      type: AlertType.info,
+      title: title,
+      content: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+
+          SizedBox(height: 15),
+          RichText(
+            text: TextSpan(
+              children: <TextSpan>[
+                new TextSpan(
+                    text: " Income Name : ",
+                    style: new TextStyle(
+                      color: AppTheme.darkText,
+                      fontWeight: FontWeight.w700,
+                    )
+                ),
+
+                new TextSpan(
+                    text: " ${data['incomeName']} ",
+                    style: new TextStyle(
+                      color: Colors.purple,
+                      fontWeight: FontWeight.w700,
+                    )
+                ),
+              ],
+            ),
+          ),
+          Container(
+            height: 2.0,
+            width: MediaQuery.of(context).size.width,
+            color: Colors.black,
+            margin: const EdgeInsets.only(left: 5.0, right: 5.0),
+          ),
+
+          SizedBox(height: 10),
+          RichText(
+            text: TextSpan(
+              children: <TextSpan>[
+                new TextSpan(
+                    text: " Type : ",
+                    style: new TextStyle(
+                      color: AppTheme.darkText,
+                      fontWeight: FontWeight.w700,
+                    )
+                ),
+
+                new TextSpan(
+                    text: " ${data['incomeFixed']} ",
+                    style: new TextStyle(
+                      color: Colors.purple,
+                      fontWeight: FontWeight.w700,
+                    )
+                ),
+              ],
+            ),
+          ),
+          Container(
+            height: 2.0,
+            width: MediaQuery.of(context).size.width,
+            color: Colors.black,
+            margin: const EdgeInsets.only(left: 5.0, right: 5.0),
+          ),
+
+          SizedBox(height: 10),
+          RichText(
+            text: TextSpan(
+              children: <TextSpan>[
+                new TextSpan(
+                    text: " Place : ",
+                    style: new TextStyle(
+                      color: AppTheme.darkText,
+                      fontWeight: FontWeight.w700,
+                    )
+                ),
+
+                new TextSpan(
+                    text: " ${data['incomePlace']} ",
+                    style: new TextStyle(
+                      color: Colors.purple,
+                      fontWeight: FontWeight.w700,
+                    )
+                ),
+              ],
+            ),
+          ),
+          Container(
+            height: 2.0,
+            width: MediaQuery.of(context).size.width,
+            color: Colors.black,
+            margin: const EdgeInsets.only(left: 5.0, right: 5.0),
+          ),
+
+          SizedBox(height: 10),
+          RichText(
+            text: TextSpan(
+              children: <TextSpan>[
+                new TextSpan(
+                    text: " Reference : ",
+                    style: new TextStyle(
+                      color: AppTheme.darkText,
+                      fontWeight: FontWeight.w700,
+                    )
+                ),
+
+                new TextSpan(
+                    text: " ${data['incomeRefence']} ",
+                    style: new TextStyle(
+                      color: Colors.purple,
+                      fontWeight: FontWeight.w700,
+                    )
+                ),
+              ],
+            ),
+          ),
+          Container(
+            height: 2.0,
+            width: MediaQuery.of(context).size.width,
+            color: Colors.black,
+            margin: const EdgeInsets.only(left: 5.0, right: 5.0),
+          ),
+
+          SizedBox(height: 10),
+          RichText(
+            text: TextSpan(
+              children: <TextSpan>[
+                new TextSpan(
+                    text: " Amount : ",
+                    style: new TextStyle(
+                      color: AppTheme.darkText,
+                      fontWeight: FontWeight.w700,
+                    )
+                ),
+
+                new TextSpan(
+                    text: " ${data['incomeAmount']} ",
+                    style: new TextStyle(
+                      color: Colors.purple,
+                      fontWeight: FontWeight.w700,
+                    )
+                ),
+              ],
+            ),
+          ),
+          Container(
+            height: 2.0,
+            width: MediaQuery.of(context).size.width,
+            color: Colors.black,
+            margin: const EdgeInsets.only(left: 5.0, right: 5.0),
+          ),
+
+          SizedBox(height: 10),
+          RichText(
+            text: TextSpan(
+              children: <TextSpan>[
+                new TextSpan(
+                    text: " Income Date : ",
+                    style: new TextStyle(
+                      color: AppTheme.darkText,
+                      fontWeight: FontWeight.w700,
+                    )
+                ),
+
+                new TextSpan(
+                    text: (DateFormat("dd-MM-yyyy").format( new DateTime.fromMicrosecondsSinceEpoch(data['created'] * 1000)) ).toString(),
+                    style: new TextStyle(
+                      color: Colors.purple,
+                      fontWeight: FontWeight.w700,
+                    )
+                ),
+              ],
+            ),
+          ),
+          Container(
+            height: 2.0,
+            width: MediaQuery.of(context).size.width,
+            color: Colors.black,
+            margin: const EdgeInsets.only(left: 5.0, right: 5.0),
+          ),
+
+        ],
+      ),
+
+    ).show();
+  }
+
+  Future<bool> deleteIncome(incomeData){
+    Alert(
+      context: context,
+      type: AlertType.info,
+      title: "Income Info",
+      desc: "Do you want to Delete Income Details ?",
+      buttons: [
+        DialogButton(
+          child: Text(
+            "Yes",
+            style: TextStyle(color: Colors.white, fontSize: 20),
+          ),
+          onPressed: () => deleteRequest(incomeData),
+          gradient: LinearGradient(colors: [
+            Colors.green,
+            Colors.deepPurple
+          ]),
+        ),
+        DialogButton(
+          child: Text(
+            "No",
+            style: TextStyle(color: Colors.white, fontSize: 20),
+          ),
+          onPressed: () => Navigator.pop(context),
+          gradient: LinearGradient(colors: [
+            Colors.red,
+            Colors.black
+          ]),
+        )
+      ],
+    ).show();
+  }
+
+  deleteRequest(incomeData) async{
+    Navigator.pop(context);
+
+    var deleteIncomeData = {
+      'email': email,
+      'userId': userId,
+      'companyId': companyId,
+      'tripsheetId': tripsheetId.toString(),
+      'tripIncomeId' : '${incomeData['tripincomeID']}',
+    };
+
+    var response =  await ApiCall.getDataFromApi(
+        URI.REMOVE_INCOME_TRIPSHEET, deleteIncomeData, URI.LIVE_URI, context);
+
+    FlutterAlert.onSuccessAlert(
+        context, " Tripsheet Income Deleted Successfully !", " Tripsheet Income ");
+
+    getTripsheetShowData(tripsheetId);
+  }
+
+  getTripIncomeList() async {
+    defaultSelectedIncome = "0";
+    setState(() {
+      incomeDropDownList = [];
+    });
+    try {
+      var data = {'companyId': companyId};
+      var result = await ApiCall.getDataFromApi(
+          URI.INCOME_LIST_TRIPSHEET, data, URI.LIVE_URI, context);
+      if (result != null) {
+        if (result['TripIncomeList'] != null &&
+            result['TripIncomeList'].length > 0) {
+          var obj1 = {
+            "incomeId": "0",
+            "incomeName": "Select Income",
+          };
+          incomeDropDownList.add(obj1);
+          for (int i = 0; i < result['TripIncomeList'].length; i++) {
+            var obj = {
+              "incomeId": result['TripIncomeList'][i]['incomeID'].toString(),
+              "incomeName": result['TripIncomeList'][i]['incomeName'],
+            };
+            incomeDropDownList.add(obj);
+          }
+          setState(() {
+            incomeDropDownData = incomeDropDownList;
+          });
+        }
+      } else {
+        setState(() {
+          incomeDropDownList = [];
+        });
+      }
+    } catch (e) {
+      throw e;
+    }
+  }
+
+  Widget showTripInfo(context)
+  {
+    return  Column(
+      children: <Widget>[
+
+        GestureDetector(
+          onTap: (){
+            showTripExtraDetails(context, "Trip Details");
+          },
+          child :Card(
+            color:Colors.white70,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.only(
+                  bottomRight: Radius.circular(30),
+                  topRight: Radius.circular(30),
+                  bottomLeft: Radius.circular(30),
+                  topLeft: Radius.circular(30)),
+              //side: BorderSide(width: 5, color: Colors.green)
+            ),
+            child: Container(
+              height: 50,
+              child: Padding(
+                  padding: const EdgeInsets.only(left: 10, right: 10, top: 10),
+                  child: Row(
+                      children: [
+
+                        new IconButton(
+                          icon: new Icon(
+                            Icons.directions_bus,
+                            color: Colors.green,
+                          ),
+                          onPressed: () {
+                            showTripExtraDetails(context, "Trip Details");
+                          },
+                        ),
+
+                        Text(
+                            " Trip Details ",
+                            style: new TextStyle(
+                              color: Colors.purple,
+                              fontWeight: FontWeight.w700,
+                              fontSize: 16,
+                            )
+                        ),
+
+                        Container(
+                          margin: const EdgeInsets.only(left: 125.0),
+                          child: IconButton(
+                            icon: new Icon(
+                              Icons.arrow_forward,
+                              color: Colors.green,
+                            ),
+                            onPressed: () {
+                              showTripExtraDetails(context, "Trip Details");
+                            },
+                          ),
+                        ),
+
+                      ]
+                  )
+              ),
+            ),
+          ),
+        ),
+
+        GestureDetector(
+          onTap: (){
+            showDriverExtraDetails(context, "Driver Details");
+          },
+          child :
+          Card(
+            color:Colors.white70,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.only(
+                  bottomRight: Radius.circular(30),
+                  topRight: Radius.circular(30),
+                  bottomLeft: Radius.circular(30),
+                  topLeft: Radius.circular(30)),
+              //side: BorderSide(width: 5, color: Colors.green)
+            ),
+            child: Container(
+              height: 50,
+              child: Padding(
+                  padding: const EdgeInsets.only(left: 10, right: 10, top: 10),
+                  child: Row(
+                      mainAxisAlignment:
+                      MainAxisAlignment.start,
+                      children: [
+
+                        new IconButton(
+                          icon: new Icon(
+                            Icons.people,
+                            color: Colors.green,
+                          ),
+                          onPressed: () {
+                            showDriverExtraDetails(context, "Driver Details");
+                          },
+                        ),
+
+                        Text(
+                            " Driver Details ",
+                            style: new TextStyle(
+                              color: Colors.purple,
+                              fontWeight: FontWeight.w700,
+                              fontSize: 15,
+                            )
+                        ),
+
+                        Container(
+                          margin: const EdgeInsets.only(left: 118.0),
+                          child: IconButton(
+                            icon: new Icon(
+                              Icons.arrow_forward,
+                              color: Colors.green,
+                            ),
+                            onPressed: () {
+                              showDriverExtraDetails(context, "Driver Details");
+                            },
+                          ),
+                        ),
+
+                      ]
+                  )
+              ),
+            ),
+          ) ,
+        ),
+
+        GestureDetector(
+          onTap: (){
+            showDispatchExtraDetails(context, "Dispatch Details");
+          },
+          child :
+          Card(
+            color:Colors.white70,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.only(
+                  bottomRight: Radius.circular(30),
+                  topRight: Radius.circular(30),
+                  bottomLeft: Radius.circular(30),
+                  topLeft: Radius.circular(30)),
+              //side: BorderSide(width: 5, color: Colors.green)
+            ),
+            child: Container(
+              height: 50,
+              child: Padding(
+                  padding: const EdgeInsets.only(left: 10, right: 10, top: 10),
+                  child: Row(
+                      mainAxisAlignment:
+                      MainAxisAlignment.start,
+                      children: [
+
+                        new IconButton(
+                          icon: new Icon(
+                            Icons.access_time,
+                            color: Colors.green,
+                          ),
+                          onPressed: () {
+                            showDispatchExtraDetails(context, "Dispatch Details");
+                          },
+                        ),
+
+                        Text(
+                            " Dispatch Details ",
+                            style: new TextStyle(
+                              color: Colors.purple,
+                              fontWeight: FontWeight.w700,
+                              fontSize: 15,
+                            )
+                        ),
+
+                        Container(
+                          margin: const EdgeInsets.only(left: 94.0),
+                          child: IconButton(
+                            icon: new Icon(
+                              Icons.arrow_forward,
+                              color: Colors.green,
+                            ),
+                            onPressed: () {
+                              showDispatchExtraDetails(context, "Dispatch Details");
+                            },
+                          ),
+                        ),
+
+                      ]
+                  )
+              ),
+            ),
+          ) ,
+        ),
+
+      ],
+    );
+
+  }
+
+  void showTripExtraDetails(BuildContext context, String title) {
+    var alertStyle = AlertStyle(
+      animationType: AnimationType.fromBottom,
+      isCloseButton: false,
+      isOverlayTapDismiss: true,
+      descStyle: TextStyle(fontWeight: FontWeight.w700),
+      animationDuration: Duration(milliseconds: 400),
+      alertBorder: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(20.0),
+        side: BorderSide(
+          color: Colors.grey,
+        ),
+      ),
+      titleStyle: TextStyle(
+        color: Colors.red,
+      ),
+    );
+
+    Alert(
+      context: context,
+      style: alertStyle,
+      type: AlertType.info,
+      title: title,
+      content: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          SizedBox(height: 15),
+          RichText(
+            text: TextSpan(
+              children: <TextSpan>[
+                new TextSpan(
+                    text: " DOJ : ",
+                    style: new TextStyle(
+                      color: AppTheme.darkText,
+                      fontWeight: FontWeight.w700,
+                    )
+                ),
+
+                new TextSpan(
+                    text: " ${tripOpenDate} to ${tripCloseDate} ",
+                    style: new TextStyle(
+                      color: Colors.purple,
+                      fontWeight: FontWeight.w700,
+                    )
+                ),
+              ],
+            ),
+          ),
+          Container(
+            height: 2.0,
+            width: MediaQuery.of(context).size.width,
+            color: Colors.black,
+            margin: const EdgeInsets.only(left: 5.0, right: 5.0),
+          ),
+
+          SizedBox(height: 10),
+          RichText(
+            text: TextSpan(
+              children: <TextSpan>[
+                new TextSpan(
+                    text: " Trip Route Point : ",
+                    style: new TextStyle(
+                      color: AppTheme.darkText,
+                      fontWeight: FontWeight.w700,
+                    )
+                ),
+
+                new TextSpan(
+                    text: routeAttendancePoint != null ? routeAttendancePoint.toString() : "-",
+                    style: new TextStyle(
+                      color: Colors.purple,
+                      fontWeight: FontWeight.w700,
+                    )
+                ),
+              ],
+            ),
+          ),
+          Container(
+            height: 2.0,
+            width: MediaQuery.of(context).size.width,
+            color: Colors.black,
+            margin: const EdgeInsets.only(left: 5.0, right: 5.0),
+          ),
+
+          SizedBox(height: 10),
+          RichText(
+            text: TextSpan(
+              children: <TextSpan>[
+                new TextSpan(
+                    text: " Trip Route Volume : ",
+                    style: new TextStyle(
+                      color: AppTheme.darkText,
+                      fontWeight: FontWeight.w700,
+                    )
+                ),
+
+                new TextSpan(
+                    text: " ${routeTotalLiter} ",
+                    style: new TextStyle(
+                      color: Colors.purple,
+                      fontWeight: FontWeight.w700,
+                    )
+                ),
+              ],
+            ),
+          ),
+          Container(
+            height: 2.0,
+            width: MediaQuery.of(context).size.width,
+            color: Colors.black,
+            margin: const EdgeInsets.only(left: 5.0, right: 5.0),
+          ),
+
+          SizedBox(height: 10),
+          RichText(
+            text: TextSpan(
+              children: <TextSpan>[
+                new TextSpan(
+                    text: " Booking No : ",
+                    style: new TextStyle(
+                      color: AppTheme.darkText,
+                      fontWeight: FontWeight.w700,
+
+                    )
+                ),
+
+                new TextSpan(
+                    text: tripBookref != null ? tripBookref.toString() : "--" ,
+                    style: new TextStyle(
+                      color: Colors.purple,
+                      fontWeight: FontWeight.w700,
+                    )
+                ),
+              ],
+            ),
+          ),
+          Container(
+            height: 2.0,
+            width: MediaQuery.of(context).size.width,
+            color: Colors.black,
+            margin: const EdgeInsets.only(left: 5.0, right: 5.0),
+          ),
+
+          SizedBox(height: 10),
+          RichText(
+            text: TextSpan(
+              children: <TextSpan>[
+                new TextSpan(
+                    text: " Group Service : ",
+                    style: new TextStyle(
+                      color: AppTheme.darkText,
+                      fontWeight: FontWeight.w700,
+                    )
+                ),
+
+                new TextSpan(
+                    text: " ${vehicle_Group} ",
+                    style: new TextStyle(
+                      color: Colors.purple,
+                      fontWeight: FontWeight.w700,
+                    )
+                ),
+              ],
+            ),
+          ),
+          Container(
+            height: 2.0,
+            width: MediaQuery.of(context).size.width,
+            color: Colors.black,
+            margin: const EdgeInsets.only(left: 5.0, right: 5.0),
+          ),
+
+          SizedBox(height: 10),
+          RichText(
+            text: TextSpan(
+              children: <TextSpan>[
+                new TextSpan(
+                    text: " Opening KM : ",
+                    style: new TextStyle(
+                      color: AppTheme.darkText,
+                      fontWeight: FontWeight.w700,
+                    )
+                ),
+
+                new TextSpan(
+                    text: " ${tripOpeningKM} ",
+                    style: new TextStyle(
+                      color: Colors.purple,
+                      fontWeight: FontWeight.w700,
+                    )
+                ),
+              ],
+            ),
+          ),
+          Container(
+            height: 2.0,
+            width: MediaQuery.of(context).size.width,
+            color: Colors.black,
+            margin: const EdgeInsets.only(left: 5.0, right: 5.0),
+          ),
+
+          SizedBox(height: 10),
+          RichText(
+            text: TextSpan(
+              children: <TextSpan>[
+                new TextSpan(
+                    text: " Closing KM : ",
+                    style: new TextStyle(
+                      color: AppTheme.darkText,
+                      fontWeight: FontWeight.w700,
+                    )
+                ),
+
+                new TextSpan(
+                    text: tripClosingKM.toString() != 'null' ? tripClosingKM.toString() : "--" ,
+                    style: new TextStyle(
+                      color: Colors.purple,
+                      fontWeight: FontWeight.w700,
+                    )
+                ),
+              ],
+            ),
+          ),
+          Container(
+            height: 2.0,
+            width: MediaQuery.of(context).size.width,
+            color: Colors.black,
+            margin: const EdgeInsets.only(left: 5.0, right: 5.0),
+          ),
+
+          SizedBox(height: 10),
+          RichText(
+            text: TextSpan(
+              children: <TextSpan>[
+                new TextSpan(
+                    text: " Usage KM : ",
+                    style: new TextStyle(
+                      color: AppTheme.darkText,
+                      fontWeight: FontWeight.w700,
+                    )
+                ),
+
+                new TextSpan(
+                    text: tripUsageKM.toString() != 'null' ? tripUsageKM.toString() : "--",
+                    style: new TextStyle(
+                      color: Colors.purple,
+                      fontWeight: FontWeight.w700,
+                    )
+                ),
+              ],
+            ),
+          ),
+          Container(
+            height: 2.0,
+            width: MediaQuery.of(context).size.width,
+            color: Colors.black,
+            margin: const EdgeInsets.only(left: 5.0, right: 5.0),
+          ),
+
+
+        ],
+      ),
+
+    ).show();
+  }
+
+  void showDriverExtraDetails(BuildContext context, String title) {
+    var alertStyle = AlertStyle(
+      animationType: AnimationType.fromBottom,
+      isCloseButton: false,
+      isOverlayTapDismiss: true,
+      descStyle: TextStyle(fontWeight: FontWeight.w700),
+      animationDuration: Duration(milliseconds: 400),
+      alertBorder: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(20.0),
+        side: BorderSide(
+          color: Colors.grey,
+        ),
+      ),
+      titleStyle: TextStyle(
+        color: Colors.red,
+      ),
+    );
+
+    Alert(
+      context: context,
+      style: alertStyle,
+      type: AlertType.info,
+      title: title,
+      content: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          SizedBox(height: 15),
+          RichText(
+            text: TextSpan(
+              children: <TextSpan>[
+                new TextSpan(
+                    text: " Driver : ",
+                    style: new TextStyle(
+                      color: AppTheme.darkText,
+                      fontWeight: FontWeight.w700,
+                    )
+                ),
+
+                new TextSpan(
+                    text: " ${tripFristDriverName} / ${tripFristDriverMobile} ",
+                    style: new TextStyle(
+                      color: Colors.purple,
+                      fontWeight: FontWeight.w700,
+                    )
+                ),
+              ],
+            ),
+          ),
+          Container(
+            height: 2.0,
+            width: MediaQuery.of(context).size.width,
+            color: Colors.black,
+            margin: const EdgeInsets.only(left: 5.0, right: 5.0),
+          ),
+
+          SizedBox(height: 10),
+          RichText(
+            text: TextSpan(
+              children: <TextSpan>[
+                new TextSpan(
+                    text: " Driver 2 : ",
+                    style: new TextStyle(
+                      color: AppTheme.darkText,
+                      fontWeight: FontWeight.w700,
+                    )
+                ),
+
+                new TextSpan(
+                    text:   tripSecDriverName.toString() != 'null null'  ? tripSecDriverName.toString() +"/"+ tripSecDriverMobile.toString()  : "--" ,
+                    style: new TextStyle(
+                      color: Colors.purple,
+                      fontWeight: FontWeight.w700,
+                    )
+                ),
+              ],
+            ),
+          ),
+          Container(
+            height: 2.0,
+            width: MediaQuery.of(context).size.width,
+            color: Colors.black,
+            margin: const EdgeInsets.only(left: 5.0, right: 5.0),
+          ),
+
+          SizedBox(height: 10),
+          RichText(
+            text: TextSpan(
+              children: <TextSpan>[
+                new TextSpan(
+                    text: " Cleaner : ",
+                    style: new TextStyle(
+                      color: AppTheme.darkText,
+                      fontWeight: FontWeight.w700,
+                    )
+                ),
+
+                new TextSpan(
+                    text: tripCleanerName.toString() != 'null null' ? tripCleanerName.toString() +"/"+ tripCleanerMobile.toString()  : "--",
+                    style: new TextStyle(
+                      color: Colors.purple,
+                      fontWeight: FontWeight.w700,
+                    )
+                ),
+              ],
+            ),
+          ),
+          Container(
+            height: 2.0,
+            width: MediaQuery.of(context).size.width,
+            color: Colors.black,
+            margin: const EdgeInsets.only(left: 5.0, right: 5.0),
+          ),
+
+          SizedBox(height: 10),
+          RichText(
+            text: TextSpan(
+              children: <TextSpan>[
+                new TextSpan(
+                    text: " Driver 1 Route Point : ",
+                    style: new TextStyle(
+                      color: AppTheme.darkText,
+                      fontWeight: FontWeight.w700,
+                    )
+                ),
+
+                new TextSpan(
+                    text: tripFristDriverRoutePoint != null ? tripFristDriverRoutePoint.toString() : "--" ,
+                    style: new TextStyle(
+                      color: Colors.purple,
+                      fontWeight: FontWeight.w700,
+                    )
+                ),
+              ],
+            ),
+          ),
+          Container(
+            height: 2.0,
+            width: MediaQuery.of(context).size.width,
+            color: Colors.black,
+            margin: const EdgeInsets.only(left: 5.0, right: 5.0),
+          ),
+
+          SizedBox(height: 10),
+          RichText(
+            text: TextSpan(
+              children: <TextSpan>[
+                new TextSpan(
+                    text: " Driver 2 Route Point : ",
+                    style: new TextStyle(
+                      color: AppTheme.darkText,
+                      fontWeight: FontWeight.w700,
+                    )
+                ),
+
+                new TextSpan(
+                    text:  tripSecDriverRoutePoint != null ? tripSecDriverRoutePoint.toString() : "--",
+                    style: new TextStyle(
+                      color: Colors.purple,
+                      fontWeight: FontWeight.w700,
+                    )
+                ),
+              ],
+            ),
+          ),
+          Container(
+            height: 2.0,
+            width: MediaQuery.of(context).size.width,
+            color: Colors.black,
+            margin: const EdgeInsets.only(left: 5.0, right: 5.0),
+          ),
+
+          SizedBox(height: 10),
+          RichText(
+            text: TextSpan(
+              children: <TextSpan>[
+                new TextSpan(
+                    text: " Cleaner Route Point : ",
+                    style: new TextStyle(
+                      color: AppTheme.darkText,
+                      fontWeight: FontWeight.w700,
+                    )
+                ),
+
+                new TextSpan(
+                    text: tripCleanerRoutePoint != null ? tripCleanerRoutePoint.toString() : "--" ,
+                    style: new TextStyle(
+                      color: Colors.purple,
+                      fontWeight: FontWeight.w700,
+                    )
+                ),
+              ],
+            ),
+          ),
+          Container(
+            height: 2.0,
+            width: MediaQuery.of(context).size.width,
+            color: Colors.black,
+            margin: const EdgeInsets.only(left: 5.0, right: 5.0),
+          ),
+
+        ],
+      ),
+
+    ).show();
+  }
+
+  void showDispatchExtraDetails(BuildContext context, String title) {
+    var alertStyle = AlertStyle(
+      animationType: AnimationType.fromBottom,
+      isCloseButton: false,
+      isOverlayTapDismiss: true,
+      descStyle: TextStyle(fontWeight: FontWeight.w700),
+      animationDuration: Duration(milliseconds: 400),
+      alertBorder: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(20.0),
+        side: BorderSide(
+          color: Colors.grey,
+        ),
+      ),
+      titleStyle: TextStyle(
+        color: Colors.red,
+      ),
+    );
+
+    Alert(
+      context: context,
+      style: alertStyle,
+      type: AlertType.info,
+      title: title,
+      content: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+
+          SizedBox(height: 10),
+          RichText(
+            text: TextSpan(
+              children: <TextSpan>[
+                new TextSpan(
+                    text: " Dispatch By : ",
+                    style: new TextStyle(
+                      color: AppTheme.darkText,
+                      fontWeight: FontWeight.w700,
+                    )
+                ),
+
+                new TextSpan(
+                    text: " ${dispatchedBy} ",
+                    style: new TextStyle(
+                      color: Colors.purple,
+                      fontWeight: FontWeight.w700,
+                    )
+                ),
+              ],
+            ),
+          ),
+          Container(
+            height: 2.0,
+            width: MediaQuery.of(context).size.width,
+            color: Colors.black,
+            margin: const EdgeInsets.only(left: 5.0, right: 5.0),
+          ),
+
+          SizedBox(height: 10),
+          RichText(
+            text: TextSpan(
+              children: <TextSpan>[
+                new TextSpan(
+                    text: " Dispatch Location : ",
+                    style: new TextStyle(
+                      color: AppTheme.darkText,
+                      fontWeight: FontWeight.w700,
+                    )
+                ),
+
+                new TextSpan(
+                    text: " ${dispatchedLocation}  ",
+                    style: new TextStyle(
+                      color: Colors.purple,
+                      fontWeight: FontWeight.w700,
+                    )
+                ),
+              ],
+            ),
+          ),
+          Container(
+            height: 2.0,
+            width: MediaQuery.of(context).size.width,
+            color: Colors.black,
+            margin: const EdgeInsets.only(left: 5.0, right: 5.0),
+          ),
+
+          SizedBox(height: 10),
+          RichText(
+            text: TextSpan(
+              children: <TextSpan>[
+                new TextSpan(
+                    text: " Dispatch Time : ",
+                    style: new TextStyle(
+                      color: AppTheme.darkText,
+                      fontWeight: FontWeight.w700,
+                    )
+                ),
+
+                new TextSpan(
+                    text: " ${dispatchedByTime} ",
+                    style: new TextStyle(
+                      color: Colors.purple,
+                      fontWeight: FontWeight.w700,
+                    )
+                ),
+              ],
+            ),
+          ),
+          Container(
+            height: 2.0,
+            width: MediaQuery.of(context).size.width,
+            color: Colors.black,
+            margin: const EdgeInsets.only(left: 5.0, right: 5.0),
+          ),
+
+          SizedBox(height: 10),
+          RichText(
+            text: TextSpan(
+              children: <TextSpan>[
+                new TextSpan(
+                    text: " Closed By : ",
+                    style: new TextStyle(
+                      color: AppTheme.darkText,
+                      fontWeight: FontWeight.w700,
+                    )
+                ),
+
+                new TextSpan(
+                    text: closedBy != null ? closedBy.toString() : "--" ,
+                    style: new TextStyle(
+                      color: Colors.purple,
+                      fontWeight: FontWeight.w700,
+                    )
+                ),
+              ],
+            ),
+          ),
+          Container(
+            height: 2.0,
+            width: MediaQuery.of(context).size.width,
+            color: Colors.black,
+            margin: const EdgeInsets.only(left: 5.0, right: 5.0),
+          ),
+
+          SizedBox(height: 10),
+          RichText(
+            text: TextSpan(
+              children: <TextSpan>[
+                new TextSpan(
+                    text: " Closed Location : ",
+                    style: new TextStyle(
+                      color: AppTheme.darkText,
+                      fontWeight: FontWeight.w700,
+                    )
+                ),
+
+                new TextSpan(
+                    text: cloesdLocation != null ? cloesdLocation.toString() : "--",
+                    style: new TextStyle(
+                      color: Colors.purple,
+                      fontWeight: FontWeight.w700,
+                    )
+                ),
+              ],
+            ),
+          ),
+          Container(
+            height: 2.0,
+            width: MediaQuery.of(context).size.width,
+            color: Colors.black,
+            margin: const EdgeInsets.only(left: 5.0, right: 5.0),
+          ),
+
+          SizedBox(height: 10),
+          RichText(
+            text: TextSpan(
+              children: <TextSpan>[
+                new TextSpan(
+                    text: " Closed Time : ",
+                    style: new TextStyle(
+                      color: AppTheme.darkText,
+                      fontWeight: FontWeight.w700,
+                    )
+                ),
+
+                new TextSpan(
+                    text:  closedByTime != null ? closedByTime.toString() : "--",
+                    style: new TextStyle(
+                      color: Colors.purple,
+                      fontWeight: FontWeight.w700,
+                    )
+                ),
+              ],
+            ),
+          ),
+          Container(
+            height: 2.0,
+            width: MediaQuery.of(context).size.width,
+            color: Colors.black,
+            margin: const EdgeInsets.only(left: 5.0, right: 5.0),
+          ),
+
+          SizedBox(height: 10),
+          RichText(
+            text: TextSpan(
+              children: <TextSpan>[
+                new TextSpan(
+                    text: " Route Remark : ",
+                    style: new TextStyle(
+                      color: AppTheme.darkText,
+                      fontWeight: FontWeight.w700,
+                    )
+                ),
+
+                new TextSpan(
+                    text: Remark != null ? Remark.toString() : "--",
+                    style: new TextStyle(
+                      color: Colors.purple,
+                      fontWeight: FontWeight.w700,
+                    )
+                ),
+              ],
+            ),
+          ),
+          Container(
+            height: 2.0,
+            width: MediaQuery.of(context).size.width,
+            color: Colors.black,
+            margin: const EdgeInsets.only(left: 5.0, right: 5.0),
+          ),
+
+        ],
+      ),
+
+    ).show();
+  }
+
+
+/*Widget tripDetailsInfoContainer() {
+    *//*var routeName =
+    (fueldata['fuelRouteName'] != null ? fueldata['fuelRouteName'] : "");*//*
+    return (Container(
+      child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+            ],
+          )),
+    ));
+  }*/
+
+}
+

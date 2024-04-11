@@ -1,0 +1,13 @@
+{
+showBatteryInventoryPrint    : false,
+tallyIntegrationRequired     : false,
+addClothInventoryDocument    : false,
+editClothInventoryDocument    : false,
+downloadClothInventoryDocument : false,
+showSubLocation      : false,  
+addVehicleLaundry    : false, 
+mainLocationIds      : "",
+discountTaxTypeId	 : 1 , 
+roundupAmount  : false,
+validateInvoiceNumber                 : false  
+}

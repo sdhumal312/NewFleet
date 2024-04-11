@@ -1,0 +1,6 @@
+{
+vendorPaymentFlavor3                  : true,
+directPayment                         : false,
+vendorApprovalPayment                 : false,
+showPartialPaymentOption			  : true
+}

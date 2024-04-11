@@ -1,0 +1,111 @@
+{
+		 "tableProperties"	: {
+	 							 "enableColumnReOrder":true
+								,"showPrintButton":true
+								,"showExcelButton":true
+								,"gridDataId":"editReport"
+								,"gridDataHeight":"500px"
+								,"enableCellNavigation":false
+								,"divId":"container"
+								,"frozenColumn":"-1"
+								,"showSerialNumber":true
+								,"fullTableHeight": true
+								,"rowHeight":30
+								,"showGrouping":true
+								,"columnNumber":0
+								,"collapseOnLoad" : true
+							}
+	,"columnConfiguration" 	: {	
+								"1":"Vehicle"
+								,"2":"DATE"
+								,"3":"Parameter"
+								,"4":"Test Result"
+								,"5":"Remark"
+								,"6":"InspectedBy"
+								,"7":"Frequency"
+								,"8":"Photo"
+							} 
+	
+						
+	,"Vehicle"			: {	 
+								 "tableDtoName":"vehicle_registration"
+								,"dataType":"text"
+								,"labelid":"VEHICLE"
+								,"columnhidden":false
+								,"showColumnTotal":false
+								,"sortable" : true
+								,"show":true
+								,"buttonCallback" : "showVehicle"
+								,"inputElement" : "link"
+							}		
+	,"DATE"					: {	 
+								 "tableDtoName":"inspectionDateStr"
+								,"dataType":"text"
+								,"labelid":"DATE"
+								,"columnhidden":false
+								,"showColumnTotal":false
+								,"sortable" : true
+								,"show":true
+							}	
+						
+	,"Parameter"			: {	 
+								 "tableDtoName":"parameterName"
+								,"dataType":"text"
+								,"labelid":"Parameter Name"
+								,"columnhidden":false
+								,"showColumnTotal":false
+								,"sortable" : true
+								,"show":true
+								,"buttonCallback" : "showVendor"
+								,"inputElement" : "link"
+							}										
+									
+	,"Test Result"			: {	 
+								 "tableDtoName":"inspectionSucessStr"
+								,"dataType":"text"
+								,"labelid":"Test Result"
+								,"columnhidden":false
+								,"showColumnTotal":false
+								,"sortable" : true
+								,"show":true
+								
+							}										
+	,"Remark"				: {	 
+								 "tableDtoName":"description"
+								,"dataType":"text"
+								,"labelid":"Remark"
+								,"columnhidden":false
+								,"showColumnTotal":true
+								,"sortable" : true
+								,"show":true
+							}
+	,"InspectedBy"				: {	 
+								 "tableDtoName":"inspectedBy"
+								,"dataType":"text"
+								,"labelid":"Inspected By"
+								,"columnhidden":false
+								,"showColumnTotal":true
+								,"sortable" : true
+								,"show":true
+							}
+	,"Frequency"				: {	 
+								 "tableDtoName":"frequency"
+								,"dataType":"text"
+								,"labelid":"Frequency"
+								,"columnhidden":false
+								,"showColumnTotal":true
+								,"sortable" : true
+								,"show":true
+							}
+	
+	,"Photo"				: {	 
+								 "tableDtoName":"documentUrl"
+								,"dataType":"text"
+								,"labelid":"VOLUME"
+								,"columnhidden":false
+								,"showColumnTotal":true
+								,"sortable" : true
+								,"show":true
+							}
+	
+}

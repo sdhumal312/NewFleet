@@ -1,0 +1,12 @@
+{ 
+multipleAccountForSameVendor : true,
+allowTollApiIntegration      : true,
+TollExpenseName              : FASTTAG TOLL CHARGES,
+CustomerId                   : 10043544,
+TollExpenseId                : 2980,
+allowHDFCBankFastTag         : true,
+hdfcBankFastTagUrl           : "https://1paytag.hdfcbank.com/walletmware/api/wallet/txn/tollenquiry",
+userName                     : "OnePay" ,
+password                     : "Test123",
+saltValue                    : "95ef659313847c7485d43d66b8c5b9e8b817c9c136d2798333c5df693b6efc2a"
+}

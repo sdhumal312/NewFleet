@@ -1,0 +1,139 @@
+{
+	"tableProperties": {
+		"enableColumnReOrder": true,
+		"showPrintButton": true,
+		"showExcelButton": true,
+		"gridDataId": "editReport",
+		"gridDataHeight": "500px",
+		"enableCellNavigation": false,
+		"divId": "container",
+		"frozenColumn": "-1",
+		"showSerialNumber": true,
+		"fullTableHeight": true,
+		"rowHeight": 30,
+		"forceFitColumns" : true,
+		"showGrouping": false,
+		"columnNumber": 0
+	},
+	"columnConfiguration": {
+		"1": "Driver_Name",
+		"2": "Badge No.",
+		"3": "Mobile No.",
+		"4": "Status",
+		"5": "Authorized to Drive",
+		"6": "Fuel_Consumption",
+		"7": "Mileage",
+		"8": "Number_Of_BreakDown",
+		"9": "Number_Of_Issue",
+		"10": "Number_Of_Accident",
+		"11": "Comments_Details"
+	},
+		"Driver_Name": {
+		"tableDtoName": "driverFullName",
+		"dataType": "text",
+		"labelid": "Driver Name",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	},
+
+	"Fuel_Consumption": {
+		"tableDtoName": "consumptionFuel",
+		"dataType": "text",
+		"labelid": "Fuel Consumption",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	},	
+	"Mileage": {
+		"tableDtoName": "mileageFuel",
+		"dataType": "text",
+		"labelid": "Mileage",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	},
+	"Number_Of_BreakDown": {
+		"tableDtoName": "breakDownTotal",
+		"dataType": "text",
+		"labelid": "Number Of BreakDown",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	},
+	
+	"Number_Of_Issue": {
+		"tableDtoName": "issueTotal",
+		"dataType": "text",
+		"labelid": "Number Of Issue",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	},
+	
+	"Badge No.": {
+		"tableDtoName": "driver_badgenumber",
+		"dataType": "text",
+		"labelid": "Badge No.",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	,
+	"Mobile No.": {
+		"tableDtoName": "driver_mobnumber",
+		"dataType": "text",
+		"labelid": "Mobile No.",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	,
+	"Status": {
+		"tableDtoName": "driver_active",
+		"dataType": "text",
+		"labelid": "Status",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	,
+	"Authorized to Drive": {
+		"tableDtoName": "driver_authorised",
+		"dataType": "text",
+		"labelid": "Authorized to Drive",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	,
+	"Number_Of_Accident": {
+		"tableDtoName": "accidentTotal",
+		"dataType": "text",
+		"labelid": "Number Of Accident",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+		,
+	"Comments_Details": {
+		"tableDtoName": "commentTotal",
+		"dataType": "text",
+		"labelid": "Comments Details (Behavior)",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+			
+}

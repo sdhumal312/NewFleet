@@ -1,0 +1,118 @@
+{
+	  "tableProperties"	: {"enableColumnReOrder":true
+							,"showPrintButton":true
+							,"showExcelButton":true
+							,"gridDataId":"editReport"
+							,"gridDataHeight":"500px"
+							,"enableCellNavigation":false
+							,"divId":"container"
+							,"frozenColumn":"-1"
+							,"showSerialNumber":true
+							,"fullTableHeight": false
+							,"rowHeight":30
+							
+							
+						}
+	,"columnConfiguration"	: {	
+								 "1":"Vehicle_Number"
+								,"2":"tripSheetNumber"
+								,"3":"JourneyDate"
+								,"4":"tripAdvanceAmount"
+								,"5":"tripIncomeAmount"
+								,"6":"tripExpenseAmount"
+								,"7":"tripDueAmount"
+								,"8":"tripBalanceAmount"
+								,"9":"Route"
+								,"10":"Driver Balance"
+								
+																 
+						} 
+	
+						
+	,"Vehicle_Number"	: {	 "tableDtoName":"vehicleRegistration"
+							,"dataType":"text"
+							,"labelid":"Vehicle"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							,"buttonCallback" : "showVehicle"
+							,"inputElement" : "link"
+						}
+	,"tripSheetNumber"	: {	 "tableDtoName":"tripSheetNumber"
+							,"dataType":"text"
+							,"labelid":"TripSheet"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							,"buttonCallback" : "showTripSheetShow"
+							,"inputElement" : "link"
+						}
+	,"JourneyDate"		: {	 "tableDtoName":"tripOpenDateStr"
+							,"dataType":"text"
+							,"labelid":"Journey Date"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	
+	,"tripIncomeAmount"	: {	 "tableDtoName":"tripIncomeAmount"
+							,"dataType":"text"
+							,"labelid":"Income"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}
+	,"tripAdvanceAmount": {	 "tableDtoName":"tripAdvanceAmount"
+							,"dataType":"text"
+							,"labelid":"Advance"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}
+	,"tripExpenseAmount": {	 "tableDtoName":"tripExpenseAmount"
+							,"dataType":"text"
+							,"labelid":"Expense"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}
+  ,"tripDueAmount": {	 "tableDtoName":"tripDueAmount"
+							,"dataType":"text"
+							,"labelid":"Due Amt"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}						
+	,"tripBalanceAmount": {	 "tableDtoName":"tripBalanceAmt"
+							,"dataType":"text"
+							,"labelid":"Balance"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}
+	,"Route"		: {	 "tableDtoName":"routeName"
+							,"dataType":"text"
+							,"labelid":"Route"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":false
+						}
+	,"Driver Balance"		: {	 "tableDtoName":"driverBalanceAmt"
+							,"dataType":"text"
+							,"labelid":"Driver Balance"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}						
+	
+}

@@ -1,0 +1,12 @@
+{
+ vehicleTyreSizeMasterCommon     : false,
+ isCommonTyreModel               : false,
+ vehicleModelTyreLayout          : true,
+ tyreModalTypeId                 : true,
+ gauageMeasurementLine            : true, 
+ tyreGauge                       : true,
+ tyreTubeTypeId                  : true, 
+ tyrePly                         : true, 
+ tyrePsi                         : true,
+ tyreModelSizeId                 : true 
+}

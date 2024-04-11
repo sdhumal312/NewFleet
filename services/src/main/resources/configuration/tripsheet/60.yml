@@ -1,0 +1,7 @@
+{
+showDefaultTimeAndDate                : true,
+allowIVLoadingSheetEntry              : true,
+loadingSheetSyncLink                  : "https://ivcargo.net/ivwebservices/LoadingSheetToTripSheetWS/getLoadingSheetToTripSheetData.do",
+showPaymentTypeInIncomeExpense		  : true,
+newLogicForTripSheetDriverBalance     : true
+}

@@ -1,0 +1,287 @@
+{
+	"tableProperties": {
+		"enableColumnReOrder": true,
+		"showPrintButton": true,
+		"showExcelButton": true,
+		"gridDataId": "editReport",
+		"gridDataHeight": "500px",
+		"enableCellNavigation": false,
+		"divId": "container",
+		"frozenColumn": "-1",
+		"showSerialNumber": true,
+		"fullTableHeight": true,
+		"rowHeight": 30,
+		"forceFitColumns" : false,
+		"showGrouping": false,
+		"columnNumber": 1
+	},
+	"columnConfiguration": {
+		"1": "Issue",
+		"2": "Issues Reported",
+		"3": "DEPOT",
+		"4": "ISSUES_TYPE",
+		"5": "Status",
+		"6": "Label",
+		"7": "VEHICLE",
+		"8": "Vehicle_Type",
+		"9": "Odometer",
+		"10": "Route",
+		"11": "Trip no.",
+		"12": "Driver",
+		"13": "Mobile No.",
+		"14": "Location",
+		"15": "Category",
+		"16": "Summary",
+		"17": "Assigned By",
+		"18": "Assigned To",
+		"19": "Resolved Date",
+		"20": "Total Time",
+		"21": "Reason",
+		"22": "Avoidabel",
+		"23": "Temprory Solution",
+		"24": "Fix Solution",
+		"25": "future Planning"
+	},
+	"Issues Reported": {
+		"tableDtoName": "issuesReportedDateStr",
+		"dataType": "text",
+		"labelid": "Issues Reported",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	},
+	"DEPOT": {
+		"tableDtoName": "issues_BRANCH_NAME",
+		"dataType": "text",
+		"labelid": "DEPOT",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	},
+	"ISSUES_TYPE": {
+		"tableDtoName": "issues_TYPE",
+		"dataType": "text",
+		"labelid": "ISSUES_TYPE",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": false
+	},
+	"Status": {
+		"tableDtoName": "issues_STATUS",
+		"dataType": "text",
+		"labelid": "Status",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	},
+	"Label": {
+		"tableDtoName": "issues_LABELS",
+		"dataType": "text",
+		"labelid": "Label",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	},
+	"VEHICLE": {
+		"tableDtoName": "issues_VEHICLE_REGISTRATION",
+		"dataType": "text",
+		"labelid": "VEHICLE",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	},
+	"Vehicle_Type": {
+		"tableDtoName": "vehicleType",
+		"dataType": "text",
+		"labelid": "Vehicle_Type",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	},
+	"Driver": {
+		"tableDtoName": "issues_DRIVER_NAME",
+		"dataType": "text",
+		"labelid": "Driver",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	},
+	"Route": {
+		"tableDtoName": "routeName",
+		"dataType": "text",
+		"labelid": "Route",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	},
+	"Category": {
+		"tableDtoName": "partCategoryName",
+		"dataType": "text",
+		"labelid": "Category",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	,
+	"Summary": {
+		"tableDtoName": "issues_SUMMARY",
+		"dataType": "text",
+		"labelid": "Summary",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	,
+	"Assigned To": {
+		"tableDtoName": "issues_ASSIGN_TO_NAME",
+		"dataType": "text",
+		"labelid": "Assigned To",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	,
+	"Total Time": {
+		"tableDtoName": "issues_DIFFERENCES_DATE",
+		"dataType": "text",
+		"labelid": "Total Time",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	,
+	"Reason": {
+		"tableDtoName": "reason",
+		"dataType": "text",
+		"labelid": "Reason",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	,
+	"Avoidabel": {
+		"tableDtoName": "avoidableStr",
+		"dataType": "text",
+		"labelid": "Avoidabel",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	,
+	"Temprory Solution": {
+		"tableDtoName": "tempSolution",
+		"dataType": "text",
+		"labelid": "Temprory Solution",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	,
+	"Fix Solution": {
+		"tableDtoName": "fixSolution",
+		"dataType": "text",
+		"labelid": "Fix Solution",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	,
+	"future Planning": {
+		"tableDtoName": "futurePlan",
+		"dataType": "text",
+		"labelid": "future Planning",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	,
+	"Trip no.": {
+		"tableDtoName": "tripNumber",
+		"dataType": "text",
+		"labelid": "Trip no.",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	,
+	"Location": {
+		"tableDtoName": "location",
+		"dataType": "text",
+		"labelid": "Location",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	,
+	"Resolved Date": {
+		"tableDtoName": "resolvingDate",
+		"dataType": "text",
+		"labelid": "Resolved Date",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	,
+	"Mobile No.": {
+		"tableDtoName": "driver_mobnumber",
+		"dataType": "text",
+		"labelid": "Mobile No.",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	
+	,
+	"Odometer": {
+		"tableDtoName": "issues_ODOMETER",
+		"dataType": "text",
+		"labelid": "Odometer",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	,
+	"Assigned By": {
+		"tableDtoName": "assignByName",
+		"dataType": "text",
+		"labelid": "Assigned By",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+		,
+	"Issue": {
+		"tableDtoName": "issuesNumberStr",
+		"dataType": "text",
+		"labelid": "Issue",
+		"columnhidden": false,
+		"showColumnTotal": false,
+		"sortable": true,
+		"show": true
+	}
+	
+}

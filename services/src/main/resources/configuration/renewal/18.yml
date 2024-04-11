@@ -1,0 +1,11 @@
+{
+saveRenewalWithoutFile                : true,
+showDueThreshold					  : false,
+showDueThresholdPeriod				  : false,
+receiptnumbershow                     : false,
+cashtransactionshow                   : false, 
+paidDateshow                          : false,
+paidbyshow                            : false,
+optionalInformation                   : false
+
+}

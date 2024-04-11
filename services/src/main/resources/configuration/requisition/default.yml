@@ -1,0 +1,5 @@
+{
+showManufacturerAndSize : true,
+showUpholstery          : true,
+showPartUOM             : false
+}

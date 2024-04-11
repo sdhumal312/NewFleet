@@ -1,0 +1,18 @@
+{ 
+TallyCompanyMasterInSE                : false,
+TallyCompanyMasterInWO                : false,
+allowServiceEntriesBackDate           : false,
+noOfDaysForServiceEntriesBackDate     : 15,
+noOfDaysToReOpenServiceEntries        : 15,
+allowDecimalValue                     : false,
+showTripSheet                         : false,
+expenseId                             : 2967,
+showPaidDateOnListView                : false,
+showInvoiceDateOnListView             : false,
+showPaidDateForServEnt                : true,
+validateInvoiceNumber                 : false,
+showPendingIssueWhileCreatingSE       : false,
+removeFeildFromLaborTab				  : false,
+showVehicleHealthStatus		          : false,
+addSECOmpletionRemark                 : false
+}

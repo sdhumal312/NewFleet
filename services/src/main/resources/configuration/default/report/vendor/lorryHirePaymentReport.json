@@ -1,0 +1,87 @@
+{
+	  "tableProperties"	: {"enableColumnReOrder":true
+							,"showPrintButton":true
+							,"showExcelButton":true
+							,"gridDataId":"editReport"
+							,"gridDataHeight":"500px"
+							,"enableCellNavigation":false
+							,"divId":"container"
+							,"frozenColumn":"-1"
+							,"showSerialNumber":true
+							,"fullTableHeight": true
+							,"rowHeight":30
+							
+						}
+	,"columnConfiguration"	: {	
+								 "1":"lorryHireDetailsNumber"
+								,"2":"vendorName"
+								,"3":"transactionDate"
+								,"4":"createdOn"
+								,"5":"receiveAmount" 
+								,"6":"paymentType" 
+								,"7":"paymentStatus" 																	
+						} 
+	
+	,"lorryHireDetailsNumber"	: {	 "tableDtoName":"lorryHireDetailsNumber"
+							,"dataType":"text"
+							,"labelid":"Hire Number"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}
+						
+						
+	,"vendorName"		: {	 "tableDtoName":"vendorName"
+							,"dataType":"text"
+							,"labelid":"Vendor Name"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false								
+							,"show":true
+						}
+	
+	,"transactionDate"			: {	 "tableDtoName":"transactionDateStr"
+							,"dataType":"text"
+							,"labelid":"Txn Date"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false									
+							,"show":true
+						}
+	,"createdOn"			: {	 "tableDtoName":"createdOnStr"
+							,"dataType":"text"
+							,"labelid":"Created Date"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}
+	 ,"receiveAmount"		: {	 "tableDtoName":"receiveAmount"
+							,"dataType":"number"
+							,"labelid":"Receive Amt"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : false
+							,"show":true
+						} 
+	,"paymentType"		: {	 "tableDtoName":"paymentType"
+							,"dataType":"text"
+							,"labelid":"Payment Mode"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"buttonCallback" : "showVendorDetails"
+							,"inputElement" : "link"
+							,"sortable" : true
+							,"show":true
+						}
+	,"paymentStatus"		: {	 "tableDtoName":"paymentStatus"
+							,"dataType":"text"
+							,"labelid":"Received As"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	
+}

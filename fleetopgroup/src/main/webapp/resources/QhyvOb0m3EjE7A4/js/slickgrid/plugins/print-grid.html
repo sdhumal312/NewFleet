@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+</title>
+<link rel="stylesheet" href="resources/QhyvOb0m3EjE7A4/css/slickgrid/bootstrap.css">
+<style>
+@media screen {
+	#chromeTable {
+		padding-left: 300px;
+		padding-top: 20px;
+	}
+}
+
+table {
+	table-layout: fixed;
+	max-width: none;
+	width: 200mm;
+	word-wrap: break-word;
+}
+/* th, td {
+    border: 1px solid black;
+    overflow: hidden;
+    width: 100px;
+} */
+/* THE FOLLOWING CSS IS REQUIRED AND SHOULD NOT BE MODIFIED. */
+div.fauxRow {
+	display: inline-block;
+	vertical-align: top;
+	width: 100%;
+	page-break-inside: avoid;
+}
+
+table.fauxRow {
+	border-spacing: 0;
+}
+
+table.fauxRow>tbody>tr>td {
+	padding: 0;
+	overflow: hidden;
+}
+
+table.fauxRow>tbody>tr>td>table.print {
+	display: inline-table;
+	vertical-align: top;
+}
+
+table.fauxRow>tbody>tr>td>table.print>caption {
+	caption-side: top;
+}
+
+.noBreak {
+	float: right;
+	width: 100%;
+	visibility: hidden;
+}
+
+.noBreak:before, .noBreak:after {
+	display: block;
+	content: "";
+}
+
+.noBreak:after {
+	margin-top: -594mm;
+}
+
+.noBreak>div {
+	display: inline-block;
+	vertical-align: top;
+	width: 100%;
+	page-break-inside: avoid;
+}
+/*table.print > thead {white-space: nowrap;}*/
+	/* Uncomment if line-wrapping causes problems. */
+table.print>tbody>tr {
+	page-break-inside: avoid;
+}
+
+table.print>tbody>.metricsRow>td {
+	border-top: none !important;
+}
+
+/* THE FOLLOWING CSS IS REQUIRED, but the values may be adjusted. */
+/* NOTE: All size values that can affect an element's height should use the px unit! */
+table.fauxRow, table.print {
+	font-size: 14px;
+	line-height: 20px;
+}
+
+/* THE FOLLOWING CSS IS OPTIONAL. */
+body {
+	counter-reset: t1;
+} /* Delete to remove row numbers. */
+.noBreak .t1>tbody>tr>:first-child:before {
+	counter-increment: none;
+} /* Delete to remove row numbers. */
+.t1>tbody>tr>:first-child:before { /* Delete to remove row numbers. */
+	display: block;
+	text-align: right;
+	counter-increment: t1 1;
+	content: counter(t1);
+}
+
+table.fauxRow, table.print {
+	font-family: Tahoma, Verdana, Georgia;
+	/* Try to use fonts that don't get bigger when printed. */
+	margin: 0 auto 0 auto;
+	/* Delete if you don't want table to be centered. */
+}
+
+table.print {
+	border-spacing: 0;
+}
+
+table.print>*>tr>* {
+	/* border-right: 2px solid black;
+	border-bottom: 2px solid black; */
+	padding: 0 5px 0 5px;
+}
+
+table.print>*>:first-child>* {
+	/* border-top: 2px solid black; */
+}
+
+table.print>thead ~ *>:first-child>*, table.print>tbody ~ *>:first-child>*
+	{
+	border-top: none;
+}
+
+table.print>*>tr>:first-child {
+	/* border-left: 2px solid black; */
+}
+
+table.print>thead {
+	vertical-align: bottom;
+}
+
+.column-data-right-align {
+	text-align: right;
+}
+
+.column-data-center-align {
+	text-align: center;
+}
+
+.column-data-left-align {
+	text-align: left;
+}
+
+table.print>thead>.borderRow>th {
+	border-bottom: none;
+}
+
+table.print>tbody {
+	vertical-align: top;
+}
+
+table.print>caption {
+	font-weight: bold;
+}
+
+/* .pagesFooter:after {
+    counter-increment: pages;
+    content: " of " counter(pages);
+} */
+.pageFooter:after {
+	counter-increment: page;
+	content: "Page : " counter(page);
+}
+
+ @page{
+      margin-top: 5mm;
+      margin-bottom: 1cm;
+      margin-left: 1cm;
+      margin-right: 1cm;
+   }
+
+@media screen {
+	.pageFooter {
+		display: none;
+	}
+}
+tfoot{
+outline-0;
+}
+
+
+@media print {
+	.pageFooter {
+		display: table-footer-group;
+		vertical-align: middle;
+		border-color: white;
+	}
+}
+.truncate {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+</style>
+
+<script src="../../../../../resources/QhyvOb0m3EjE7A4/js/utility/jquery.min.js"></script>
+<script src="../../../../../resources/QhyvOb0m3EjE7A4/js/slickgrid/plugins/colResizable.min.js"></script>
+<script src="../../../../../resources/QhyvOb0m3EjE7A4/js/fleetop/jspdf/jspdf.min.js"></script>
+<script src="../../../../../resources/QhyvOb0m3EjE7A4/js/exportCSV/tableToExcel.js"></script>
+<script>
+	function applyColumnPicker() {
+	    $(function() {
+		    var $chk = $("#grpChkBox input:checkbox");
+		    var $tbl = $("#table");
+		   	var cell = $tbl.find(".slick-cell-checkboxsel");
+		    cell.addClass("hide");
+		    $chk.prop('checked', true);
+		    $chk.click(function() {
+			    var colToHide = $tbl.find("." + $(this).attr("name"));
+			    $(colToHide).toggle();
+		    });
+	    });
+    }
+	
+	function showHideSummary(checkBox) {
+		if($('#'+checkBox.id).prop('checked')) {
+			$("*[data-id='"+checkBox.id+"']").show();
+		} else {
+			$("*[data-id='"+checkBox.id+"']").hide();
+		}
+	}
+</script>
+<script>
+function applyReload(){
+
+}
+function removeColumnResizer(){
+	 $('#grpChkBox').remove();
+}
+
+function resizeColumn(){
+	  //$("#table").colResizable({liveDrag:true});
+}
+
+function applyPrintSetting() {
+	removeColumnResizer();
+	history.replaceState( {} , '', '/' );
+	/* var r = confirm("Press a button!");
+	if (r == true) { */
+		if(!/Firefox|MSIE |Trident/i.test(navigator.userAgent)){
+			chromePrinter();
+		}
+		window.print();
+	/* } else {
+	} */
+	window.close();
+	}
+function applyPrintSettingPlainPrint() {
+	document.getElementById("table").border=0;
+	applyPrintSetting();
+}
+
+function changeWidth(column) {
+	var selector	= column.name;
+	var value		= column.value+"%;"
+	$("[data-selector='"+selector+"']").attr("style","width:"+value+"background-color: lightblue;");
+}
+/* function exportDataToExcel() {
+	window.open('data:application/vnd.ms-excel,' + encodeURIComponent(document.getElementById('chromeTable').innerHTML));
+} */
+function exportDataToExcel() {
+	
+	var dt 			= new Date();
+    var day 		= dt.getDate();
+    var month 		= dt.getMonth() + 1;
+    var year		= dt.getFullYear();
+    var hour 		= dt.getHours();
+    var mins 		= dt.getMinutes();
+
+	var postfix = day + "_" + month + "_" + year + "_" + hour + "_" + mins;
+	
+	 var finalName = $("#tableHeaderValue").html()+"_"+postfix+".xlsx";
+	TableToExcel.convert(document.getElementById('chromeTable'), {
+		  name: finalName,
+		  sheet: {
+		    name: "Sheet 1"
+		  }
+		});  
+    
+}
+
+
+function exportDataToPDF() {
+	var fbcanvas = document.getElementById('chromeTable');
+    html2canvas($(fbcanvas),
+         {
+
+             onrendered: function (canvas) {
+
+                 var width = canvas.width;
+                 var height = canvas.height;
+                 var millimeters = {};
+                 millimeters.width = Math.floor(width * 0.264583);
+                 millimeters.height = Math.floor(height * 0.264583);
+
+                 var imgData = canvas.toDataURL(
+                     'image/png');
+                 var doc = new jsPDF("p", "mm", "a4");
+                 doc.deletePage(1);
+                 doc.addPage(millimeters.width, millimeters.height);
+                 doc.addImage(imgData, 'PNG', 0, 0);
+                 doc.save('ReportPrint.pdf');
+             }
+         });
+	//window.open('data:application/vnd.ms-excel,' + encodeURIComponent(document.getElementById('chromeTable').innerHTML));
+}
+
+
+
+function changeLineType(checkBox) {
+	var selector	= checkBox.name;
+	var id			= $("[data-checkbox='"+selector+"']").attr("id");
+	var className= $("[data-cell='"+selector+"']").attr("class");
+	if (id.length > 0) {
+		className	= className.substr(0,className.indexOf(' '));
+		$("[data-cell='"+selector+"']").attr("class", className);
+		$("[data-checkbox='"+selector+"']").attr("id", "");
+	} else {
+		var newClassName = className+" truncate";
+		$("[data-cell='"+selector+"']").attr("class", newClassName);
+		$("[data-checkbox='"+selector+"']").attr("id", checkBox.name);
+	}
+}
+
+</script>
+<script>	    
+function chromePrinter(){
+  (function() { // THIS FUNCTION IS REQUIRED.
+     if(/Firefox|MSIE |Trident/i.test(navigator.userAgent))
+      var formatForPrint = function(table) {
+        var noBreak = document.createElement("div")
+          , noBreakTable = noBreak.appendChild(document.createElement("div")).appendChild(table.cloneNode())
+          , tableParent = table.parentNode
+          , tableParts = table.children
+          , partCount = tableParts.length
+          , partNum = 0
+          , cell = table.querySelector("tbody > tr > td");
+        noBreak.className = "noBreak";
+        for(; partNum < partCount; partNum++) {
+          if(!/tbody/i.test(tableParts[partNum].tagName))
+            noBreakTable.appendChild(tableParts[partNum].cloneNode(true));
+        }
+        if(cell) {
+          noBreakTable.appendChild(cell.parentNode.parentNode.cloneNode()).appendChild(cell.parentNode.cloneNode(true));
+          if(!table.tHead) {
+            var borderRow = document.createElement("tr");
+            borderRow.appendChild(document.createElement("th")).colSpan="1000";
+            borderRow.className = "borderRow";
+            table.insertBefore(document.createElement("thead"), table.tBodies[0]).appendChild(borderRow);
+          }
+        }
+        tableParent.insertBefore(document.createElement("div"), table).style.paddingTop = ".009px";
+        tableParent.insertBefore(noBreak, table);
+      };
+    else
+      var formatForPrint = function(table) {
+        var tableParent = table.parentNode
+          , cell = table.querySelector("tbody > tr > td");
+        if(cell) {
+          var topFauxRow = document.createElement("table")
+            , fauxRowTable = topFauxRow.insertRow(0).insertCell(0).appendChild(table.cloneNode())
+            , colgroup = fauxRowTable.appendChild(document.createElement("colgroup"))
+            , headerHider = document.createElement("div")
+            , metricsRow = document.createElement("tr")
+            , cells = cell.parentNode.cells
+            , cellNum = cells.length
+            , colCount = 0
+            , tbods = table.tBodies
+            , tbodCount = tbods.length
+            , tbodNum = 0
+            , tbod = tbods[0];
+          for(; cellNum--; colCount += cells[cellNum].colSpan);
+          for(cellNum = colCount; cellNum--; metricsRow.appendChild(document.createElement("td")).style.padding = 0);
+          cells = metricsRow.cells;
+          tbod.insertBefore(metricsRow, tbod.firstChild);
+          for(; ++cellNum < colCount; colgroup.appendChild(document.createElement("col")).style.width = cells[cellNum].offsetWidth + "px");
+          var borderWidth = metricsRow.offsetHeight;
+          metricsRow.className = "metricsRow";
+          borderWidth -= metricsRow.offsetHeight;
+          tbod.removeChild(metricsRow);
+          tableParent.insertBefore(topFauxRow, table).className = "fauxRow";
+          if(table.tHead)
+            fauxRowTable.appendChild(table.tHead);
+          var fauxRow = topFauxRow.cloneNode(true)
+            , fauxRowCell = fauxRow.rows[0].cells[0];
+          fauxRowCell.insertBefore(headerHider, fauxRowCell.firstChild).style.marginBottom = -fauxRowTable.offsetHeight - borderWidth + "px";
+          if(table.caption)
+            fauxRowTable.insertBefore(table.caption, fauxRowTable.firstChild);
+          if(tbod.rows[0])
+            fauxRowTable.appendChild(tbod.cloneNode()).appendChild(tbod.rows[0]);
+          for(; tbodNum < tbodCount; tbodNum++) {
+            tbod = tbods[tbodNum];
+            rows = tbod.rows;
+            for(; rows[0]; tableParent.insertBefore(fauxRow.cloneNode(true), table).rows[0].cells[0].children[1].appendChild(tbod.cloneNode()).appendChild(rows[0]));
+          }
+          tableParent.removeChild(table);
+        }
+        else
+          tableParent.insertBefore(document.createElement("div"), table).appendChild(table).parentNode.className="fauxRow";
+      };
+    var tables = document.body.querySelectorAll("table.print")
+      , tableNum = tables.length;
+    for(; tableNum--; formatForPrint(tables[tableNum]));
+  }
+  )();
+}
+
+</script>
+</head>
+<body>
+</body>
+</html>

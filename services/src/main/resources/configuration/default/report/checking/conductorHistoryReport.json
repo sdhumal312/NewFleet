@@ -1,0 +1,67 @@
+{
+	  "tableProperties"	: {"enableColumnReOrder":true
+							,"showPrintButton":true
+							,"showExcelButton":true
+							,"gridDataId":"editReport"
+							,"gridDataHeight":"500px"
+							,"enableCellNavigation":false
+							,"divId":"container"
+							,"frozenColumn":"-1"
+							,"showSerialNumber":true
+							,"fullTableHeight": true
+							,"rowHeight":30
+							
+						}
+	,"columnConfiguration"	: {	
+								"1":"createdDate"
+								,"2":"route"
+								,"3":"description"
+								,"4":"punishment"
+								,"5":"orderNoAndDate"
+						} 
+	
+	,"createdDate"	: {	 "tableDtoName":"checkingDate"
+							,"dataType":"text"
+							,"labelid":"Date"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+						
+						
+	,"route"		: {	 "tableDtoName":"route"
+							,"dataType":"text"
+							,"labelid":"Route"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}
+	
+	,"description"			: {	 "tableDtoName":"description"
+							,"dataType":"text"
+							,"labelid":"Description"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}
+	,"punishment"			: {	 "tableDtoName":"punishment"
+							,"dataType":"text"
+							,"labelid":"Punishment"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}
+	,"orderNoAndDate"		: {	 "tableDtoName":"orderNoAndDate"
+							,"dataType":"text"
+							,"labelid":"OrderNo And Date"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}
+	
+}

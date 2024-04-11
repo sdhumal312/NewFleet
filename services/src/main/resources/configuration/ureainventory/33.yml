@@ -1,0 +1,5 @@
+{
+addNotification             : true,
+ureaNotificationThreashold  : "700"
+
+}

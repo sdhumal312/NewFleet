@@ -1,0 +1,136 @@
+{ 
+"tableProperties"	: {"enableColumnReOrder":true
+							,"showPrintButton":true
+							,"showExcelButton":true
+							,"gridDataId":"editReport"
+							,"gridDataHeight":"500px"
+							,"enableCellNavigation":false
+							,"divId":"container"
+							,"frozenColumn":"-1"
+							,"showSerialNumber":true
+							,"fullTableHeight": true
+							,"rowHeight":30
+							,"showGrouping":true
+							,"columnNumber":0
+							
+					}
+	,"columnConfiguration"	: {	
+								"1":"User_Name"
+								,"2":"renewal_Number"
+								,"3":"vehicle_registration"
+								,"4":"vehicle_Status"
+								,"5":"vehicle_Group"
+								,"6":"renewal_type"
+								,"7":"Renewal_Date"
+								,"8":"created"
+								,"9":"lastupdated"
+								,"10":"renewal_Amount"
+
+																 
+						} 
+						
+						
+						
+	,"User_Name"		: {	 "tableDtoName":"userName"
+							,"dataType":"text"
+							,"labelid":"User_Name"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+	
+						
+	,"renewal_Number"		: {	 "tableDtoName":"renewal_number"
+							,"dataType":"text"
+							,"labelid":"renewal_Number"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+						
+	,"vehicle_Group"		: {	 "tableDtoName":"vehicleGroup"
+							,"dataType":"text"
+							,"labelid":"vehicle_Group"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+						
+						
+	,"vehicle_Status"		: {	 "tableDtoName":"vehicleStatus"
+							,"dataType":"text"
+							,"labelid":"vehicle_Status"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+						
+			
+	,"vehicle_registration"		: {	 "tableDtoName":"vehicle_registration"
+							,"dataType":"text"
+							,"labelid":"vehicle_registration"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+						
+
+	
+	,"created"		: {	 "tableDtoName":"created"
+							,"dataType":"text"
+							,"labelid":"created"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	,"lastupdated"		: {	 "tableDtoName":"lastupdated"
+							,"dataType":"text"
+							,"labelid":"lastupdated"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+						
+						
+	,"renewal_type"		: {	 "tableDtoName":"renewal_type"
+							,"dataType":"text"
+							,"labelid":"renewal_type"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+						
+	,"renewal_Amount"		: {	 "tableDtoName":"renewal_Amount"
+							,"dataType":"text"
+							,"labelid":"renewal_Amount"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+							
+						}
+						
+	,"Renewal_Date"		: {	 "tableDtoName":"renewal_dateofRenewal"
+							,"dataType":"text"
+							,"labelid":"Renewal_Date"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+							
+						}
+								
+}

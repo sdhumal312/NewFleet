@@ -1,0 +1,94 @@
+{
+	  "tableProperties"	: {"enableColumnReOrder":true
+							,"showPrintButton":true
+							,"showExcelButton":true
+							,"gridDataId":"editReport"
+							,"gridDataHeight":"500px"
+							,"enableCellNavigation":false
+							,"divId":"container"
+							,"frozenColumn":"-1"
+							,"showSerialNumber":true
+							,"fullTableHeight": true
+							,"rowHeight":30
+							
+						}
+	,"columnConfiguration"	: {	
+								"1":"upholsteryName"
+								,"2":"receivedDate"
+								,"3":"receiveBy"
+								,"4":"receiveQuantity"
+								,"5":"eachCost" 
+								,"6":"discount" 
+								,"7":"gst" 
+								,"8":"amount" 
+						} 
+	
+	,"upholsteryName"	: {	 "tableDtoName":"clothTypesName"
+							,"dataType":"text"
+							,"labelid":"UpholsteryName"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+						
+						
+	,"receivedDate"		: {	 "tableDtoName":"receiveDateStr"
+							,"dataType":"text"
+							,"labelid":"ReceivedDate"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	
+	,"receiveBy"			: {	 "tableDtoName":"firstName"
+							,"dataType":"text"
+							,"labelid":"ReceiveBy"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	,"receiveQuantity"			: {	 "tableDtoName":"receiveQuantity"
+							,"dataType":"text"
+							,"labelid":"ReceiveQuantity"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}
+	,"eachCost"		: {	 "tableDtoName":"clothEachCost"
+							,"dataType":"text"
+							,"labelid":"EachCost"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}
+	,"discount"		: {	 "tableDtoName":"clothDiscount"
+							,"dataType":"text"
+							,"labelid":"Discount"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}
+	,"gst"		: {	 "tableDtoName":"clothGst"
+							,"dataType":"text"
+							,"labelid":"Gst"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : false
+							,"show":true
+						}
+	,"amount"		: {	 "tableDtoName":"clothTotal"
+							,"dataType":"text"
+							,"labelid":"Amount"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}
+	
+}

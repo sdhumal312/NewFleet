@@ -1,0 +1,79 @@
+{
+	   "tableProperties"	: {"enableColumnReOrder":true
+							,"showPrintButton":true
+							,"showExcelButton":true
+							,"gridDataId":"dispatchPopup"
+							,"gridDataHeight":"250px"
+							,"enableCellNavigation":false
+							,"divId":"dispatchContainer"
+							,"frozenColumn":"-1"
+							,"showSerialNumber":false
+							,"fullTableHeight": true
+							,"rowHeight":30
+							,"showGrouping":true
+							,"columnNumber":0
+							,"readDivFromConfig" : true
+							,"collapseOnLoad" : true
+						}
+	,"columnConfiguration"	: {	
+								 "1":"LsNumber"
+								,"2":"LsDate"
+								,"3":"LrNumber"
+								,"4":"Freight"
+								,"5":"BookingTotal"
+								,"6":"NoOfArticles"
+						} 
+	,"LsNumber"		: {	 "tableDtoName":"lsNumber"
+							,"dataType":"text"
+							,"labelid":"LS Number"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+						
+	,"LsDate"		: {	 "tableDtoName":"tripDateTimeStr"
+							,"dataType":"text"
+							,"labelid":"LS Date"
+							,"columnhidden":true
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":false
+						
+						}
+						
+	,"LrNumber"		: {	 "tableDtoName":"wayBillNumber"
+							,"dataType":"text"
+							,"labelid":"LR Number"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":true
+						}
+	
+	,"Freight"		: {	 "tableDtoName":"freight"
+							,"dataType":"number"
+							,"labelid":"Freight"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}	
+						
+	,"BookingTotal"		: {	 "tableDtoName":"bookingTotal"
+							,"dataType":"number"
+							,"labelid":"Booking Total"
+							,"columnhidden":false
+							,"showColumnTotal":true
+							,"sortable" : true
+							,"show":true
+						}														
+	,"NoOfArticles"		: {	 "tableDtoName":"totalNoOfPackages"
+							,"dataType":"number"
+							,"labelid":"No Of Packages"
+							,"columnhidden":false
+							,"showColumnTotal":false
+							,"sortable" : true
+							,"show":false
+						}
+}

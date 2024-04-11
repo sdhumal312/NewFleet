@@ -1,0 +1,22 @@
+{
+  AllowWSFuelEntry             : true,
+  lastFuelAsOpen               : true,
+  validateDriver1              : true,
+  showVehicleNumCol		  	   : true,
+  showFuelReferenceNumCol      : true,
+  showDriverNameCol            : true,
+  showTripSheetDropDown        : true,
+  noOfDaysToShowTripSheet      : 10,
+  tallyImportRequired          : true,
+  validateTripSheetNumber      : true,
+  validateUniqueReference      : true,
+  allowToEditFuelRef           : true,
+  considerFirstEntry           : false,
+  noOfDaysForBackDate          : 180,
+  selectAutoCredit             : true,
+  addFuelDocument              : true,
+  showDriverFullNameInFuel     : true,
+  showGPSKMPLInVFuelReport     : true,
+  showVehicleNoInFuelReport    : true,
+  maxOdometerAsTripCloseKM     : true
+}

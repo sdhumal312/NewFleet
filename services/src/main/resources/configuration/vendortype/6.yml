@@ -1,0 +1,7 @@
+{
+useCommonVendorType			   : false,
+directPayment                  : false,
+vendorApprovalPayment          : false,
+vendorPaymentFlavor3           : true,
+paymentMode                    : true
+}

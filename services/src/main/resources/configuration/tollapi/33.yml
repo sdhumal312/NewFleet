@@ -1,0 +1,6 @@
+{ 
+allowTollApiIntegration      : true,
+TollExpenseName              : FASTTAG TOLL CHARGES,
+CustomerId                   : 12729297,
+TollExpenseId                : 3268
+}
